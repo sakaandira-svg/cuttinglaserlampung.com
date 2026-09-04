@@ -1,4 +1,6 @@
 ---
+import { whatsappUrl } from '../lib/whatsapp';
+
 const links = [
   { href: '/', label: 'Beranda' },
   { href: '/layanan/', label: 'Layanan' },
@@ -11,6 +13,6 @@ const links = [
   <div class="shell header-inner">
     <a class="brand" href="/" aria-label="Cutting Laser Lampung, beranda"><span class="brand-mark">CL</span><span>Cutting Laser <b>Lampung</b></span></a>
     <nav aria-label="Navigasi utama"><ul class="nav-links">{links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul></nav>
-    <a class="button button-small button-accent header-cta" href="/kontak/">Konsultasi <span aria-hidden="true">↗</span></a>
+    <a class="button button-small button-accent header-cta" href={whatsappUrl()} target="_blank" rel="noopener noreferrer">Konsultasi <span aria-hidden="true">↗</span></a>
   </div>
 </header>

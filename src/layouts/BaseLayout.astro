@@ -8,6 +8,79 @@ import WhatsAppBar from '../components/WhatsAppBar.astro';
 interface Props { title: string; description: string; pathname?: string; noindex?: boolean; }
 const { title, description, pathname = '/', noindex = false } = Astro.props;
 const canonical = new URL(pathname, siteUrl).toString();
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      name: business.brandName,
+      url: siteUrl,
+      description,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${siteUrl}/?q={search_term_string}`,
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: business.brandName,
+      url: siteUrl,
+      email: business.email,
+      telephone: `+${business.phone}`,
+      sameAs: Object.values(business.socialUrls),
+      areaServed: 'Lampung',
+      hasMap: business.mapsUrl,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: business.addressParts.streetAddress,
+        addressLocality: business.addressParts.addressLocality,
+        addressRegion: business.addressParts.addressRegion,
+        postalCode: business.addressParts.postalCode,
+        addressCountry: business.addressParts.addressCountry,
+      },
+    },
+    {
+      '@type': 'LocalBusiness',
+      '@id': `${siteUrl}/#localbusiness`,
+      name: business.brandName,
+      url: siteUrl,
+      telephone: `+${business.phone}`,
+      email: business.email,
+      sameAs: Object.values(business.socialUrls),
+      areaServed: 'Lampung',
+      hasMap: business.mapsUrl,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: business.addressParts.streetAddress,
+        addressLocality: business.addressParts.addressLocality,
+        addressRegion: business.addressParts.addressRegion,
+        postalCode: business.addressParts.postalCode,
+        addressCountry: business.addressParts.addressCountry,
+      },
+      openingHoursSpecification: business.openingHours
+        .filter((day) => !day.closed)
+        .map((day) => ({
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: day.day,
+          opens: day.opens,
+          closes: day.closes,
+        })),
+      parentOrganization: { '@id': `${siteUrl}/#organization` },
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${canonical}#webpage`,
+      url: canonical,
+      name: title,
+      description,
+      isPartOf: { '@id': `${siteUrl}/#website` },
+      about: { '@id': `${siteUrl}/#localbusiness` },
+    },
+  ],
+};
 ---
 <!doctype html>
 <html lang="id">
@@ -24,6 +97,7 @@ const canonical = new URL(pathname, siteUrl).toString();
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <title>{title}</title>
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Lewati ke konten utama</a>

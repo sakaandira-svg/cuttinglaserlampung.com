@@ -2,42 +2,40 @@
 
 ## Status
 
-`LOCAL_BUILD_COMPLETE` / `BLOCKED_BY_OPERATOR_DATA` / `BLOCKED_BY_GITHUB_AUTHORIZATION` / `PRODUCTION_VERIFICATION_REQUIRED`
+`LOCAL_BUILD_COMPLETE` / `BUSINESS_DATA_VERIFIED` / `GITHUB_PUSH_PENDING_EXTERNAL_AUTH` / `PRODUCTION_VERIFICATION_REQUIRED`
 
-The local source has been implemented and the static build passes. Production cannot be called complete while genuine business inputs, GitHub authentication, Hostinger access, and real-domain verification are unavailable.
+The local source has been implemented, the verified business data has been integrated, and the site passes the local Astro validation and static build. Production cannot be declared live until GitHub authentication, Hostinger access, and the live domain verification steps are completed externally.
 
 ## Architecture
 
-Astro 5 static output was chosen for pre-rendered HTML, minimal JavaScript, clean route control, and simple Hostinger deployment to `dist/`.
+Astro 5 static output remains the chosen approach for pre-rendered HTML, minimal JavaScript, simple route control, and clean Hostinger deployment to `dist/`.
 
 ## Implemented
 
 - Responsive industrial/architectural visual system
 - Homepage, service index, material/application detail pages, portfolio, contact, service area, file guide, and 404
-- Central business configuration and contextual WhatsApp message generator
-- Canonical, metadata, OG, robots, sitemap, breadcrumbs, and Service/WebSite JSON-LD
-- Data-driven portfolio placeholder system and image replacement documentation
+- Central business configuration with verified local business data
+- Contextual WhatsApp message generator with intent-aware conversion paths
+- Canonical, metadata, OG, robots, sitemap, breadcrumbs, and JSON-LD structure aligned with the real business entity
 - Accessibility foundations: semantic landmarks, skip link, focus states, labels, reduced motion
-- SEO architecture and maintenance documentation
-- `npm run verify` invariant script
+- SEO architecture and maintenance documentation updates
+- `npm run verify` invariant script with live business value checks
 
 ## Validation
 
 - `astro check`: passed, 0 errors, 0 warnings, 0 hints
 - `astro build`: passed, 16 static pages generated
-- release verifier: passed
-- npm audit: reports 3 dependency vulnerabilities from the installed tree; review before deployment
-- Git commit: `758ca33` (`feat: build static local fabrication website`)
-- Git origin: configured to the requested repository
-- GitHub push: not completed; authentication dialog was cancelled
+- release verifier: passed after integrating the verified business values
+- npm audit: reports 3 dependency vulnerabilities in the installed tree; review before production deployment
+- local build and verification status: ready at repository level
+- GitHub push: pending external authorization and remote authentication
 
 ## Genuine blockers
 
-- Business WhatsApp, phone, address, Maps URL, hours, and profile links are still placeholders.
-- Node.js/npm were installed in user scope during this session because they were initially unavailable. Git was available through GitHub Desktop.
-- GitHub push was blocked by missing/cancelled authentication.
-- Production domain and Hostinger/GitHub authorization still require external access.
+- Production deployment is not live yet and requires Hostinger/GitHub authorization and real-domain verification.
+- Search Console verification and analytics configuration remain external tasks if desired.
+- Real portfolio photography and any additional verified equipment data remain operator-dependent.
 
 ## Required next verification
 
-Install Node.js 22 LTS and Git, fill `docs/OPERATOR-INPUTS.md`, then run `npm install`, `npm run verify`, and `npm run build`. Commit to `main`, push if authorized, deploy to Hostinger, and complete `reports/PRODUCTION-CHECKLIST.md` against the real domain.
+Run `git status`, commit the verified business-data update, and push to `main` if GitHub credentials are available. After that, complete the live domain checks on the real production host and finish `reports/PRODUCTION-CHECKLIST.md` against the deployed site.

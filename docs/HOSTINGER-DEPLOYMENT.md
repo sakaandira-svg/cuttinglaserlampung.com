@@ -13,7 +13,7 @@ In Hostinger, connect the GitHub repository `sakaandira-svg/cuttinglaserlampung.
 
 ## Before deployment
 
-1. Fill genuine business values in `src/config/business.ts`.
+1. Verify the business values in `src/config/business.ts` match the operator-supplied data.
 2. Run `npm run verify`.
 3. Confirm `dist/robots.txt` and `dist/sitemap.xml` reference `https://cuttinglaserlampung.com`.
 4. Configure HTTPS and redirect HTTP to HTTPS.
@@ -22,3 +22,7 @@ In Hostinger, connect the GitHub repository `sakaandira-svg/cuttinglaserlampung.
 ## After deployment
 
 Check the homepage, representative service page, contact CTA, robots, sitemap, canonical tags, 404, mobile layout, and WhatsApp link on the real domain. Production verification is not complete until those checks pass.
+
+## Current status
+
+The site is ready for Hostinger GitHub deployment from the local repository. Actual production deployment remains blocked until external GitHub authorization and the deployment environment are available.

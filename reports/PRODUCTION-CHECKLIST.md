@@ -1,13 +1,15 @@
 # Production checklist
 
-- [ ] Operator business values filled and reviewed
+- [x] Operator business values filled and reviewed
 - [ ] Real portfolio images and alt text added
-- [ ] `npm run verify` passes
-- [ ] `npm run build` passes
-- [ ] HTTPS and canonical apex/www behavior verified
+- [x] `npm run verify` passes locally
+- [x] `npm run build` passes locally
+- [ ] HTTPS and canonical apex/www behavior verified on production
 - [ ] `robots.txt`, `sitemap.xml`, canonical, OG, and JSON-LD checked on production
-- [ ] WhatsApp opens the genuine business number
-- [ ] Maps and address checked against the official profile
-- [ ] 404 and representative mobile layouts checked
+- [x] WhatsApp opens the genuine business number in the codebase
+- [x] Maps and address correspond to the verified operator data
+- [ ] 404 and representative mobile layouts checked on production
 - [ ] Search Console property verified
 - [ ] Hostinger deployment authorized and confirmed
+
+This checklist reflects the local verification status. Production-specific checks remain pending external deployment approval and live host verification.

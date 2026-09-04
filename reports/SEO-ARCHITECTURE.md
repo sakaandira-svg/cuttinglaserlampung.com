@@ -13,4 +13,6 @@
 | preparing design files | `/panduan-file-desain-laser-cutting/` | Informational support that assists conversion |
 | contact / quotation | `/kontak/` | Conversion destination |
 
-The current architecture intentionally does not create separate city pages, price pages, or unsupported material pages where unique evidence is unavailable. Each detail page has unique use cases and preparation considerations drawn from its material or application intent.
+Current status: the architecture remains intentionally narrow and non-duplicative. No additional city pages or near-duplicate pages were introduced. Anchor text and internal links continue to funnel toward conversion while preserving the Lampung service-area focus.
+
+Overlap review: the commercial pages share the same broad intent cluster but remain differentiated by material, process, or application. This is acceptable without keyword stuffing because each page adds unique usage context and preparation guidance.

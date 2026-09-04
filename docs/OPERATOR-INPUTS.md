@@ -1,14 +1,28 @@
 # Operator inputs
 
-The site intentionally does not invent real-world business data. Fill these values in `src/config/business.ts` before production launch:
+The verified business data has been integrated into `src/config/business.ts` and resolved for production use.
 
-- WhatsApp number in international format, without `+` or spaces
-- Public telephone and email
-- Exact workshop address
-- Google Maps URL and coordinates
-- Opening hours
-- Google Business Profile URL
-- Official social profile URLs
-- GA4, GTM, and Search Console IDs, only when genuinely available
+Resolved and confirmed:
 
-After updating the file, run `npm run verify` and inspect every contact/CTA page. Do not publish placeholder contact information as if it were real.
+- Public business name: Cutting Laser Lampung
+- WhatsApp: 6281273070930
+- Phone: 6281273070930, displayed as +62 812-7307-0930
+- Email: saka.andira@gmail.com
+- Public workshop address: Jl. Ryacudu Gg. Al Fajar, Way Dadi, Kec. Sukarame, Kota Bandar Lampung, Lampung 35133, Indonesia
+- Google Maps URL: https://maps.app.goo.gl/cpJSqQ58KMznkQkb8
+- Opening hours: Monday-Saturday 08:00-17:00; Sunday closed
+- Google Business Profile: https://share.google/Mjbq92qzvL7z5k0n0
+- Instagram: https://www.instagram.com/kinglaserart
+- Facebook: https://www.facebook.com/kinglaserartlampung/
+- TikTok: https://www.tiktok.com/@kinglasercutting
+
+Still unresolved / future operator tasks may include:
+
+- actual portfolio photographs
+- verified production machine capabilities not yet supplied
+- production deployment
+- production performance evidence
+- Search Console ownership/verification if not yet configured
+- analytics IDs if desired
+
+This file is now resolved for the verified business details above. Any remaining unknowns must stay documented as unresolved instead of being invented.
