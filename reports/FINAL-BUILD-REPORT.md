@@ -2,9 +2,9 @@
 
 ## Status
 
-`WORKING` / `BLOCKED_BY_OPERATOR_DATA` / `PRODUCTION_VERIFICATION_REQUIRED`
+`LOCAL_BUILD_COMPLETE` / `BLOCKED_BY_OPERATOR_DATA` / `BLOCKED_BY_GITHUB_AUTHORIZATION` / `PRODUCTION_VERIFICATION_REQUIRED`
 
-The local source has been implemented, but production cannot be called complete while genuine business inputs, local Node tooling, Git authentication, and Hostinger access are unavailable.
+The local source has been implemented and the static build passes. Production cannot be called complete while genuine business inputs, GitHub authentication, Hostinger access, and real-domain verification are unavailable.
 
 ## Architecture
 
@@ -21,10 +21,21 @@ Astro 5 static output was chosen for pre-rendered HTML, minimal JavaScript, clea
 - SEO architecture and maintenance documentation
 - `npm run verify` invariant script
 
+## Validation
+
+- `astro check`: passed, 0 errors, 0 warnings, 0 hints
+- `astro build`: passed, 16 static pages generated
+- release verifier: passed
+- npm audit: reports 3 dependency vulnerabilities from the installed tree; review before deployment
+- Git commit: `758ca33` (`feat: build static local fabrication website`)
+- Git origin: configured to the requested repository
+- GitHub push: not completed; authentication dialog was cancelled
+
 ## Genuine blockers
 
 - Business WhatsApp, phone, address, Maps URL, hours, and profile links are still placeholders.
-- Node.js/npm/Git were not available in the current PATH or standard install locations, so build, verification, commits, and push could not be executed.
+- Node.js/npm were installed in user scope during this session because they were initially unavailable. Git was available through GitHub Desktop.
+- GitHub push was blocked by missing/cancelled authentication.
 - Production domain and Hostinger/GitHub authorization still require external access.
 
 ## Required next verification
