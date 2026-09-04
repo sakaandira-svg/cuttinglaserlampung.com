@@ -1,0 +1,6 @@
+---
+import type { Service } from '../data/services';
+interface Props { service: Service }
+const { service } = Astro.props;
+---
+<a class="service-card" href={`/${service.slug}/`}><span class="card-number">01 / {service.eyebrow}</span><h3>{service.title}</h3><p>{service.summary}</p><span class="text-link">Pelajari layanan <span aria-hidden="true">↗</span></span></a>

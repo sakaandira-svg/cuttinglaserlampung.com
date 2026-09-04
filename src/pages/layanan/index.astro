@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import { services } from '../../data/services';
+---
+<BaseLayout title="Layanan Laser Cutting dan CNC Lampung" description="Jelajahi layanan laser cutting material, CNC router, dan aplikasi fabrikasi arsitektural di Lampung." pathname="/layanan/">
+  <Breadcrumbs items={[{ label: 'Layanan' }]} />
+  <section class="page-hero"><div class="shell"><div class="eyebrow">Layanan dan material</div><h1>Dari lembaran material sampai detail arsitektur.</h1><p>Pilih titik mulai yang paling dekat dengan kebutuhanmu. Setiap layanan punya pertimbangan desain, material, dan penggunaan yang berbeda.</p></div></section>
+  <section class="section"><div class="shell"><div class="service-grid">{services.map((service) => <ServiceCard service={service} />)}</div></div></section>
+</BaseLayout>

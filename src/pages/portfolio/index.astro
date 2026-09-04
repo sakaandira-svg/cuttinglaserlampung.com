@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { whatsappUrl } from '../../lib/whatsapp';
+const items = [
+  { label: 'Material / acrylic', title: 'Signage dan lettering custom', text: 'Slot portfolio siap diisi foto pekerjaan nyata.' },
+  { label: 'Aplikasi / fasad', title: 'Panel pola untuk bangunan', text: 'Ganti placeholder ini dengan dokumentasi proyek yang benar.' },
+  { label: 'Aplikasi / pagar', title: 'Pola pagar dan gerbang', text: 'Tambahkan material, ukuran, dan konteks setelah data tersedia.' },
+];
+---
+<BaseLayout title="Portfolio Cutting Laser Lampung" description="Ruang portfolio untuk dokumentasi pekerjaan laser cutting, CNC, signage, dan fabrikasi arsitektural di Lampung." pathname="/portfolio/">
+  <Breadcrumbs items={[{ label: 'Portfolio' }]} />
+  <section class="page-hero"><div class="shell"><div class="eyebrow">Portfolio / dokumentasi pekerjaan</div><h1>Hasil nyata akan berbicara paling jelas.</h1><p>Halaman ini disiapkan untuk foto pekerjaan, detail material, dan konteks pemasangan yang benar. Tidak ada proyek fiktif di sini.</p></div></section>
+  <section class="section"><div class="shell"><div class="portfolio-grid">{items.map((item) => <article class="portfolio-tile"><span class="eyebrow">{item.label}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div><div style="margin-top:35px"><a class="button button-accent" href={whatsappUrl('portfolio')} target="_blank" rel="noopener noreferrer">Tanyakan pekerjaan serupa ↗</a></div></div></section>
+</BaseLayout>
