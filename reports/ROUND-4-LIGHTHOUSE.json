@@ -1,0 +1,222 @@
+{
+  "environment": "Local production build, Chrome headless, Lighthouse simulated throttling; not field data.",
+  "runs": [
+    {
+      "path": "/",
+      "device": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-09-04T22:21:59.768Z",
+      "runtimeError": null,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1017.55655,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1017.55655,
+          "display": "1.0 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 2007.455300078506,
+          "display": "2.0 s"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.99,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "path": "/portfolio/",
+      "device": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-09-04T22:22:10.35Z",
+      "runtimeError": null,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 970.7501,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 970.7501,
+          "display": "1.0 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 970.7501,
+          "display": "1.0 s"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.25,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "path": "/",
+      "device": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-09-04T22:22:18.142Z",
+      "runtimeError": null,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 214.6707,
+          "display": "0.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 245.34140000000002,
+          "display": "0.2 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 214.6707,
+          "display": "0.2 s"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "path": "/portfolio/",
+      "device": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-09-04T22:22:26.042Z",
+      "runtimeError": null,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 206.7797,
+          "display": "0.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 243.55939999999998,
+          "display": "0.2 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 206.7797,
+          "display": "0.2 s"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

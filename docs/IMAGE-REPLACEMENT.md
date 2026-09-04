@@ -1,25 +1,24 @@
-# Portfolio image system
+# Portfolio artwork and photograph replacement
 
-`src/data/portfolio.ts` is the shared gallery source for the homepage and portfolio page. `PortfolioImage.astro` uses Astro image processing to produce WebP variants at 480, 800, 1200, and 1536 pixels. Width, height, sizes, alt text, and loading priority are included in static HTML. Gallery images load lazily; the first hero image loads eagerly with high priority. No gallery JavaScript or third-party media requests are needed.
+`src/data/portfolio.ts` is the shared source for the homepage and gallery. The current six records are original inline SVG concept studies, not completed customer projects. `PortfolioImage.astro` selects the vector study or Astro's optimized photo renderer from the record's `kind`.
 
-## Current image provenance
+## Current artwork
 
-The three source PNGs in `src/assets/portfolio/` are AI-generated fictional concept studies made with the built-in image generation tool. They are **not photographs of completed work**. Each image is labeled as a concept in the interface, and the gallery explains its status. There are no invented clients, project dates, counts, testimonials, or material specifications.
+`CutStudy.astro` draws six deterministic patterns: arch slots, lens openings, stepped rhythm, geometric lettering, nested contours, and angled slots. Each is shown with a cut sheet, an offset trace, shallow shadows, and drafting marks. These are visual studies, not fabrication-ready CAD files, material specifications, or authentic traditional motifs.
 
-- `studi-fasad.png`: exterior screen concept.
-- `studi-partisi.png`: interior partition concept.
-- `studi-ornamen.png`: ornamental metal and acrylic material concept.
+The homepage and portfolio disclose that the illustrations are concepts. Each plate repeats the label. Accessible SVG titles describe the geometry; instance-specific IDs prevent collisions between masks, gradients, patterns, and titles. No external images or client JavaScript are required.
 
-Exact prompts are recorded in `docs/CONCEPT-IMAGE-PROMPTS.md`.
+The three Round 3 PNGs under `src/assets/portfolio/` remain historical source assets. They are no longer imported or emitted into the current build. Their historical prompts remain in `docs/CONCEPT-IMAGE-PROMPTS.md`.
 
-## Adding verified project photographs
+## Replacing a study with verified photography
 
-1. Obtain permission to publish the real photograph. Confirm its application, material, and any supplied project details. Never infer these facts from appearance alone.
-2. Place the source under `src/assets/portfolio/` and import it in `src/data/portfolio.ts`. Prefer a source at least 1536 pixels wide; preserve its proportions. Avoid embedding customer contact details or unapproved information in images or captions.
-3. Add a record with a unique `id`, accurate title, Indonesian `alt`, category, caption, service link, WhatsApp intent, and focal point. A real project uses `kind: 'project'`, `permissionConfirmed: true`, and `verifiedDetails`. A concept retains `kind: 'concept'` and its visible disclosure.
-4. Write `considerations` from verified project context. Do not leave speculative concept text under a real project photograph. Preserve stable IDs when replacing a record so existing links continue to work.
-5. The shared cards automatically change their label to `Dokumentasi proyek` for real project records. Update the page-level gallery introductions and hero caption to describe the actual mix of projects and studies. Do not remove disclosures from any remaining concepts.
-6. The homepage currently features the first three records. If expanding the collection, deliberately select featured records and group the portfolio into meaningful categories instead of duplicating images or creating thin routes. Category navigation can be updated in `src/pages/portfolio/index.astro`.
-7. Run `npm run verify` and `npm run build`. Check all focal crops and captions at mobile and desktop sizes and rerun Lighthouse after adding large images.
+1. Obtain publication permission and verify the application, material, and project details. Do not infer business claims from a photograph.
+2. Add the photograph to `src/assets/portfolio/` and import it in `src/data/portfolio.ts`. Prefer a source at least 1536 pixels wide and preserve its proportions.
+3. Preserve the record's stable `id` and complete all shared fields: `code`, `category`, `title`, `description`, Indonesian `alt`, `tags`, `serviceHref`, `serviceLabel`, and WhatsApp `intent`.
+4. Replace `kind: 'concept'`, `study`, and `tone` with `kind: 'project'`, the imported `image`, an explicit `focus` such as `'50% 50%'`, the verified `material`, concise `verifiedDetails`, and `permissionConfirmed: true`. Remove speculative study descriptions from the real project record.
+5. The renderer automatically switches to WebP photography with responsive widths, dimensions, sizes, loading priority, and the chosen focal point. The plate displays its verified material. Native detail drawers carry brief project information and relevant service/WhatsApp links.
+6. Update the page-level introductions to accurately describe the mix of studies and real projects. Keep visible concept labels for remaining studies. The hero is a separate illustration and must retain its own disclosure.
+7. The homepage features the first three records and a secondary mosaic from the remaining records. Curate these deliberately when expanding the dataset. The portfolio index uses each record's first tag; additional categories should reflect verified content rather than empty filters.
+8. Run `npm run verify` and `npm run build`. Inspect crops, focus rings, captions, and detail drawers at 320px, 390px, tablet, and desktop widths. Rerun Lighthouse after adding photos.
 
-The current verification includes disclosure checks for this all-concept release. Update those expectations when verified photography is introduced; never simply remove the disclosure safeguards.
+The verifier currently expects this all-concept release, including 13 labeled vector studies. Adjust that count and the disclosure wording when introducing real photographs while retaining the photo, accessibility, and provenance checks. Never remove safeguards simply to make a mixed gallery pass.

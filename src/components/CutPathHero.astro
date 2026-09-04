@@ -1,0 +1,14 @@
+---
+import CutStudy from './CutStudy.astro';
+import { whatsappUrl } from '../lib/whatsapp';
+---
+<section class="cut-hero" aria-labelledby="hero-title">
+  <div class="shell hero-spec"><span>Laser cutting / CNC router</span><span>Bandar Lampung, Indonesia</span><span class="hero-spec-last">Custom fabrication studio</span></div>
+  <div class="shell cut-hero-canvas">
+    <div class="hero-title-block"><p class="eyebrow">Cutting Laser Lampung</p><h1 id="hero-title">IDE BERANI.<br /><span class="cut-word">DETAIL</span><br />TERUKUR.</h1><p class="hero-short">Pola custom untuk interior, eksterior,<br class="desktop-break" /> dan elemen arsitektur.</p><a class="button button-dark" href="#pilihan-visual">Masuk ke galeri <span aria-hidden="true">↘</span></a></div>
+    <figure class="hero-cut-art"><CutStudy id="hero-sheet" study="rhythm" hero /><figcaption><span class="index-tag">CUT / 01</span><span>Studi pola — ilustrasi konsep</span></figcaption></figure>
+    <div class="hero-vertical" aria-hidden="true">DARI GARIS KE BIDANG</div>
+    <a class="hero-discuss" href={whatsappUrl()} target="_blank" rel="noopener noreferrer">Punya ide? Kirim sketsanya <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="cut-rule shell"><span>Eksplorasi bentuk</span><span aria-hidden="true">↓</span><span>Gulir untuk melihat</span></div>
+</section>

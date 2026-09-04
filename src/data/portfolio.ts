@@ -1,58 +1,30 @@
 import type { ImageMetadata } from 'astro';
 import type { WhatsAppIntent } from '../lib/whatsapp';
-import facade from '../assets/portfolio/studi-fasad.png';
-import interior from '../assets/portfolio/studi-partisi.png';
-import ornament from '../assets/portfolio/studi-ornamen.png';
 
-// Concept images are never represented as completed work. See docs/IMAGE-REPLACEMENT.md.
+export type StudyPattern = 'arc' | 'weave' | 'rhythm' | 'letter' | 'contour' | 'layer';
 type PortfolioBase = {
   id: string;
+  code: string;
   category: string;
   title: string;
   description: string;
-  image: ImageMetadata;
   alt: string;
-  focus: string;
   tags: string[];
-  considerations: { label: string; text: string }[];
   serviceHref: string;
   serviceLabel: string;
   intent: WhatsAppIntent;
 };
+// All current records are original vector studies, never customer project claims.
+// The project variant requires permission, actual photography, and verified details.
 export type PortfolioItem = PortfolioBase & (
-  | { kind: 'concept' }
-  | { kind: 'project'; verifiedDetails: string; permissionConfirmed: true }
+  | { kind: 'concept'; study: StudyPattern; tone: 'green' | 'silver' | 'orange' }
+  | { kind: 'project'; image: ImageMetadata; focus: string; material: string; verifiedDetails: string; permissionConfirmed: true }
 );
-
 export const portfolio: PortfolioItem[] = [
-  {
-    id: 'eksterior', category: 'Eksterior / Fasad & pagar', title: 'Ritme pada tampak bangunan.',
-    description: 'Bidang yang terasa ringan, pola yang tetap berkarakter. Eksplorasi hubungan antara bukaan, bayangan, dan skala arsitektur.',
-    image: facade, kind: 'concept', alt: 'Ilustrasi konsep screen logam bermotif organik pada fasad, dengan bayangan di dinding terang.', focus: '50% 50%',
-    tags: ['Fasad', 'Pagar bermotif', 'Screen eksterior'],
-    considerations: [
-      { label: 'Maksud visual', text: 'Motif mengikuti ritme bangunan, dengan kerapatan pola yang mempertimbangkan privasi dan cahaya.' },
-      { label: 'Untuk dibahas', text: 'Ukuran modul, kondisi luar ruang, struktur pendukung, sambungan, dan rencana finishing.' },
-    ], serviceHref: '/fasad-laser-cutting-lampung/', serviceLabel: 'Tentang fasad laser cutting', intent: 'fasad',
-  },
-  {
-    id: 'interior', category: 'Interior / Partisi dekoratif', title: 'Membagi ruang. Meneruskan cahaya.',
-    description: 'Partisi sebagai aksen ruang, dengan celah dan motif yang menyaring pandangan tanpa kehilangan keterbukaan.',
-    image: interior, kind: 'concept', alt: 'Ilustrasi konsep partisi bermotif botani berwarna perunggu dengan cahaya alami pada interior terang.', focus: '50% 50%',
-    tags: ['Partisi', 'Panel interior', 'Motif organik'],
-    considerations: [
-      { label: 'Maksud visual', text: 'Pola menjadi penghubung antarruang. Proporsinya dipertimbangkan dari jarak pandang dan arah datangnya cahaya.' },
-      { label: 'Untuk dibahas', text: 'Ukuran ruang, kebutuhan privasi, detail tepi, titik penopang, serta warna dan tekstur permukaan.' },
-    ], serviceHref: '/partisi-laser-cutting-lampung/', serviceLabel: 'Tentang partisi laser cutting', intent: 'partisi',
-  },
-  {
-    id: 'ornamen', category: 'Detail / Ornamen & lettering', title: 'Karakter hadir dalam detail.',
-    description: 'Garis lengkung, bidang solid, dan kontras permukaan membuka kemungkinan untuk ornamen, lettering, serta elemen visual custom.',
-    image: ornament, kind: 'concept', alt: 'Ilustrasi konsep komposisi potongan logam ornamental dan bentuk acrylic di atas permukaan gelap.', focus: '50% 50%',
-    tags: ['Ornamen custom', 'Lettering', 'Acrylic & metal'],
-    considerations: [
-      { label: 'Maksud visual', text: 'Detail yang terbaca dekat maupun jauh, dengan bentuk dan permukaan yang mendukung identitas visual.' },
-      { label: 'Untuk dibahas', text: 'Ukuran detail terkecil, bagian yang saling terhubung, pilihan material, dan konteks penempatan akhir.' },
-    ], serviceHref: '/laser-cutting-acrylic-lampung/', serviceLabel: 'Tentang acrylic & lettering', intent: 'acrylic',
-  },
+  { id:'eksterior', code:'EXT / 01', category:'Fasad / Pagar', title:'Ritme pada fasad.', description:'Kerapatan pola, skala bidang, dan bayangan. Bahas material serta struktur sesuai konteks bangunan.', alt:'Studi vektor panel fasad dengan deretan bukaan lengkung dan jejak garis potong. Ilustrasi konsep.', tags:['Eksterior','Fasad','Pagar','Metal'], serviceHref:'/fasad-laser-cutting-lampung/', serviceLabel:'Layanan fasad', intent:'fasad', kind:'concept', study:'arc', tone:'green' },
+  { id:'interior', code:'INT / 02', category:'Interior / Partisi', title:'Cahaya di sela pola.', description:'Bukaan organik untuk menyaring pandangan. Skala motif dan penopang mengikuti kebutuhan ruang.', alt:'Studi vektor panel partisi dengan bukaan berbentuk lensa yang saling berulang. Ilustrasi konsep.', tags:['Interior','Partisi','Custom'], serviceHref:'/partisi-laser-cutting-lampung/', serviceLabel:'Layanan partisi', intent:'partisi', kind:'concept', study:'weave', tone:'silver' },
+  { id:'ornamen', code:'ORN / 03', category:'Ornamen / Motif custom', title:'Geometri yang berirama.', description:'Pola berpuncak dan berulang, disusun sebagai eksplorasi geometris kontemporer. Motif dan sambungannya dibahas sebelum produksi.', alt:'Studi vektor pola geometris berpuncak yang dipotong berulang pada panel. Ilustrasi konsep orisinal.', tags:['Ornamen','Custom','Metal'], serviceHref:'/laser-cutting-plat-besi-lampung/', serviceLabel:'Cutting plat besi', intent:'plat-besi', kind:'concept', study:'rhythm', tone:'orange' },
+  { id:'signage', code:'SGN / 04', category:'Signage / Huruf timbul', title:'Identitas dalam bidang.', description:'Studi ruang negatif pada bentuk huruf. Material, ukuran, dan tampilan permukaan mengikuti identitas visual Anda.', alt:'Studi vektor bentuk huruf geometris dalam panel potong. Ilustrasi konsep signage.', tags:['Signage','Huruf timbul','Acrylic'], serviceHref:'/laser-cutting-acrylic-lampung/', serviceLabel:'Acrylic & lettering', intent:'acrylic', kind:'concept', study:'letter', tone:'green' },
+  { id:'cnc', code:'CNC / 05', category:'CNC / Pola berlapis', title:'Garis menjadi kedalaman.', description:'Eksplorasi kontur dan jalur berulang. Kedalaman, geometri, dan bahan perlu disesuaikan dengan proses routing.', alt:'Studi vektor jalur kontur bersarang sebagai eksplorasi pola CNC. Bukan gambar kerja.', tags:['CNC','Interior','Custom'], serviceHref:'/cnc-router-lampung/', serviceLabel:'CNC router', intent:'cnc', kind:'concept', study:'contour', tone:'silver' },
+  { id:'material', code:'MAT / 06', category:'Material / Panel', title:'Susunan. Celah. Bayangan.', description:'Ritme bukaan pada bidang lembaran. Pilihan material dan finishing dibahas sesuai lokasi penerapan.', alt:'Studi vektor celah bersudut berulang pada panel hijau. Ilustrasi konsep material.', tags:['Material','Metal','Custom'], serviceHref:'/layanan/#material', serviceLabel:'Pilihan material', intent:'general', kind:'concept', study:'layer', tone:'green' },
 ];

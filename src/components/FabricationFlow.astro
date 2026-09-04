@@ -1,0 +1,11 @@
+---
+const steps = [
+  { label: 'Ide', note: 'Sketsa & referensi', path: 'M12 65L24 28L38 54L58 17L76 64M14 72H80' },
+  { label: 'Pola', note: 'Ritme & proporsi', path: 'M10 65V30Q25 5 40 30V65M48 65V30Q63 5 78 30V65M20 65V32Q25 21 30 32V65M58 65V32Q63 21 68 32V65' },
+  { label: 'Material', note: 'Bahan & permukaan', path: 'M8 48L45 28L83 48L45 69ZM8 35L45 15L83 35L45 56ZM8 60L45 81L83 60' },
+  { label: 'Cut', note: 'Laser / CNC', path: 'M37 5H53V28L45 40L37 28ZM45 42V65M12 67H78M30 50L22 44M60 50L68 44M45 73V85' },
+  { label: 'Finish', note: 'Detail akhir', path: 'M13 26H78V74H13ZM13 37H78M25 20V31M45 20V31M65 20V31M26 51L37 62L62 44' },
+  { label: 'Ruang', note: 'Konteks penerapan', path: 'M10 75V20H80V75M27 75V38H63V75M6 79H84M40 38V75M51 38V75M27 26H63' },
+];
+---
+<section class="fabrication-flow" aria-labelledby="flow-title"><div class="shell"><div class="compact-heading"><p class="eyebrow">Alur / Desain ke fabrikasi</p><h2 id="flow-title">Satu garis. <em>Sampai jadi.</em></h2><a class="text-link" href="/panduan-file-desain-laser-cutting/">Panduan file ↗</a></div><ol class="flow-track">{steps.map((step, index) => <li><span class="flow-index">0{index + 1}</span><svg viewBox="0 0 90 90" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d={step.path} /></svg><h3>{step.label}</h3><p>{step.note}</p></li>)}</ol><p class="flow-note">Detail material, finishing, dan lingkup pengerjaan dibahas sebelum produksi.</p></div></section>

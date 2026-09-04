@@ -1,7 +1,8 @@
 ---
 import { Image } from 'astro:assets';
+import CutStudy from './CutStudy.astro';
 import type { PortfolioItem } from '../data/portfolio';
-interface Props { item: PortfolioItem; priority?: boolean; sizes?: string; }
-const { item, priority = false, sizes = '(max-width: 760px) 100vw, 65vw' } = Astro.props;
+interface Props { item: PortfolioItem; id: string; priority?: boolean; sizes?: string; }
+const { item, id, priority = false, sizes = '(max-width: 700px) calc(100vw - 40px), 65vw' } = Astro.props;
 ---
-<Image src={item.image} alt={item.alt} widths={[480, 800, 1200, 1536]} sizes={sizes} format="webp" quality={80} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} decoding="async" style={`object-position: ${item.focus}`} />
+{item.kind === 'project' ? <Image src={item.image} alt={item.alt} widths={[480,800,1200,1536]} sizes={sizes} format="webp" quality={80} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} decoding="async" style={`object-position: ${item.focus}`} /> : <CutStudy id={id} study={item.study} tone={item.tone} label={item.alt} />}

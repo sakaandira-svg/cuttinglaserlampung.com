@@ -1,0 +1,56 @@
+---
+export type Study = 'arc' | 'weave' | 'rhythm' | 'letter' | 'contour' | 'layer';
+interface Props { id: string; study?: Study; tone?: 'green' | 'silver' | 'orange'; hero?: boolean; decorative?: boolean; label?: string; }
+const { id, study = 'arc', tone = 'green', hero = false, decorative = false, label = 'Studi pola potong geometris. Ilustrasi konsep, bukan foto proyek.' } = Astro.props;
+const colors = { green: ['#17493e', '#092c26', '#507b66'], silver: ['#dae0d4', '#9aa99d', '#f9fbef'], orange: ['#e66b3d', '#9f381f', '#f1a46b'] }[tone];
+const panel = 'M26 0H390L420 30V610L394 636H0V26Z';
+const slots: string[] = [];
+if (study === 'arc') {
+  for (let row = 0; row < 4; row++) for (let col = 0; col < 4; col++) {
+    const x = 22 + col * 99, y = 24 + row * 150;
+    slots.push(`M${x} ${y + 112}V${y + 40}Q${x} ${y} ${x + 38} ${y}Q${x + 76} ${y} ${x + 76} ${y + 40}V${y + 112}H${x + 59}V${y + 40}Q${x + 59} ${y + 19} ${x + 38} ${y + 19}Q${x + 17} ${y + 19} ${x + 17} ${y + 40}V${y + 112}Z`);
+  }
+} else if (study === 'weave') {
+  for (let row = 0; row < 6; row++) for (let col = 0; col < 4; col++) {
+    const x = 20 + col * 101, y = 23 + row * 100;
+    slots.push(`M${x} ${y + 42}Q${x + 44} ${y - 24} ${x + 81} ${y + 42}Q${x + 44} ${y + 112} ${x} ${y + 42}Z`);
+  }
+} else if (study === 'rhythm') {
+  for (let row = 0; row < 6; row++) {
+    const y = 20 + row * 102;
+    slots.push(`M20 ${y + 60}L67 ${y + 10}L112 ${y + 60}L160 ${y + 10}L208 ${y + 60}L256 ${y + 10}L304 ${y + 60}L351 ${y + 10}L398 ${y + 60}V${y + 87}L351 ${y + 37}L304 ${y + 87}L256 ${y + 37}L208 ${y + 87}L160 ${y + 37}L112 ${y + 87}L67 ${y + 37}L20 ${y + 87}Z`);
+  }
+} else if (study === 'letter') {
+  slots.push('M70 90H340V130H110V280H340V320H70Z', 'M70 380H110V520H340V560H70Z', 'M150 170H340V240H150Z', 'M160 380H200V470H340V510H160Z');
+} else if (study === 'contour') {
+  for (let n = 0; n < 7; n++) {
+    const x = 22 + n * 26, y = 32 + n * 32, w = 375 - n * 52, h = 570 - n * 64;
+    slots.push(`M${x} ${y}H${x + w}V${y + h}H${x}V${y + 24}H${x + 10}V${y + h - 10}H${x + w - 10}V${y + 10}H${x}Z`);
+  }
+} else {
+  for (let row = 0; row < 7; row++) for (let col = 0; col < 3; col++) {
+    const x = 26 + col * 130, y = 25 + row * 85;
+    slots.push(`M${x + 25} ${y}H${x + 95}L${x + 72} ${y + 54}H${x}Z`);
+  }
+}
+---
+<svg class:list={['cut-study', `study-${study}`, { 'study-hero': hero }]} viewBox="0 0 900 760" xmlns="http://www.w3.org/2000/svg" role={decorative ? undefined : 'img'} aria-hidden={decorative ? 'true' : undefined} aria-labelledby={decorative ? undefined : `${id}-title`} focusable="false" data-study={study}>
+  {!decorative && <title id={`${id}-title`}>{label}</title>}
+  <defs>
+    <linearGradient id={`${id}-surface`} x1="0" y1="0" x2="1" y2="1"><stop stop-color={colors[2]} /><stop offset=".2" stop-color={colors[0]} /><stop offset=".78" stop-color={colors[1]} /><stop offset="1" stop-color={colors[0]} /></linearGradient>
+    <mask id={`${id}-cut`} maskUnits="userSpaceOnUse" x="0" y="0" width="420" height="636"><path d={panel} fill="white" />{slots.map(d => <path d={d} fill="black" />)}</mask>
+    <pattern id={`${id}-grid`} width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#385b4c" stroke-opacity=".15" stroke-width="1" /></pattern>
+  </defs>
+  <rect width="900" height="760" fill="currentColor" />
+  <rect width="900" height="760" fill={`url(#${id}-grid)`} />
+  <g stroke="#658473" fill="none" stroke-width="1" opacity=".5"><path d="M40 78H840M40 687H840M90 35V725M796 35V725" /><path d="M80 68h20v20H80ZM786 677h20v20h-20Z" /><path d="M53 58v40m-20-20h40M833 667v40m-20-20h40" /></g>
+  <g transform={hero ? 'translate(116 118) rotate(-10 210 318) scale(.8)' : 'translate(82 125) rotate(-12 210 318) scale(.77)'} fill="none" stroke="#678473" stroke-width="1.3" opacity=".7"><path d={panel} />{slots.map(d => <path d={d} />)}</g>
+  <g transform="translate(331 105) skewY(-9) rotate(9 210 318)">
+    <path d={panel} transform="translate(26 31)" fill="#0a241d" opacity=".16" />
+    <g transform="translate(9 10)" mask={`url(#${id}-cut)`}><path d={panel} fill={colors[1]} /></g>
+    <g mask={`url(#${id}-cut)`}><path d={panel} fill={`url(#${id}-surface)`} /><path d="M-100 600L500 -100M-50 700L550 0" stroke={colors[2]} stroke-width="1.2" opacity=".7" /></g>
+    <path d={panel} fill="none" stroke={colors[2]} stroke-width="1" />
+  </g>
+  <g stroke="#dc552c" stroke-width="1.6" fill="none"><path d="M122 550H248L352 437" stroke-dasharray="5 6" /><circle cx="352" cy="437" r="7" /><path d="M640 169L740 97H859" /><circle cx="640" cy="169" r="5" fill="#dc552c" /></g>
+  {hero && <g fill="#375748" font-family="monospace" font-size="12" letter-spacing="2" aria-hidden="true"><text x="104" y="577">TRACE / A</text><text x="746" y="84">CUT / B</text><text x="108" y="715">+ POLA / BIDANG / RUANG</text></g>}
+</svg>

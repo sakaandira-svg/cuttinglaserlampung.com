@@ -49,6 +49,7 @@ const attr = (tag, name) => tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1];
 let internalLinks = 0;
 let images = 0;
 let whatsappLinks = 0;
+let vectorStudies = 0;
 for (const [file, html] of pages) {
   if ((html.match(/<h1(?:\s|>)/g) || []).length !== 1) fail(`Expected one h1: ${file}`);
   if (!/<html\s[^>]*lang="id"/.test(html)) fail(`Missing Indonesian language: ${file}`);
@@ -67,6 +68,15 @@ for (const [file, html] of pages) {
     JSON.parse(content);
   }
   if (!scripts.some((script) => script[2].includes('LocalBusiness'))) fail(`Missing entity schema: ${file}`);
+  for (const [tag] of html.matchAll(/<svg\s[^>]*>/g)) {
+    if (!attr(tag, 'data-study')) continue;
+    vectorStudies++;
+    if (attr(tag, 'role') !== 'img' || !attr(tag, 'aria-labelledby') || !attr(tag, 'viewBox')) fail(`Unlabeled vector study: ${file}`);
+    if (!html.includes(`id="${attr(tag, 'aria-labelledby')}"`)) fail(`Missing vector title: ${file}`);
+  }
+  for (const [, id] of html.matchAll(/url\(#([^)]+)\)/g)) {
+    if (!ids.includes(id)) fail(`Broken SVG gradient, mask, or pattern reference ${id}: ${file}`);
+  }
   for (const [tag] of html.matchAll(/<a\s[^>]*>/g)) {
     const href = attr(tag, 'href')?.replaceAll('&amp;', '&');
     if (!href) fail(`Empty link: ${file}`);
@@ -104,6 +114,8 @@ for (const url of sitemapUrls) {
 }
 if (!readFileSync(join(dist, 'robots.txt'), 'utf8').includes(`${domain}/sitemap.xml`)) fail('Incorrect robots sitemap');
 const homepage = readFileSync(join(dist, 'index.html'), 'utf8');
-if (homepage.indexOf('id="pilihan-visual"') > homepage.indexOf('id="services-title"')) fail('Gallery must precede services');
+if (!homepage.includes('id="pilihan-visual"') || homepage.indexOf('id="pilihan-visual"') > homepage.indexOf('id="services-title"')) fail('Gallery must precede services');
 if (!homepage.includes('Ilustrasi konsep') || !readFileSync(join(dist, 'portfolio/index.html'), 'utf8').includes('Bukan foto proyek')) fail('Missing concept-image disclosure');
-console.log(`Rendered release passed: ${htmlFiles.length} pages, ${internalLinks} internal links/anchors, ${whatsappLinks} WhatsApp links, ${images} responsive images; schema, canonicals, sitemap, and zero client JavaScript verified.`);
+if (vectorStudies < 13) fail('Expected original vector studies in hero and galleries');
+if (homepage.includes('class="application-card"') || homepage.includes('class="service-card"')) fail('Homepage must use the visual application index');
+console.log(`Rendered release passed: ${htmlFiles.length} pages, ${internalLinks} internal links/anchors, ${whatsappLinks} WhatsApp links, ${images} responsive photos, ${vectorStudies} labeled vector studies; SVG references, schema, canonicals, sitemap, and zero client JavaScript verified.`);

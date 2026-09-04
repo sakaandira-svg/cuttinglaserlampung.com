@@ -1,54 +1,23 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PortfolioCard from '../components/PortfolioCard.astro';
-import PortfolioImage from '../components/PortfolioImage.astro';
+import CutPathHero from '../components/CutPathHero.astro';
+import ProjectMosaic from '../components/ProjectMosaic.astro';
+import ApplicationIndex from '../components/ApplicationIndex.astro';
+import FabricationFlow from '../components/FabricationFlow.astro';
+import MaterialStrip from '../components/MaterialStrip.astro';
 import ProjectCTA from '../components/ProjectCTA.astro';
 import { portfolio } from '../data/portfolio';
-import { serviceGroups } from '../data/serviceGroups';
-import { whatsappUrl } from '../lib/whatsapp';
-const featuredPortfolio = portfolio.slice(0, 3);
 ---
 <BaseLayout title="Cutting Laser Lampung | Laser Cutting, CNC & Fabrication di Lampung" description="Jasa laser cutting Lampung, CNC router, dan fabrikasi custom untuk interior, fasad, pagar, signage, serta ornamen. Diskusikan desain dan material bersama Cutting Laser Lampung.">
-  <section class="studio-hero">
-    <div class="shell hero-grid">
-      <div class="hero-content">
-        <p class="eyebrow">Cutting Laser Lampung / Fabrikasi custom</p>
-        <h1>Presisi bertemu<br /><em>imajinasi.</em></h1>
-        <p class="hero-copy">Dari sebuah pola, menjadi karakter sebuah ruang. Laser cutting, CNC router, dan fabrikasi custom untuk interior, eksterior, serta detail arsitektur di Lampung.</p>
-        <div class="hero-actions">
-          <a class="button button-accent" href="#pilihan-visual">Jelajahi galeri <span aria-hidden="true">↘</span></a>
-          <a class="hero-text-link" href={whatsappUrl()} target="_blank" rel="noopener noreferrer" data-event="whatsapp-hero">Diskusikan ide Anda <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="hero-location"><span aria-hidden="true">⌖</span> Workshop di Bandar Lampung</p>
-      </div>
-      <figure class="hero-visual">
-        <PortfolioImage item={portfolio[0]} priority sizes="(max-width: 760px) 100vw, 58vw" />
-        <figcaption><span>Studi visual / Eksterior</span><span>Ilustrasi konsep</span></figcaption>
-        <span class="hero-image-label" aria-hidden="true">Bentuk. Cahaya. Karakter.</span>
-      </figure>
-    </div>
-    <div class="shell hero-footnote"><span>Laser cutting & CNC router</span><span>Interior · Eksterior · Ornamen · Signage</span><a href="/portfolio/">Eksplorasi visual <span aria-hidden="true">↗</span></a></div>
-  </section>
-  <section class="section showcase-section" id="pilihan-visual" aria-labelledby="showcase-title">
-    <div class="shell">
-      <div class="section-heading"><div><p class="eyebrow">01 / Galeri aplikasi</p><h2 id="showcase-title">Detail yang memberi<br /><em>kesan berbeda.</em></h2></div><div class="section-intro"><p>Pola, proporsi, dan material membentuk cara sebuah ruang terasa. Telusuri kemungkinan penerapannya.</p><a class="text-link" href="/portfolio/">Jelajahi portfolio <span aria-hidden="true">↗</span></a></div></div>
-      <p class="gallery-disclosure">Galeri saat ini menampilkan ilustrasi konsep, bukan foto proyek yang telah dikerjakan. Dokumentasi pekerjaan dapat ditanyakan melalui WhatsApp.</p>
-      <div class="showcase-grid">{featuredPortfolio.map((item, index) => <PortfolioCard item={item} index={index} />)}</div>
-    </div>
-  </section>
-  <section class="section section-dark expertise-section" aria-labelledby="expertise-title">
-    <div class="shell expertise-grid"><div><p class="eyebrow">02 / Cara kami memandang detail</p><h2 id="expertise-title">Ketelitian dalam<br /><em>setiap garis.</em></h2></div><div class="expertise-copy"><p class="large-copy">Potongan yang baik dimulai dari memahami apa yang ingin Anda hadirkan.</p><p>Apakah sebuah partisi perlu menjaga privasi tanpa menghalangi cahaya? Apakah motif fasad tetap terbaca dari jalan? Percakapan seperti ini membantu menyatukan maksud desain dengan kebutuhan fabrikasi.</p><div class="expertise-notes"><div><h3>Rasa & proporsi</h3><p>Skala motif, ritme bidang, dan hubungan dengan ruang di sekitarnya.</p></div><div><h3>Material & fungsi</h3><p>Karakter permukaan, konteks interior atau eksterior, serta rencana finishing.</p></div></div><a class="text-link" href="/panduan-file-desain-laser-cutting/">Dari referensi menuju file produksi <span aria-hidden="true">↗</span></a></div></div>
-  </section>
-  <section class="section" aria-labelledby="services-title"><div class="shell">
-    <div class="section-heading"><div><p class="eyebrow">03 / Ruang untuk kemungkinan</p><h2 id="services-title">Satu ide.<br /><em>Banyak penerapan.</em></h2></div><p>Mulai dari fungsi yang Anda butuhkan. Material dan proses dipilih mengikuti desain, lokasi, serta hasil visual yang ingin dicapai.</p></div>
-    <div class="application-grid">{serviceGroups.map((group, index) => <a class="application-card" href={group.href}><span class="card-number">0{index + 1} / {group.label}</span><h3>{group.title}</h3><p>{group.description}</p><span class="application-link">{group.linkLabel}<span aria-hidden="true">↗</span></span></a>)}</div>
-    <a class="text-link section-link" href="/layanan/">Seluruh layanan & material <span aria-hidden="true">↗</span></a>
+  <CutPathHero />
+  <section class="featured-work section" id="pilihan-visual" aria-labelledby="showcase-title"><div class="shell">
+    <div class="compact-heading"><p class="eyebrow">Pilihan studi / 01—03</p><h2 id="showcase-title">Potongan yang<br /><em>mengubah bidang.</em></h2><a class="text-link" href="/portfolio/">Buka seluruh galeri ↗</a></div>
+    <p class="gallery-disclosure">Ilustrasi konsep. Bukan foto proyek. <a href="/kontak/">Minta dokumentasi pekerjaan ↗</a></p>
+    <ProjectMosaic items={portfolio.slice(0,3)} id="featured" />
   </div></section>
-  <section class="section section-tint" aria-labelledby="process-title"><div class="shell split"><div><p class="eyebrow">04 / Dari ide ke bentuk</p><h2 id="process-title">Ruang untuk ide.<br /><em>Kejelasan untuk<br />pengerjaan.</em></h2><p class="process-intro">Desain belum final? Mulai dengan sketsa, foto referensi, atau ukuran bidang. Detailnya kita bahas bersama.</p><a class="text-link" href={whatsappUrl()} target="_blank" rel="noopener noreferrer">Ceritakan rencana Anda <span aria-hidden="true">↗</span></a></div><div class="steps">
-    <div class="step"><span>01</span><div><h3>Pahami ide & ruangnya</h3><p>Kirim referensi visual, fungsi, ukuran, dan foto lokasi. Kita mulai dari kesan yang ingin dibangun serta kebutuhan penggunaannya.</p></div></div>
-    <div class="step"><span>02</span><div><h3>Selaraskan pola & material</h3><p>Bahas keterbacaan motif, bagian yang perlu tersambung, pilihan permukaan, dan kesesuaian bahan dengan area penempatan.</p></div></div>
-    <div class="step"><span>03</span><div><h3>Perjelas detail produksi</h3><p>Ukuran, file, jumlah, finishing, serta lingkup pengerjaan disepakati sebelum masuk ke proses cutting atau CNC.</p></div></div>
-    <div class="step"><span>04</span><div><h3>Perhatikan hasil akhirnya</h3><p>Diskusikan tepi potongan, sambungan, dan kebutuhan pemasangan agar detail visual tetap sejalan dengan fungsi.</p></div></div>
-  </div></div></section>
+  <ApplicationIndex />
+  <FabricationFlow />
+  <section class="detail-studies section" aria-labelledby="detail-title"><div class="shell"><div class="compact-heading"><p class="eyebrow">Eksplorasi / 04—06</p><h2 id="detail-title">Lihat lebih <em>dekat.</em></h2><a class="text-link" href="/portfolio/">Indeks visual ↗</a></div><ProjectMosaic items={portfolio.slice(3)} id="detail" compact /></div></section>
+  <MaterialStrip />
   <ProjectCTA />
 </BaseLayout>

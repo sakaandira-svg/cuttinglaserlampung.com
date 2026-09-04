@@ -1,0 +1,14 @@
+---
+import PortfolioImage from './PortfolioImage.astro';
+import type { PortfolioItem } from '../data/portfolio';
+import { whatsappUrl } from '../lib/whatsapp';
+interface Props { item: PortfolioItem; instance: string; detail?: boolean; priority?: boolean; }
+const { item, instance, detail = false, priority = false } = Astro.props;
+const Heading = detail ? 'h2' : 'h3';
+---
+<article class:list={['project-plate', `plate-${item.id}`]} id={detail ? item.id : undefined}>
+  <div class="plate-topline"><span class="index-tag">{item.code}</span><span aria-hidden="true">+</span></div>
+  <a class="plate-visual" href={detail ? item.serviceHref : `/portfolio/#${item.id}`} aria-label={`${item.title} — ${detail ? 'detail layanan' : 'lihat studi'}`}><PortfolioImage item={item} id={instance} priority={priority} /><span class="plate-corner" aria-hidden="true">↗</span></a>
+  <div class="plate-caption"><div><p class="eyebrow">{item.category}</p><Heading><a href={detail ? item.serviceHref : `/portfolio/#${item.id}`}>{item.title}</a></Heading></div><span class="plate-kind">{item.kind === 'concept' ? 'Ilustrasi konsep' : item.material}</span></div>
+  {detail && <details class="plate-details"><summary>Detail & konsultasi <span aria-hidden="true">+</span></summary><div><p>{item.description}</p>{item.kind === 'project' && <p>{item.verifiedDetails}</p>}<div class="plate-links"><a class="text-link" href={item.serviceHref}>{item.serviceLabel} ↗</a><a class="text-link" href={whatsappUrl(item.intent)} target="_blank" rel="noopener noreferrer" data-event={`whatsapp-portfolio-${item.id}`}>Diskusikan ide ini ↗</a></div></div></details>}
+</article>

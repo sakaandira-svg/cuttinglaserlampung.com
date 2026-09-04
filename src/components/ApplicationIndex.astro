@@ -1,0 +1,11 @@
+---
+const applications = [
+  { code:'INT', label:'Interior', note:'Partisi / panel ruang', href:'/partisi-laser-cutting-lampung/', path:'M6 55V10H60V55M18 10V55M30 10V55M42 10V55M54 10V55' },
+  { code:'EXT', label:'Eksterior', note:'Fasad / pagar / screen', href:'/fasad-laser-cutting-lampung/', path:'M4 55V10H70V55M12 47L23 19L34 47L45 19L56 47L66 19' },
+  { code:'ORN', label:'Ornamen', note:'Motif / pola custom', href:'/portfolio/#ornamen', path:'M5 46L16 17L27 46L38 17L49 46L60 17L71 46M5 54L16 25L27 54L38 25L49 54L60 25L71 54' },
+  { code:'SGN', label:'Signage', note:'Logo / huruf timbul', href:'/laser-cutting-acrylic-lampung/', path:'M33 13H9V53H33M43 13V53H70M18 22H33M51 13V45H70' },
+  { code:'MAT', label:'Material', note:'Metal / acrylic / panel', href:'/layanan/#material', path:'M5 24L38 6L71 24L38 44ZM5 35L38 55L71 35M5 46L38 65L71 46' },
+  { code:'CNC', label:'CNC', note:'Routing / komponen', href:'/cnc-router-lampung/', path:'M5 55V8H70V55H17V20H58V43H29V32H46' },
+];
+---
+<section class="application-index section" aria-labelledby="services-title"><div class="shell"><div class="compact-heading"><p class="eyebrow">Aplikasi / Pilih bidang Anda</p><h2 id="services-title">Dibuat untuk <em>berbeda.</em></h2></div><ol>{applications.map(app => <li><a href={app.href}><span class="index-tag">{app.code}</span><h3>{app.label}</h3><svg viewBox="0 0 78 72" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d={app.path} /></svg><span class="application-arrow" aria-hidden="true">↗</span></a></li>)}</ol></div></section>
