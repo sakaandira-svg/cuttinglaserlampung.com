@@ -2,10 +2,17 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ServiceCard from '../../components/ServiceCard.astro';
+import ProjectCTA from '../../components/ProjectCTA.astro';
 import { services } from '../../data/services';
+const groups = [
+  { id: 'aplikasi', title: 'Interior & eksterior', label: '01 / Ruang', services: services.filter((service) => service.eyebrow === 'Aplikasi') },
+  { id: 'material', title: 'Material & karakter permukaan', label: '02 / Bahan', services: services.filter((service) => service.eyebrow === 'Material') },
+  { id: 'cnc', title: 'CNC & dukungan fabrikasi', label: '03 / Proses', services: services.filter((service) => service.eyebrow === 'Layanan') },
+];
 ---
 <BaseLayout title="Layanan Laser Cutting dan CNC Lampung" description="Jelajahi layanan laser cutting material, CNC router, dan aplikasi fabrikasi arsitektural di Lampung." pathname="/layanan/">
   <Breadcrumbs items={[{ label: 'Layanan' }]} />
-  <section class="page-hero"><div class="shell"><div class="eyebrow">Layanan dan material</div><h1>Dari lembaran material sampai detail arsitektur.</h1><p>Pilih titik mulai yang paling dekat dengan kebutuhanmu. Setiap layanan punya pertimbangan desain, material, dan penggunaan yang berbeda.</p></div></section>
-  <section class="section"><div class="shell"><div class="service-grid">{services.map((service) => <ServiceCard service={service} />)}</div></div></section>
+  <section class="page-hero"><div class="shell"><p class="eyebrow">Layanan / Material / Aplikasi</p><h1>Dari karakter bahan,<br />ke <em>karakter ruang.</em></h1><p>Jasa laser cutting Lampung untuk kebutuhan dekoratif dan fungsional. Mulai dari aplikasi yang ingin dibuat, lalu bahas pola, material, dan proses yang sesuai.</p><a class="text-link" href="/portfolio/">Lihat eksplorasi visual <span aria-hidden="true">↗</span></a></div></section>
+  {groups.map((group) => <section class="section service-section" id={group.id} aria-labelledby={`heading-${group.id}`}><div class="shell"><div class="service-section-title"><div><p class="eyebrow">{group.label}</p><h2 id={`heading-${group.id}`}>{group.title}</h2></div></div><div class="service-grid">{group.services.map((service, index) => <ServiceCard service={service} index={index} />)}</div></div></section>)}
+  <ProjectCTA />
 </BaseLayout>

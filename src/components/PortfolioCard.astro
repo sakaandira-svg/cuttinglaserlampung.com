@@ -1,0 +1,10 @@
+---
+import PortfolioImage from './PortfolioImage.astro';
+import type { PortfolioItem } from '../data/portfolio';
+interface Props { item: PortfolioItem; index: number; }
+const { item, index } = Astro.props;
+---
+<article class:list={['showcase-card', { 'showcase-card-featured': index === 0 }]}>
+  <a class="showcase-image" href={`/portfolio/#${item.id}`} aria-label={`${item.kind === 'concept' ? 'Ilustrasi konsep' : 'Dokumentasi proyek'} — Jelajahi ${item.title}`}><PortfolioImage item={item} sizes={index === 0 ? '(max-width: 760px) calc(100vw - 40px), 60vw' : '(max-width: 760px) calc(100vw - 40px), 35vw'} /><span class="image-badge">{item.kind === 'concept' ? 'Ilustrasi konsep' : 'Dokumentasi proyek'}</span><span class="image-arrow" aria-hidden="true">↗</span></a>
+  <div class="showcase-caption"><p class="eyebrow">{item.category}</p><h3><a href={`/portfolio/#${item.id}`}>{item.title}</a></h3><p>{item.description}</p></div>
+</article>

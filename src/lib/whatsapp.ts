@@ -15,7 +15,7 @@ export type WhatsAppIntent =
   | 'portfolio';
 
 const messages: Record<WhatsAppIntent, string> = {
-  general: 'Halo Cutting Laser Lampung, saya ingin konsultasi jasa laser cutting di Lampung. Saya ingin mengirim desain, ukuran, atau foto referensi.',
+  general: 'Halo Cutting Laser Lampung, saya ingin mendiskusikan proyek custom. Kebutuhan saya: [interior/eksterior/signage/lainnya]. Saya ingin mengirim referensi desain, ukuran, dan lokasi penggunaan.',
   'plat-besi': 'Halo Cutting Laser Lampung, saya ingin konsultasi laser cutting plat besi. Saya ingin mengirim desain dan ukuran untuk kebutuhan di Lampung.',
   acrylic: 'Halo Cutting Laser Lampung, saya ingin konsultasi laser cutting acrylic/akrilik di Lampung. Saya ingin mengirim desain, ukuran, serta kebutuhan finishing.',
   acp: 'Halo Cutting Laser Lampung, saya ingin konsultasi cutting ACP di Lampung. Saya ingin menanyakan kebutuhan panel atau fasad.',
@@ -26,7 +26,7 @@ const messages: Record<WhatsAppIntent, string> = {
   railing: 'Halo Cutting Laser Lampung, saya ingin konsultasi railing tangga laser cutting. Saya ingin mengirim ukuran dan referensi desain.',
   partisi: 'Halo Cutting Laser Lampung, saya ingin konsultasi partisi laser cutting. Saya ingin mengirim ukuran ruang dan referensi yang dibutuhkan.',
   'huruf-timbul': 'Halo Cutting Laser Lampung, saya ingin konsultasi huruf timbul laser cutting di Lampung. Saya ingin mengirim desain, ukuran, dan material yang diinginkan.',
-  portfolio: 'Halo Cutting Laser Lampung, saya ingin menanyakan pekerjaan serupa seperti yang ada di portfolio. Saya ingin mengirim referensi atau foto kebutuhan.',
+  portfolio: 'Halo Cutting Laser Lampung, saya melihat studi visual di galeri dan ingin meminta dokumentasi pekerjaan yang relevan dengan kebutuhan saya. Saya ingin mengirim referensi, ukuran, dan konteks proyek.',
 };
 
 export function whatsappUrl(intent: WhatsAppIntent = 'general') {

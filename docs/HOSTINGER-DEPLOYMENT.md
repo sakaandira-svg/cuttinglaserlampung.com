@@ -25,4 +25,4 @@ Check the homepage, representative service page, contact CTA, robots, sitemap, c
 
 ## Current status
 
-The site is ready for Hostinger GitHub deployment from the local repository. Actual production deployment remains blocked until external GitHub authorization and the deployment environment are available.
+The operator confirmed an existing live Hostinger deployment before Round 3. The redesign retains this repository, main branch, and dist output. See reports/ROUND-3-REDESIGN.md for validation of the new source release. Confirm that Hostinger has deployed the latest main revision before treating the redesigned production site as verified.

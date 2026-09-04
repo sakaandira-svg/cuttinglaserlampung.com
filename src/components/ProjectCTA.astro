@@ -1,0 +1,5 @@
+---
+import { whatsappUrl } from '../lib/whatsapp';
+import { business, businessHoursText } from '../config/business';
+---
+<section class="project-cta"><div class="shell"><p class="eyebrow">Mari wujudkan ide Anda</p><div class="cta-inner"><h2>Setiap karya dimulai<br />dari <em>percakapan.</em></h2><div class="cta-copy"><p>Kirim foto referensi, sketsa, atau ukuran bidang. Kita bahas desain, material, dan langkah berikutnya.</p><a class="button button-accent" href={whatsappUrl()} target="_blank" rel="noopener noreferrer" data-event="whatsapp-closing">Diskusikan proyek Anda <span aria-hidden="true">↗</span></a></div></div><div class="cta-location"><a href={business.mapsUrl} target="_blank" rel="noopener noreferrer">Kunjungi workshop di Bandar Lampung <span aria-hidden="true">↗</span></a><span>{businessHoursText}</span></div></div></section>

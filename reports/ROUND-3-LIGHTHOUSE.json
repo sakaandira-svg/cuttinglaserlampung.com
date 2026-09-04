@@ -1,0 +1,153 @@
+{
+  "environment": "Local production build served by Astro preview; simulated Lighthouse throttling; not field Core Web Vitals or Hostinger measurements.",
+  "results": [
+    {
+      "name": "home-mobile",
+      "path": "/",
+      "device": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-09-04T21:35:53.898Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 847.5306,
+          "display": "0.8 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1596.0612,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 847.5306,
+          "display": "0.8 s"
+        }
+      },
+      "accessibilityFindings": [],
+      "warnings": []
+    },
+    {
+      "name": "portfolio-mobile",
+      "path": "/portfolio/",
+      "device": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-09-04T21:36:01.398Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 838.01085,
+          "display": "0.8 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1581.0217,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 838.01085,
+          "display": "0.8 s"
+        }
+      },
+      "accessibilityFindings": [],
+      "warnings": []
+    },
+    {
+      "name": "home-desktop",
+      "path": "/",
+      "device": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-09-04T21:36:08.676Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 213.12655,
+          "display": "0.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 364.2531,
+          "display": "0.4 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 213.12655,
+          "display": "0.2 s"
+        }
+      },
+      "accessibilityFindings": [],
+      "warnings": []
+    },
+    {
+      "name": "portfolio-desktop",
+      "path": "/portfolio/",
+      "device": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-09-04T21:36:16.408Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 212.6714,
+          "display": "0.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 532.6714,
+          "display": "0.5 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 212.6714,
+          "display": "0.2 s"
+        }
+      },
+      "accessibilityFindings": [],
+      "warnings": []
+    }
+  ]
+}

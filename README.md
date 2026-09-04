@@ -26,4 +26,4 @@ npm run build
 npm run verify
 ```
 
-Deployment guidance is in `docs/HOSTINGER-DEPLOYMENT.md`. Production deployment is still pending external GitHub/Hostinger authorization and domain verification.
+Deployment guidance is in `docs/HOSTINGER-DEPLOYMENT.md`. The operator reports an existing Hostinger deployment connected to this repository. Each new release still requires confirmation that the current main revision is live. See reports/ROUND-3-REDESIGN.md for the redesign validation and release status.

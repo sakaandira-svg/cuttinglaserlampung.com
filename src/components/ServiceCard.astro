@@ -1,6 +1,6 @@
 ---
 import type { Service } from '../data/services';
-interface Props { service: Service }
-const { service } = Astro.props;
+interface Props { service: Service; index?: number; }
+const { service, index = 0 } = Astro.props;
 ---
-<a class="service-card" href={`/${service.slug}/`}><span class="card-number">01 / {service.eyebrow}</span><h3>{service.title}</h3><p>{service.summary}</p><span class="text-link">Pelajari layanan <span aria-hidden="true">↗</span></span></a>
+<a class="service-card" href={`/${service.slug}/`}><span class="card-number">{String(index + 1).padStart(2, '0')} / {service.eyebrow}</span><h3>{service.title}</h3><p>{service.summary}</p><span class="text-link">Detail layanan <span aria-hidden="true">↗</span></span></a>
