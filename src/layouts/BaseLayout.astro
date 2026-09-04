@@ -4,9 +4,10 @@ import { business, siteUrl } from '../config/business';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppBar from '../components/WhatsAppBar.astro';
+import { defaultSocialPath } from '../lib/social-paths';
 
 interface Props { title: string; description: string; pathname?: string; noindex?: boolean; ogType?: 'website'|'article'; ogImage?: string; extraSchema?: Record<string, unknown>[]; }
-const { title, description, pathname = '/', noindex = false, ogType = 'website', ogImage = `${siteUrl}/media/social.png`, extraSchema = [] } = Astro.props;
+const { title, description, pathname = '/', noindex = false, ogType = 'website', ogImage = `${siteUrl}${defaultSocialPath}`, extraSchema = [] } = Astro.props;
 const canonical = new URL(pathname, siteUrl).toString();
 const schema = {
   '@context': 'https://schema.org',

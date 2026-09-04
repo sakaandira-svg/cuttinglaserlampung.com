@@ -9,6 +9,7 @@ import { publishedArticles, articlePath, displayDate, clusters } from '../../lib
 import { services } from '../../data/services';
 import { portfolio } from '../../data/portfolio';
 import { business, siteUrl } from '../../config/business';
+import { articleSocialPath } from '../../lib/social-paths';
 import '../../styles/editorial.css';
 export async function getStaticPaths() { return (await publishedArticles()).map(article=>({params:{slug:article.id},props:{article}})); }
 interface Props { article: CollectionEntry<'articles'>; }
@@ -19,7 +20,7 @@ const related = a.relatedArticles.map(id=>all.find(item=>item.id===id)).filter((
 const relatedServices = a.relatedServices.map(slug=>services.find(s=>s.slug===slug)).filter((s): s is typeof services[number]=>Boolean(s));
 const study = portfolio.find(p=>p.id===a.portfolioId)!;
 const wa = `https://wa.me/${business.whatsappNumber}?text=${encodeURIComponent(a.whatsappMessage)}`;
-const ogImage = `${siteUrl}/media/artikel/${article.id}.png`;
+const ogImage = `${siteUrl}${articleSocialPath(article.id)}`;
 const articleSchema = {'@type':'Article','@id':`${a.canonical}#article`,headline:a.title,description:a.description,inLanguage:'id-ID',datePublished:a.publishedAt,dateModified:a.updatedAt,author:{'@id':`${siteUrl}/#organization`},publisher:{'@id':`${siteUrl}/#organization`},mainEntityOfPage:{'@id':`${a.canonical}#webpage`},isPartOf:{'@id':`${siteUrl}/#website`},image:[ogImage],articleSection:clusters[a.cluster]};
 ---
 <BaseLayout title={`${a.title} | Cutting Laser Lampung`} description={a.description} pathname={articlePath(article.id)} ogType="article" ogImage={ogImage} extraSchema={[articleSchema]}>

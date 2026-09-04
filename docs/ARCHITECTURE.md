@@ -6,6 +6,7 @@ CuttingLaserLampung.com uses Astro 5 with static output. Content is pre-rendered
 - `src/content.config.ts` and `src/content/articles/*.md`: validated editorial collection, distinct intents, publication controls, diagrams, citations, and relationships
 - `src/lib/articles.ts`: one publication query for the hub, article routes, related reading, social images, and sitemap; excludes draft, future, and noindex entries
 - `src/lib/editorial-art.ts`: original SVG diagrams and build-time social artwork
+- `src/lib/social-image.ts`, `src/lib/social-paths.ts`, and `src/assets/editorial/`: versioned social PNGs with licensed font glyphs converted to SVG paths; no dependency on host-installed fonts and no browser font payload
 - `src/pages/artikel/`: editorial hub and static article pages, with native table-of-contents anchors
 - `src/pages/media/`: build-time PNG social images; Sharp runs during the build only
 - `src/lib/whatsapp.ts`: contextual CTA/message generator
