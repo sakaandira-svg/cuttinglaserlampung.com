@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleDiagram from '../../components/ArticleDiagram.astro';
+import ArticleLinks from '../../components/ArticleLinks.astro';
+import {publishedArticles, clusters} from '../../lib/articles';
+import '../../styles/editorial.css';
+const articles = await publishedArticles();
+---
+<BaseLayout title="Artikel Desain, Material & Fabrikasi | Cutting Laser Lampung" description="Panduan memilih material, merancang pola, dan menyiapkan proyek laser cutting atau CNC. Catatan praktis untuk keputusan fabrikasi yang lebih terarah." pathname="/artikel/">
+  <Breadcrumbs items={[{label:'Artikel'}]} />
+  <section class="knowledge-intro shell"><p class="eyebrow">Catatan fabrikasi / {articles.length} panduan</p><h1>SEBELUM<br /><span class="cut-word">DIPOTONG.</span></h1><p>Kenali bahan. Pahami pola. Siapkan keputusan.</p><ArticleDiagram id="hub-diagram" visual={{type:'path',labels:['Garis desain','Ruang alat','Hasil bidang'],alt:'Tiga jalur bersarang dengan ruang alat berbeda sebagai pengantar panduan fabrikasi.',caption:'Satu garis di layar menyimpan banyak keputusan.'}} /></section>
+  <nav class="shell knowledge-nav" aria-label="Kelompok artikel">{Object.entries(clusters).map(([key,label])=><a href={`#${key}`}>{label} <span aria-hidden="true">↘</span></a>)}</nav>
+  {Object.entries(clusters).map(([key,label])=><section class="shell knowledge-cluster" id={key} aria-labelledby={`cluster-${key}`}><div><p class="eyebrow">Indeks pengetahuan</p><h2 id={`cluster-${key}`}>{label}</h2></div><ArticleLinks articles={articles.filter(a=>a.data.cluster===key)} /></section>)}
+  <aside class="shell editorial-policy"><h2>Cara membaca catatan ini</h2><p>Materi editorial Cutting Laser Lampung disusun dengan bantuan AI dan rujukan teknis yang dicantumkan pada artikel terkait. Panduan membantu perencanaan; spesifikasi material, metode kerja, dan lingkup layanan harus dikonfirmasi untuk setiap kebutuhan.</p><p>Ilustrasi adalah studi konsep. Tidak ada foto proyek pelanggan atau klaim pengalaman yang direkayasa. <a href="/kontak/">Kirim koreksi atau diskusikan kondisi proyek ↗</a></p><a class="text-link" href="/panduan-file-desain-laser-cutting/">Sudah punya file? Buka panduan persiapan ↗</a></aside>
+</BaseLayout>

@@ -26,4 +26,6 @@ npm run build
 npm run verify
 ```
 
-Deployment guidance is in `docs/HOSTINGER-DEPLOYMENT.md`. The operator reports an existing Hostinger deployment connected to this repository. Each new release still requires confirmation that the current main revision is live. See reports/ROUND-4-REDESIGN.md for the latest redesign validation and release status. The visual system and artwork replacement guide are in docs/VISUAL-SYSTEM.md and docs/IMAGE-REPLACEMENT.md.
+Deployment guidance is in `docs/HOSTINGER-DEPLOYMENT.md`. GitHub main feeds the existing Hostinger static deployment. See `reports/SEO-FORTRESS-AUDIT.md` for Round 5 release evidence, article URLs, commercial intent mapping, and local/production Lighthouse results. The approved design remains documented in `docs/VISUAL-SYSTEM.md` and `reports/ROUND-4-REDESIGN.md`.
+
+The 24-article editorial library uses Astro content collections. See `docs/SEO-MAINTENANCE.md` for publishing and verification, `docs/IMAGE-REPLACEMENT.md` for portfolio photography, `reports/CONTENT-ROADMAP.md` for gated future topics, and `docs/SEARCH-CONSOLE.md` for domain verification and sitemap submission. Roadmap entries are not published routes.

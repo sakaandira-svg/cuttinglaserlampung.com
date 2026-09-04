@@ -1,0 +1,15 @@
+# Repository-managed rules for Apache/LiteSpeed Hostinger static hosting.
+# CDN-managed hosts may require the equivalent domain redirect in hPanel.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.cuttinglaserlampung\.com$ [NC]
+  RewriteRule ^ https://cuttinglaserlampung.com%{REQUEST_URI} [R=301,L,NE]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.[A-Za-z0-9_-]{8,}\.(css|js|webp|avif)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

@@ -8,11 +8,18 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "verify": "npm run check && npm run build && node scripts/verify.mjs"
+    "verify": "npm run check && npm run build && node scripts/verify.mjs && node scripts/seo-audit.mjs && node scripts/test-content-guards.mjs",
+    "audit:content": "node scripts/content-audit.mjs",
+    "audit:lighthouse": "node scripts/lighthouse-audit.mjs",
+    "audit:production": "node scripts/production-audit.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "astro": "^5.13.0",
+    "sharp": "0.34.5",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "lighthouse": "^12.8.2"
   }
 }

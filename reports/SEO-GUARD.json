@@ -1,0 +1,256 @@
+{
+  "indexableUrls": 40,
+  "htmlPages": 41,
+  "commercialPages": 9,
+  "publishedArticles": 24,
+  "orphanUrls": 0,
+  "duplicateTitles": 0,
+  "duplicateDescriptions": 0,
+  "duplicateCanonicals": 0,
+  "canonicalErrors": 0,
+  "schemaErrors": 0,
+  "sitemapErrors": 0,
+  "errors": [],
+  "urls": [
+    {
+      "url": "https://cuttinglaserlampung.com/area-layanan/",
+      "title": "Area Layanan Cutting Laser di Lampung",
+      "description": "Informasi area layanan Cutting Laser Lampung untuk konsultasi laser cutting, CNC, dan fabrikasi custom.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/acrylic-bening-opal-warna/",
+      "title": "Acrylic bening, opal, atau berwarna: memilih tampilan untuk display | Cutting Laser Lampung",
+      "description": "Tentukan acrylic dari cara melihat objek, latar, pencahayaan, dan kondisi tepinya. Pelajari cara membandingkan sampel untuk signage serta display interior.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/finishing-panel-plat-besi/",
+      "title": "Merencanakan finishing panel plat besi sejak tahap desain | Cutting Laser Lampung",
+      "description": "Tinjau tepi potong, sambungan, akses pelapisan, dan perawatan panel besi. Gunakan lingkup finishing yang jelas saat membandingkan rancangan dan penawaran.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/huruf-timbul-jarak-baca/",
+      "title": "Huruf timbul yang terbaca: jarak pandang, kontras, dan susunan | Cutting Laser Lampung",
+      "description": "Uji huruf timbul dari posisi pembaca, latar, dan kondisi cahaya. Bedakan lettering potong datar, konstruksi timbul, serta kebutuhan pemasangan sejak brief.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/",
+      "title": "Artikel Desain, Material & Fabrikasi | Cutting Laser Lampung",
+      "description": "Panduan memilih material, merancang pola, dan menyiapkan proyek laser cutting atau CNC. Catatan praktis untuk keputusan fabrikasi yang lebih terarah.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/laser-cutting-vs-cnc-router/",
+      "title": "Laser cutting atau CNC router: memilih proses dari bentuk akhir | Cutting Laser Lampung",
+      "description": "Bandingkan potong tembus, kantong, detail sudut, dan karakter tepi untuk menentukan pertanyaan yang tepat sebelum memilih laser cutting atau CNC router.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/mdf-dan-hmr-untuk-interior/",
+      "title": "MDF dan HMR untuk interior: memahami batas ketahanan lembap | Cutting Laser Lampung",
+      "description": "Bedakan nama papan, grade tahan lembap, kondisi ruang, dan detail tepi. Susun pertanyaan material sebelum memilih MDF atau papan yang dipasarkan sebagai HMR.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memahami-kerf-dan-sambungan/",
+      "title": "Memahami kerf dan kelonggaran pada sambungan panel | Cutting Laser Lampung",
+      "description": "Pahami perbedaan garis desain, material yang terbuang, dan ukuran sambungan. Susun uji kecocokan tanpa memakai angka kerf yang belum terverifikasi.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memahami-panel-acp-dan-metode-potong/",
+      "title": "Memahami ACP sebelum menentukan potongan, lipatan, dan sambungan | Cutting Laser Lampung",
+      "description": "Kenali ACP sebagai panel komposit. Periksa inti, permukaan, arah pemasangan, dan bentuk akhir sebelum menyepakati metode pengolahan yang sesuai.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-motif-pagar/",
+      "title": "Memilih motif pagar: privasi, ritme, dan pandangan dari jalan | Cutting Laser Lampung",
+      "description": "Bandingkan pola pagar dari arah pandang, pembagian daun, dan konteks rumah. Gunakan simulasi sederhana sebelum mengunci motif serta detail panel.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-permukaan-stainless/",
+      "title": "Memilih permukaan stainless: pantulan, arah serat, dan perawatan | Cutting Laser Lampung",
+      "description": "Bandingkan karakter visual permukaan stainless dan dampaknya pada pola, sambungan, serta jejak pemakaian. Siapkan spesifikasi tampilan yang dapat diperiksa.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-spons-foam-untuk-cutting/",
+      "title": "Spons dan foam untuk cutting: identitas bahan lebih dulu | Cutting Laser Lampung",
+      "description": "Spons bukan satu jenis material. Kenali kebutuhan insert, lapisan perekat, komposisi, dan cara menilai hasil sebelum menyepakati metode pemotongan foam.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-workshop-laser-cutting-lampung/",
+      "title": "Memilih workshop laser cutting di Lampung: pertanyaan sebelum memesan | Cutting Laser Lampung",
+      "description": "Nilai kecocokan workshop lewat dokumentasi relevan, kejelasan material, file, lingkup, dan komunikasi. Hindari memilih hanya dari mesin atau foto promosi.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/mengubah-foto-referensi-menjadi-brief/",
+      "title": "Dari foto referensi menjadi brief desain yang bisa dibahas | Cutting Laser Lampung",
+      "description": "Pisahkan motif, warna, proporsi, dan konteks ruang dari foto inspirasi. Susun brief yang jelas tanpa menganggap foto sebagai ukuran atau file produksi.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/menguji-sampel-sebelum-produksi/",
+      "title": "Menguji sampel sebelum produksi: tentukan pertanyaan yang ingin dijawab | Cutting Laser Lampung",
+      "description": "Rancang sampel untuk menilai pola, tepi, sambungan, atau finishing. Catat kriteria, versi, dan batas uji agar persetujuan tidak bergantung pada kesan semata.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/mengukur-bidang-sebelum-konsultasi/",
+      "title": "Mengukur bidang sebelum konsultasi panel custom | Cutting Laser Lampung",
+      "description": "Catat ukuran awal, titik acuan, hambatan, dan status pengukuran. Buat sketsa yang membantu konsultasi tanpa menganggap ukuran perkiraan sebagai ukuran produksi.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "title": "Data untuk penawaran fabrikasi: bandingkan lingkup, bukan angka saja | Cutting Laser Lampung",
+      "description": "Susun kebutuhan bahan, jumlah, pola, finishing, dan pemasangan agar penawaran bisa dibandingkan. Tidak ada harga perkiraan atau kapasitas yang direkayasa.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/merawat-panel-dekoratif/",
+      "title": "Merawat panel dekoratif: mulai dari material dan aksesnya | Cutting Laser Lampung",
+      "description": "Susun catatan perawatan untuk panel metal, acrylic, atau bahan berlapis. Kenali batas pembersihan, dokumentasi perubahan, dan akses yang perlu direncanakan.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/merencanakan-screen-fasad-tropis/",
+      "title": "Merencanakan screen fasad untuk konteks bangunan tropis Lampung | Cutting Laser Lampung",
+      "description": "Tinjau arah matahari, pandangan, hujan, akses perawatan, dan modul screen. Susun brief fasad berdasarkan lokasi nyata tanpa menjanjikan penghematan energi.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/ornamen-lampung-dan-siger-kontemporer/",
+      "title": "Membawa inspirasi Lampung dan Siger ke panel kontemporer | Cutting Laser Lampung",
+      "description": "Susun brief ornamen lokal dengan asal referensi yang jelas. Bedakan inspirasi geometris, penggunaan simbol, dan klaim makna sebelum membuat panel custom.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/panel-railing-bukan-struktur-utama/",
+      "title": "Panel dekoratif pada railing: pisahkan pola dari fungsi pengaman | Cutting Laser Lampung",
+      "description": "Pahami hubungan panel isian, rangka, pegangan, dan pengikat. Siapkan pertanyaan kepada perancang sebelum menggunakan motif potong pada railing tangga.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/partisi-privasi-dan-cahaya/",
+      "title": "Partisi berpola: menyeimbangkan privasi, cahaya, dan alur ruang | Cutting Laser Lampung",
+      "description": "Rancang partisi dari arah pandang dan aktivitas penghuni. Bandingkan posisi, pola, serta cahaya siang dan malam sebelum memilih bukaan dekoratif.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/persetujuan-desain-dan-serah-terima/",
+      "title": "Persetujuan desain dan serah terima: menjaga satu acuan pekerjaan | Cutting Laser Lampung",
+      "description": "Kelola revisi, material, jumlah, dan kriteria penerimaan dari gambar sampai hasil. Gunakan catatan sederhana agar file lama tidak tertukar dengan desain final.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/pola-cutting-jembatan-dan-detail/",
+      "title": "Pola cutting yang tetap utuh: jembatan, pulau, dan detail kecil | Cutting Laser Lampung",
+      "description": "Periksa bagian pola yang dapat terlepas, sambungan tipis, dan detail yang hilang saat diperkecil. Gunakan audit visual sebelum file masuk tahap produksi.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/pvc-bukan-bahan-untuk-laser/",
+      "title": "PVC bukan bahan untuk laser: verifikasi material sebelum cutting | Cutting Laser Lampung",
+      "description": "Jangan menguji PVC atau bahan tak dikenal dengan laser. Pelajari data yang perlu diminta, cara menghindari salah identifikasi, dan pembahasan proses alternatif.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/skala-motif-dan-pembagian-panel/",
+      "title": "Skala motif dan pembagian panel: merancang pola pada bidang nyata | Cutting Laser Lampung",
+      "description": "Pelajari perbedaan memperbesar motif dan menambah pengulangan. Atur tepi, modul, sambungan, dan titik acuan agar pola tetap terbaca setelah dipasang.",
+      "article": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/cnc-router-lampung/",
+      "title": "Jasa CNC router Lampung | Cutting Laser Lampung",
+      "description": "Pengerjaan CNC router untuk material dan bentuk yang lebih sesuai dengan proses milling atau routing.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/fasad-laser-cutting-lampung/",
+      "title": "Fasad laser cutting Lampung | Cutting Laser Lampung",
+      "description": "Panel dan ornamen fasad dengan pola yang dirancang menyatu dengan bahasa arsitektur bangunan.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/",
+      "title": "Cutting Laser Lampung | Laser Cutting, CNC & Fabrication di Lampung",
+      "description": "Jasa laser cutting Lampung, CNC router, dan fabrikasi custom untuk interior, fasad, pagar, signage, serta ornamen. Diskusikan desain dan material bersama Cutting Laser Lampung.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/kontak/",
+      "title": "Kontak Cutting Laser Lampung",
+      "description": "Hubungi Cutting Laser Lampung untuk konsultasi laser cutting, CNC router, material, dan fabrikasi custom di Lampung.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-acp-lampung/",
+      "title": "Laser cutting ACP Lampung | Cutting Laser Lampung",
+      "description": "Pengolahan ACP untuk elemen signage dan kebutuhan visual bangunan dengan rancangan yang disiapkan secara hati-hati.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-acrylic-lampung/",
+      "title": "Laser cutting acrylic Lampung | Cutting Laser Lampung",
+      "description": "Potong acrylic untuk signage, display, lettering, dan kebutuhan dekorasi yang memerlukan tepi presisi.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-mdf-lampung/",
+      "title": "Laser cutting MDF Lampung | Cutting Laser Lampung",
+      "description": "Pemotongan MDF untuk maket, dekorasi, display, dan komponen interior yang membutuhkan pola konsisten.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-plat-besi-lampung/",
+      "title": "Laser cutting plat besi Lampung | Cutting Laser Lampung",
+      "description": "Pemotongan plat besi untuk kebutuhan pola, panel, elemen pagar, dan komponen fabrikasi yang membutuhkan detail rapi.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-stainless-lampung/",
+      "title": "Laser cutting stainless Lampung | Cutting Laser Lampung",
+      "description": "Solusi pemotongan stainless untuk aplikasi yang mengutamakan tampilan bersih, ketahanan, dan detail desain.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/layanan/",
+      "title": "Layanan Laser Cutting dan CNC Lampung",
+      "description": "Jelajahi layanan laser cutting material, CNC router, dan aplikasi fabrikasi arsitektural di Lampung.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/pagar-laser-cutting-lampung/",
+      "title": "Pagar laser cutting Lampung | Cutting Laser Lampung",
+      "description": "Pagar bermotif custom untuk rumah, ruko, dan bangunan komersial dengan perhatian pada pola, privasi, dan konteks fasad.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/panduan-file-desain-laser-cutting/",
+      "title": "Panduan File Desain Laser Cutting",
+      "description": "Panduan praktis menyiapkan file, ukuran, pola, dan referensi sebelum konsultasi laser cutting atau CNC di Lampung.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/partisi-laser-cutting-lampung/",
+      "title": "Partisi laser cutting Lampung | Cutting Laser Lampung",
+      "description": "Partisi dekoratif untuk membagi ruang tanpa membuat interior terasa tertutup sepenuhnya.",
+      "article": false
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/portfolio/",
+      "title": "Portfolio & Eksplorasi Desain | Cutting Laser Lampung",
+      "description": "Jelajahi aplikasi laser cutting untuk fasad, partisi, ornamen, dan lettering. Galeri studi visual dan konsultasi dokumentasi pekerjaan Cutting Laser Lampung.",
+      "article": false
+    }
+  ]
+}

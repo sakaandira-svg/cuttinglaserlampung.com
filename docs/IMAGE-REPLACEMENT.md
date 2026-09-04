@@ -1,6 +1,6 @@
 # Portfolio artwork and photograph replacement
 
-`src/data/portfolio.ts` is the shared source for the homepage and gallery. The current six records are original inline SVG concept studies, not completed customer projects. `PortfolioImage.astro` selects the vector study or Astro's optimized photo renderer from the record's `kind`.
+`src/data/portfolio.ts` is the shared source for the homepage, gallery, and article application modules. The current six records are original inline SVG concept studies, not completed customer projects. `PortfolioImage.astro` selects the vector study or Astro's optimized photo renderer from the record's `kind`. Each article maps a stable `portfolioId` to this same record, so replacing its asset updates every related article automatically.
 
 ## Current artwork
 
@@ -21,4 +21,4 @@ The three Round 3 PNGs under `src/assets/portfolio/` remain historical source as
 7. The homepage features the first three records and a secondary mosaic from the remaining records. Curate these deliberately when expanding the dataset. The portfolio index uses each record's first tag; additional categories should reflect verified content rather than empty filters.
 8. Run `npm run verify` and `npm run build`. Inspect crops, focus rings, captions, and detail drawers at 320px, 390px, tablet, and desktop widths. Rerun Lighthouse after adding photos.
 
-The verifier currently expects this all-concept release, including 13 labeled vector studies. Adjust that count and the disclosure wording when introducing real photographs while retaining the photo, accessibility, and provenance checks. Never remove safeguards simply to make a mixed gallery pass.
+The Round 5 build renders 37 labeled portfolio studies: 13 existing instances plus one in each of 24 articles. Article header diagrams are separate original SVGs. The verifier retains minimum study and provenance checks; update the all-concept expectations and page introductions when introducing real photographs while retaining photo accessibility and provenance checks. Never remove safeguards simply to make a mixed gallery pass.

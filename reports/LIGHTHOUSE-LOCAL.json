@@ -1,0 +1,2341 @@
+{
+  "base": "http://127.0.0.1:4323",
+  "environment": "Local static production build, headless Chrome, Lighthouse simulated throttling.",
+  "runs": [
+    {
+      "path": "/",
+      "device": "mobile",
+      "time": "2026-09-04T23:22:28.553Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 905.9947,
+        "largest-contentful-paint": 905.9947,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 905.9947
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+                  "selector": "section.cut-hero > div.shell > div.hero-title-block > h1#hero-title",
+                  "boundingRect": {
+                    "top": 196,
+                    "bottom": 327,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 130
+                  },
+                  "snippet": "<h1 id=\"hero-title\">",
+                  "nodeLabel": "IDE BERANI.\nDETAIL\nTERUKUR."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 460.9947,
+                "percent": "51%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 444.99999999999994,
+                "percent": "49%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/layanan/",
+      "device": "mobile",
+      "time": "2026-09-04T23:22:37.709Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/layanan/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 861.414,
+        "largest-contentful-paint": 906.828,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 1954.564816075182
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,2,P",
+                  "selector": "main#main-content > section.page-hero > div.shell > p",
+                  "boundingRect": {
+                    "top": 298,
+                    "bottom": 407,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 109
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Jasa laser cutting Lampung untuk kebutuhan dekoratif dan fungsional. Mulai dari…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 453.414,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 453.414,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/portfolio/",
+      "device": "mobile",
+      "time": "2026-09-04T23:22:46.489Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/portfolio/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 859.6068,
+        "largest-contentful-paint": 859.6068,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 859.6068
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-SPAN",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,DIV,0,H1,2,SPAN",
+                  "selector": "div.shell > div.gallery-title-row > h1 > span.cut-word",
+                  "boundingRect": {
+                    "top": 219,
+                    "bottom": 256,
+                    "left": 20,
+                    "right": 286,
+                    "width": 266,
+                    "height": 37
+                  },
+                  "snippet": "<span class=\"cut-word\">",
+                  "nodeLabel": "EKSPLORASI."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 453.6068,
+                "percent": "53%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 406,
+                "percent": "47%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/kontak/",
+      "device": "mobile",
+      "time": "2026-09-04T23:22:54.482Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/kontak/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 790.1987,
+        "largest-contentful-paint": 790.1987,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 790.1987
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,2,P",
+                  "selector": "main#main-content > section.page-hero > div.shell > p",
+                  "boundingRect": {
+                    "top": 298,
+                    "bottom": 407,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 109
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Bawa referensi yang Anda sukai, ukuran bidang, dan gambaran ruangnya. Kita baha…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 453.1987,
+                "percent": "57%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 337.00000000000006,
+                "percent": "43%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/laser-cutting-acrylic-lampung/",
+      "device": "mobile",
+      "time": "2026-09-04T23:23:01.926Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/laser-cutting-acrylic-lampung/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 905.9894999999999,
+        "largest-contentful-paint": 905.9894999999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 905.9894999999999
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,0,DIV,1,H1",
+                  "selector": "main#main-content > section.page-hero > div.shell > h1",
+                  "boundingRect": {
+                    "top": 188,
+                    "bottom": 272,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 84
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Laser cutting acrylic Lampung"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 452.99475,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 452.9947499999999,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/pagar-laser-cutting-lampung/",
+      "device": "mobile",
+      "time": "2026-09-04T23:23:09.070Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/pagar-laser-cutting-lampung/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 905.7280000000001,
+        "largest-contentful-paint": 905.7280000000001,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 905.7280000000001
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,0,DIV,1,H1",
+                  "selector": "main#main-content > section.page-hero > div.shell > h1",
+                  "boundingRect": {
+                    "top": 188,
+                    "bottom": 272,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 84
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Pagar laser cutting Lampung"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 452.864,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 452.8640000000001,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/",
+      "device": "mobile",
+      "time": "2026-09-04T23:23:16.789Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 909.3511000000001,
+        "largest-contentful-paint": 909.3511000000001,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 909.3511000000001
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-SPAN",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,1,H1,2,SPAN",
+                  "selector": "main#main-content > section.knowledge-intro > h1 > span.cut-word",
+                  "boundingRect": {
+                    "top": 227,
+                    "bottom": 269,
+                    "left": 20,
+                    "right": 272,
+                    "width": 252,
+                    "height": 43
+                  },
+                  "snippet": "<span class=\"cut-word\">",
+                  "nodeLabel": "DIPOTONG."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 454.67555,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 454.6755500000001,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/laser-cutting-vs-cnc-router/",
+      "device": "mobile",
+      "time": "2026-09-04T23:23:24.534Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/laser-cutting-vs-cnc-router/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 946.49125,
+        "largest-contentful-paint": 946.49125,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 946.49125
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 213,
+                    "bottom": 342,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 130
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Laser cutting atau CNC router: memilih proses dari bentuk akhir"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 454.49125,
+                "percent": "48%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 492.00000000000006,
+                "percent": "52%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/pvc-bukan-bahan-untuk-laser/",
+      "device": "mobile",
+      "time": "2026-09-04T23:23:33.140Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/pvc-bukan-bahan-untuk-laser/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 977.18595,
+        "largest-contentful-paint": 977.18595,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2050.982970035916
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 213,
+                    "bottom": 386,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 173
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "PVC bukan bahan untuk laser: verifikasi material sebelum cutting"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 458.18595,
+                "percent": "47%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 519,
+                "percent": "53%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "device": "mobile",
+      "time": "2026-09-04T23:23:42.814Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 904.1112,
+        "largest-contentful-paint": 904.1112,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 904.1112
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 234,
+                    "bottom": 406,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 173
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Data untuk penawaran fabrikasi: bandingkan lingkup, bukan angka saja"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 452.0556,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 452.0556,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "device": "desktop",
+      "time": "2026-09-04T23:23:50.670Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 247.52635,
+        "largest-contentful-paint": 253.05270000000002,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 265.8993720943006
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+                  "selector": "section.cut-hero > div.shell > div.hero-title-block > h1#hero-title",
+                  "boundingRect": {
+                    "top": 258,
+                    "bottom": 497,
+                    "left": 48,
+                    "right": 575,
+                    "width": 527,
+                    "height": 239
+                  },
+                  "snippet": "<h1 id=\"hero-title\">",
+                  "nodeLabel": "IDE BERANI.\nDETAIL\nTERUKUR."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 126.52635,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 126.52635000000002,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.99,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/layanan/",
+      "device": "desktop",
+      "time": "2026-09-04T23:24:00.066Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/layanan/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 234.38065,
+        "largest-contentful-paint": 244.7613,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 241.6296279643742
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,H1",
+                  "selector": "main#main-content > section.page-hero > div.shell > h1",
+                  "boundingRect": {
+                    "top": 216,
+                    "bottom": 388,
+                    "left": 48,
+                    "right": 968,
+                    "width": 920,
+                    "height": 172
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Dari karakter bahan,\nke karakter ruang."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 122.38065,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 122.38065,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/portfolio/",
+      "device": "desktop",
+      "time": "2026-09-04T23:24:08.436Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/portfolio/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 255.33435,
+        "largest-contentful-paint": 255.33435,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 283.53485540350596
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-SPAN",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,DIV,0,H1,2,SPAN",
+                  "selector": "div.shell > div.gallery-title-row > h1 > span.cut-word",
+                  "boundingRect": {
+                    "top": 297,
+                    "bottom": 384,
+                    "left": 48,
+                    "right": 677,
+                    "width": 629,
+                    "height": 87
+                  },
+                  "snippet": "<span class=\"cut-word\">",
+                  "nodeLabel": "EKSPLORASI."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 124.33435,
+                "percent": "49%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 131,
+                "percent": "51%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.98,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/kontak/",
+      "device": "desktop",
+      "time": "2026-09-04T23:24:17.538Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/kontak/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 256.84015,
+        "largest-contentful-paint": 257.6803,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 270.000415417215
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,H1",
+                  "selector": "main#main-content > section.page-hero > div.shell > h1",
+                  "boundingRect": {
+                    "top": 216,
+                    "bottom": 388,
+                    "left": 48,
+                    "right": 968,
+                    "width": 920,
+                    "height": 172
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Ceritakan idenya.\nKita bahas detailnya."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 128.84015,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 128.84015,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/laser-cutting-acrylic-lampung/",
+      "device": "desktop",
+      "time": "2026-09-04T23:24:26.236Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/laser-cutting-acrylic-lampung/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 252.2749,
+        "largest-contentful-paint": 252.2749,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 252.2749
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,0,DIV,1,H1",
+                  "selector": "main#main-content > section.page-hero > div.shell > h1",
+                  "boundingRect": {
+                    "top": 216,
+                    "bottom": 300,
+                    "left": 48,
+                    "right": 968,
+                    "width": 920,
+                    "height": 84
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Laser cutting acrylic Lampung"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 126.13745,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 126.13745,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/pagar-laser-cutting-lampung/",
+      "device": "desktop",
+      "time": "2026-09-04T23:24:34.165Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/pagar-laser-cutting-lampung/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 248.68400000000003,
+        "largest-contentful-paint": 248.68400000000003,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 248.68400000000003
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,0,DIV,1,H1",
+                  "selector": "main#main-content > section.page-hero > div.shell > h1",
+                  "boundingRect": {
+                    "top": 216,
+                    "bottom": 300,
+                    "left": 48,
+                    "right": 968,
+                    "width": 920,
+                    "height": 84
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Pagar laser cutting Lampung"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 122.842,
+                "percent": "49%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 125.84200000000003,
+                "percent": "51%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/",
+      "device": "desktop",
+      "time": "2026-09-04T23:24:42.703Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 250.16235,
+        "largest-contentful-paint": 250.16235,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 268.23443038266817
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-SPAN",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,1,H1,2,SPAN",
+                  "selector": "main#main-content > section.knowledge-intro > h1 > span.cut-word",
+                  "boundingRect": {
+                    "top": 299,
+                    "bottom": 388,
+                    "left": 48,
+                    "right": 573,
+                    "width": 525,
+                    "height": 89
+                  },
+                  "snippet": "<span class=\"cut-word\">",
+                  "nodeLabel": "DIPOTONG."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 124.16235,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 126,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.98,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/laser-cutting-vs-cnc-router/",
+      "device": "desktop",
+      "time": "2026-09-04T23:24:51.277Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/laser-cutting-vs-cnc-router/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 263.30565,
+        "largest-contentful-paint": 263.30565,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 290.4902362883854
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 211,
+                    "bottom": 355,
+                    "left": 48,
+                    "right": 1128,
+                    "width": 1080,
+                    "height": 144
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Laser cutting atau CNC router: memilih proses dari bentuk akhir"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 124.30565,
+                "percent": "47%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 139,
+                "percent": "53%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/pvc-bukan-bahan-untuk-laser/",
+      "device": "desktop",
+      "time": "2026-09-04T23:25:00.560Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/pvc-bukan-bahan-untuk-laser/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 249.7605,
+        "largest-contentful-paint": 249.7605,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 261.69016247258185
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 211,
+                    "bottom": 355,
+                    "left": 48,
+                    "right": 1128,
+                    "width": 1080,
+                    "height": 144
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "PVC bukan bahan untuk laser: verifikasi material sebelum cutting"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 122.7605,
+                "percent": "49%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 127.00000000000001,
+                "percent": "51%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "device": "desktop",
+      "time": "2026-09-04T23:25:08.761Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 247.16320000000002,
+        "largest-contentful-paint": 247.16320000000002,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 247.16320000000002
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 211,
+                    "bottom": 355,
+                    "left": 48,
+                    "right": 1128,
+                    "width": 1080,
+                    "height": 144
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Data untuk penawaran fabrikasi: bandingkan lingkup, bukan angka saja"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 122.0816,
+                "percent": "49%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 125.08160000000002,
+                "percent": "51%"
+              }
+            ]
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    }
+  ]
+}

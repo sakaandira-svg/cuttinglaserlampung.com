@@ -1,5 +1,9 @@
 ---
 interface Props { items: { label: string; href?: string }[] }
 const { items } = Astro.props;
+import { siteUrl } from '../config/business';
+const breadcrumbs = [{label:'Beranda',href:'/'},...items];
+const schema = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:breadcrumbs.map((item,index)=>({'@type':'ListItem',position:index+1,name:item.label,item:new URL(item.href || Astro.url.pathname,siteUrl).toString()}))};
 ---
+<script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
 <nav class="breadcrumbs shell" aria-label="Breadcrumb"><a href="/">Beranda</a>{items.map((item) => <><span aria-hidden="true">/</span>{item.href ? <a href={item.href}>{item.label}</a> : <span aria-current="page">{item.label}</span>}</>)}</nav>

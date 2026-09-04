@@ -1,0 +1,6 @@
+---
+import { diagramSvg, type Diagram } from '../lib/editorial-art';
+interface Props { visual: Diagram; id: string; }
+const {visual, id} = Astro.props;
+---
+<figure class="article-figure"><Fragment set:html={diagramSvg(visual,id)} /><ol class="diagram-key" aria-hidden="true">{visual.labels.map(label=><li>{label}</li>)}</ol><figcaption>{visual.caption} <span>Ilustrasi konsep; bukan gambar kerja.</span></figcaption></figure>

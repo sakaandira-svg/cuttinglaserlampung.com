@@ -1,0 +1,584 @@
+{
+  "publishedCount": 24,
+  "draftOrExcludedCount": 0,
+  "errors": [],
+  "warnings": [],
+  "articles": [
+    {
+      "id": "acrylic-bening-opal-warna",
+      "url": "https://cuttinglaserlampung.com/artikel/acrylic-bening-opal-warna/",
+      "title": "Acrylic bening, opal, atau berwarna: memilih tampilan untuk display",
+      "cluster": "material",
+      "words": 616,
+      "sections": 6,
+      "primaryIntent": "Memilih karakter visual acrylic menurut fungsi display dan signage.",
+      "targetUser": "Pemilik usaha, desainer display, dan perancang lettering.",
+      "uniqueValue": "Membandingkan kebutuhan melihat objek dan membaca huruf melalui uji latar, sampel, serta posisi tepi.",
+      "cannibalizationRisk": "Rendah: keputusan tampilan acrylic/akrilik mendukung satu URL komersial yang sama.",
+      "services": [
+        "laser-cutting-acrylic-lampung"
+      ],
+      "portfolio": "/portfolio/#signage",
+      "related": [
+        "huruf-timbul-jarak-baca",
+        "memahami-kerf-dan-sambungan",
+        "merawat-panel-dekoratif"
+      ],
+      "incomingRelated": 1,
+      "whatsapp": true
+    },
+    {
+      "id": "finishing-panel-plat-besi",
+      "url": "https://cuttinglaserlampung.com/artikel/finishing-panel-plat-besi/",
+      "title": "Merencanakan finishing panel plat besi sejak tahap desain",
+      "cluster": "material",
+      "words": 657,
+      "sections": 6,
+      "primaryIntent": "Menentukan informasi finishing dan perlindungan panel besi sebelum produksi.",
+      "targetUser": "Pemilik pagar, panel eksterior, dan perancang interior.",
+      "uniqueValue": "Menghubungkan geometri panel dengan akses finishing dan perawatan serta membedakan sampel warna dari sistem perlindungan.",
+      "cannibalizationRisk": "Rendah: membahas keputusan finishing, sementara pesanan potong besi tetap pada halaman layanan.",
+      "services": [
+        "laser-cutting-plat-besi-lampung",
+        "pagar-laser-cutting-lampung"
+      ],
+      "portfolio": "/portfolio/#material",
+      "related": [
+        "memilih-motif-pagar",
+        "menguji-sampel-sebelum-produksi",
+        "merawat-panel-dekoratif"
+      ],
+      "incomingRelated": 4,
+      "whatsapp": true
+    },
+    {
+      "id": "huruf-timbul-jarak-baca",
+      "url": "https://cuttinglaserlampung.com/artikel/huruf-timbul-jarak-baca/",
+      "title": "Huruf timbul yang terbaca: jarak pandang, kontras, dan susunan",
+      "cluster": "aplikasi",
+      "words": 613,
+      "sections": 6,
+      "primaryIntent": "Merencanakan keterbacaan signage dan huruf timbul sebelum memilih bahan.",
+      "targetUser": "Pemilik usaha dan desainer identitas bangunan.",
+      "uniqueValue": "Protokol uji baca pratinjau, hierarki pesan, serta pemisahan huruf potong datar dari konstruksi timbul.",
+      "cannibalizationRisk": "Rendah: tidak membuat halaman jasa lettering baru; bahan mengarah ke acrylic atau stainless.",
+      "services": [
+        "laser-cutting-acrylic-lampung",
+        "laser-cutting-stainless-lampung"
+      ],
+      "portfolio": "/portfolio/#signage",
+      "related": [
+        "acrylic-bening-opal-warna",
+        "memilih-permukaan-stainless",
+        "pola-cutting-jembatan-dan-detail"
+      ],
+      "incomingRelated": 2,
+      "whatsapp": true
+    },
+    {
+      "id": "laser-cutting-vs-cnc-router",
+      "url": "https://cuttinglaserlampung.com/artikel/laser-cutting-vs-cnc-router/",
+      "title": "Laser cutting atau CNC router: memilih proses dari bentuk akhir",
+      "cluster": "proses",
+      "words": 637,
+      "sections": 6,
+      "primaryIntent": "Membandingkan proses berdasarkan geometri dan hasil akhir yang dibutuhkan.",
+      "targetUser": "Pemilik proyek dan desainer yang belum menentukan proses.",
+      "uniqueValue": "Matriks bentuk akhir, contoh keputusan bertahap, dan daftar informasi untuk menilai proses tanpa mengasumsikan mesin workshop.",
+      "cannibalizationRisk": "Rendah: membahas keputusan proses, tidak menargetkan pemesanan jasa CNC di Lampung.",
+      "services": [
+        "cnc-router-lampung",
+        "laser-cutting-plat-besi-lampung"
+      ],
+      "portfolio": "/portfolio/#cnc",
+      "related": [
+        "memahami-kerf-dan-sambungan",
+        "pvc-bukan-bahan-untuk-laser",
+        "mengubah-foto-referensi-menjadi-brief"
+      ],
+      "incomingRelated": 2,
+      "whatsapp": true
+    },
+    {
+      "id": "mdf-dan-hmr-untuk-interior",
+      "url": "https://cuttinglaserlampung.com/artikel/mdf-dan-hmr-untuk-interior/",
+      "title": "MDF dan HMR untuk interior: memahami batas ketahanan lembap",
+      "cluster": "material",
+      "words": 701,
+      "sections": 6,
+      "primaryIntent": "Menilai kecocokan MDF dan papan berlabel HMR untuk kondisi interior tertentu.",
+      "targetUser": "Pemilik interior, pembuat display, dan perancang panel dekoratif.",
+      "uniqueValue": "Memisahkan label pemasaran dari spesifikasi, memetakan sumber lembap, serta menilai detail tepi dan pembongkaran.",
+      "cannibalizationRisk": "Rendah: tidak membuat halaman jasa HMR yang belum terverifikasi; pemesanan mengarah ke MDF atau penilaian CNC.",
+      "services": [
+        "laser-cutting-mdf-lampung",
+        "cnc-router-lampung"
+      ],
+      "portfolio": "/portfolio/#interior",
+      "related": [
+        "memahami-panel-acp-dan-metode-potong",
+        "menguji-sampel-sebelum-produksi",
+        "merawat-panel-dekoratif"
+      ],
+      "incomingRelated": 1,
+      "whatsapp": true
+    },
+    {
+      "id": "memahami-kerf-dan-sambungan",
+      "url": "https://cuttinglaserlampung.com/artikel/memahami-kerf-dan-sambungan/",
+      "title": "Memahami kerf dan kelonggaran pada sambungan panel",
+      "cluster": "proses",
+      "words": 621,
+      "sections": 6,
+      "primaryIntent": "Memahami pengaruh lebar potong terhadap ukuran dan pasangan sambungan.",
+      "targetUser": "Desainer komponen rakitan dan pembuat display.",
+      "uniqueValue": "Membedakan kerf, toleransi, dan kelonggaran serta menyusun uji pasangan dengan catatan versi dan kondisi finishing.",
+      "cannibalizationRisk": "Rendah: pembahasan geometri sambungan melengkapi panduan file, bukan menduplikasi layanan.",
+      "services": [
+        "cnc-router-lampung",
+        "laser-cutting-acrylic-lampung"
+      ],
+      "portfolio": "/portfolio/#cnc",
+      "related": [
+        "laser-cutting-vs-cnc-router",
+        "menguji-sampel-sebelum-produksi",
+        "persetujuan-desain-dan-serah-terima"
+      ],
+      "incomingRelated": 4,
+      "whatsapp": true
+    },
+    {
+      "id": "memahami-panel-acp-dan-metode-potong",
+      "url": "https://cuttinglaserlampung.com/artikel/memahami-panel-acp-dan-metode-potong/",
+      "title": "Memahami ACP sebelum menentukan potongan, lipatan, dan sambungan",
+      "cluster": "material",
+      "words": 594,
+      "sections": 6,
+      "primaryIntent": "Memahami data ACP yang diperlukan untuk memilih metode pengolahan.",
+      "targetUser": "Pemilik signage dan perancang panel fasad.",
+      "uniqueValue": "Membedakan potong profil dari routing lipatan dan menekankan pemeriksaan produk komposit serta batas klaim ketahanan.",
+      "cannibalizationRisk": "Rendah: panduan identifikasi dan bentuk akhir mendukung URL layanan ACP yang ada.",
+      "services": [
+        "laser-cutting-acp-lampung",
+        "cnc-router-lampung"
+      ],
+      "portfolio": "/portfolio/#eksterior",
+      "related": [
+        "merencanakan-screen-fasad-tropis",
+        "skala-motif-dan-pembagian-panel",
+        "menyiapkan-data-penawaran-fabrikasi"
+      ],
+      "incomingRelated": 3,
+      "whatsapp": true
+    },
+    {
+      "id": "memilih-motif-pagar",
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-motif-pagar/",
+      "title": "Memilih motif pagar: privasi, ritme, dan pandangan dari jalan",
+      "cluster": "aplikasi",
+      "words": 596,
+      "sections": 6,
+      "primaryIntent": "Memilih komposisi motif pagar berdasarkan privasi dan tampak rumah.",
+      "targetUser": "Pemilik rumah atau ruko yang sedang membandingkan pola.",
+      "uniqueValue": "Pemetaan zona pandang, penilaian gerbang terbuka/tertutup, dan perbandingan pola dalam satu elevasi.",
+      "cannibalizationRisk": "Rendah: panduan memilih motif mengarahkan pesanan ke URL pagar yang sudah ada.",
+      "services": [
+        "pagar-laser-cutting-lampung",
+        "laser-cutting-plat-besi-lampung"
+      ],
+      "portfolio": "/portfolio/#eksterior",
+      "related": [
+        "skala-motif-dan-pembagian-panel",
+        "finishing-panel-plat-besi",
+        "mengukur-bidang-sebelum-konsultasi"
+      ],
+      "incomingRelated": 2,
+      "whatsapp": true
+    },
+    {
+      "id": "memilih-permukaan-stainless",
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-permukaan-stainless/",
+      "title": "Memilih permukaan stainless: pantulan, arah serat, dan perawatan",
+      "cluster": "material",
+      "words": 613,
+      "sections": 7,
+      "primaryIntent": "Menentukan karakter permukaan stainless untuk panel dan signage.",
+      "targetUser": "Desainer interior, pemilik signage, dan pemilik bangunan.",
+      "uniqueValue": "Uji pantulan dan arah permukaan dengan mockup, pembagian sisi terlihat, serta catatan penerimaan hasil.",
+      "cannibalizationRisk": "Rendah: fokus pemilihan tampilan, tidak menjadi halaman jasa stainless kedua.",
+      "services": [
+        "laser-cutting-stainless-lampung"
+      ],
+      "portfolio": "/portfolio/#signage",
+      "related": [
+        "huruf-timbul-jarak-baca",
+        "merawat-panel-dekoratif",
+        "menguji-sampel-sebelum-produksi"
+      ],
+      "incomingRelated": 2,
+      "whatsapp": true
+    },
+    {
+      "id": "memilih-spons-foam-untuk-cutting",
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-spons-foam-untuk-cutting/",
+      "title": "Spons dan foam untuk cutting: identitas bahan lebih dulu",
+      "cluster": "material",
+      "words": 642,
+      "sections": 6,
+      "primaryIntent": "Mempersiapkan data foam atau spons untuk menilai metode potong yang sesuai.",
+      "targetUser": "Pemilik kebutuhan insert, kemasan, display, atau bantalan custom.",
+      "uniqueValue": "Memisahkan sifat tekan dari dimensi potong dan menyusun uji fungsi insert tanpa mengasumsikan semua foam laser-safe.",
+      "cannibalizationRisk": "Rendah: bukan klaim jasa laser spons; hanya konsultasi material dan metode yang perlu diverifikasi.",
+      "services": [
+        "cnc-router-lampung"
+      ],
+      "portfolio": "/portfolio/#material",
+      "related": [
+        "pvc-bukan-bahan-untuk-laser",
+        "menguji-sampel-sebelum-produksi",
+        "menyiapkan-data-penawaran-fabrikasi"
+      ],
+      "incomingRelated": 1,
+      "whatsapp": true
+    },
+    {
+      "id": "memilih-workshop-laser-cutting-lampung",
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-workshop-laser-cutting-lampung/",
+      "title": "Memilih workshop laser cutting di Lampung: pertanyaan sebelum memesan",
+      "cluster": "perencanaan",
+      "words": 593,
+      "sections": 6,
+      "primaryIntent": "Mengevaluasi penyedia fabrikasi lokal melalui bukti dan kejelasan proses.",
+      "targetUser": "Pemilik kebutuhan custom di Bandar Lampung dan wilayah Lampung.",
+      "uniqueValue": "Daftar evaluasi penyedia yang netral, pemisahan dokumentasi nyata dan konsep, serta persiapan kunjungan lokal.",
+      "cannibalizationRisk": "Sedang, dikendalikan: artikel evaluasi penyedia, bukan halaman jasa umum atau klaim workshop terbaik.",
+      "services": [
+        "laser-cutting-plat-besi-lampung",
+        "cnc-router-lampung"
+      ],
+      "portfolio": "/portfolio/#eksterior",
+      "related": [
+        "menyiapkan-data-penawaran-fabrikasi",
+        "menguji-sampel-sebelum-produksi",
+        "persetujuan-desain-dan-serah-terima"
+      ],
+      "incomingRelated": 1,
+      "whatsapp": true
+    },
+    {
+      "id": "mengubah-foto-referensi-menjadi-brief",
+      "url": "https://cuttinglaserlampung.com/artikel/mengubah-foto-referensi-menjadi-brief/",
+      "title": "Dari foto referensi menjadi brief desain yang bisa dibahas",
+      "cluster": "proses",
+      "words": 659,
+      "sections": 7,
+      "primaryIntent": "Mengubah inspirasi visual menjadi kebutuhan desain yang dapat dikomunikasikan.",
+      "targetUser": "Pemilik rumah atau usaha yang belum mempunyai gambar kerja.",
+      "uniqueValue": "Metode anotasi referensi, daftar hal yang disukai dan dihindari, serta contoh brief tanpa menyalin karya orang lain.",
+      "cannibalizationRisk": "Rendah: menyiapkan kebutuhan sebelum file, bukan duplikasi panduan ekspor file.",
+      "services": [
+        "partisi-laser-cutting-lampung",
+        "fasad-laser-cutting-lampung"
+      ],
+      "portfolio": "/portfolio/#interior",
+      "related": [
+        "mengukur-bidang-sebelum-konsultasi",
+        "skala-motif-dan-pembagian-panel",
+        "persetujuan-desain-dan-serah-terima",
+        "partisi-privasi-dan-cahaya"
+      ],
+      "incomingRelated": 4,
+      "whatsapp": true
+    },
+    {
+      "id": "menguji-sampel-sebelum-produksi",
+      "url": "https://cuttinglaserlampung.com/artikel/menguji-sampel-sebelum-produksi/",
+      "title": "Menguji sampel sebelum produksi: tentukan pertanyaan yang ingin dijawab",
+      "cluster": "perencanaan",
+      "words": 578,
+      "sections": 6,
+      "primaryIntent": "Merencanakan sampel yang menjawab ketidakpastian desain dan proses.",
+      "targetUser": "Desainer dan pemilik proyek dengan detail yang perlu dibuktikan.",
+      "uniqueValue": "Matriks satu pertanyaan per sampel, kontrol variabel, bukti penerimaan, serta batas generalisasi hasil.",
+      "cannibalizationRisk": "Rendah: panduan validasi sebelum pemesanan, bukan klaim fasilitas pengujian workshop.",
+      "services": [
+        "cnc-router-lampung",
+        "laser-cutting-acrylic-lampung"
+      ],
+      "portfolio": "/portfolio/#cnc",
+      "related": [
+        "memahami-kerf-dan-sambungan",
+        "finishing-panel-plat-besi",
+        "persetujuan-desain-dan-serah-terima"
+      ],
+      "incomingRelated": 8,
+      "whatsapp": true
+    },
+    {
+      "id": "mengukur-bidang-sebelum-konsultasi",
+      "url": "https://cuttinglaserlampung.com/artikel/mengukur-bidang-sebelum-konsultasi/",
+      "title": "Mengukur bidang sebelum konsultasi panel custom",
+      "cluster": "perencanaan",
+      "words": 621,
+      "sections": 6,
+      "primaryIntent": "Menyiapkan ukuran awal dan dokumentasi lokasi untuk konsultasi fabrikasi.",
+      "targetUser": "Pemilik proyek yang akan mengirim sketsa melalui WhatsApp.",
+      "uniqueValue": "Pemisahan ukuran bukaan dan panel, penamaan titik acuan, pemeriksaan silang, serta batas survei mandiri.",
+      "cannibalizationRisk": "Rendah: fokus pengumpulan data lokasi, bukan format file atau halaman kontak kedua.",
+      "services": [
+        "pagar-laser-cutting-lampung",
+        "partisi-laser-cutting-lampung"
+      ],
+      "portfolio": "/portfolio/#interior",
+      "related": [
+        "mengubah-foto-referensi-menjadi-brief",
+        "menyiapkan-data-penawaran-fabrikasi",
+        "persetujuan-desain-dan-serah-terima"
+      ],
+      "incomingRelated": 4,
+      "whatsapp": true
+    },
+    {
+      "id": "menyiapkan-data-penawaran-fabrikasi",
+      "url": "https://cuttinglaserlampung.com/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "title": "Data untuk penawaran fabrikasi: bandingkan lingkup, bukan angka saja",
+      "cluster": "perencanaan",
+      "words": 611,
+      "sections": 7,
+      "primaryIntent": "Mempersiapkan permintaan penawaran dan membandingkan ruang lingkup pekerjaan.",
+      "targetUser": "Pemilik proyek yang meminta estimasi custom fabrication.",
+      "uniqueValue": "Matriks lingkup dan asumsi, pemisahan kebutuhan pasti/opsional, serta cara membandingkan alternatif tanpa daftar harga palsu.",
+      "cannibalizationRisk": "Rendah: proses menyiapkan data, tidak menjadi halaman harga jasa yang tidak terverifikasi.",
+      "services": [
+        "laser-cutting-plat-besi-lampung",
+        "cnc-router-lampung"
+      ],
+      "portfolio": "/portfolio/#material",
+      "related": [
+        "mengukur-bidang-sebelum-konsultasi",
+        "finishing-panel-plat-besi",
+        "memilih-workshop-laser-cutting-lampung"
+      ],
+      "incomingRelated": 5,
+      "whatsapp": true
+    },
+    {
+      "id": "merawat-panel-dekoratif",
+      "url": "https://cuttinglaserlampung.com/artikel/merawat-panel-dekoratif/",
+      "title": "Merawat panel dekoratif: mulai dari material dan aksesnya",
+      "cluster": "aplikasi",
+      "words": 573,
+      "sections": 6,
+      "primaryIntent": "Menyusun rutinitas pemeriksaan dan perawatan berdasarkan material panel.",
+      "targetUser": "Pemilik panel, pengelola ruang, dan penanggung jawab bangunan.",
+      "uniqueValue": "Kartu perawatan material, pemisahan kotoran dari kerusakan, serta prosedur pelaporan tanpa mencoba perbaikan yang tidak sesuai.",
+      "cannibalizationRisk": "Rendah: artikel purna-pemakaian mendukung layanan bahan dan tidak mengklaim jasa perawatan.",
+      "services": [
+        "laser-cutting-plat-besi-lampung",
+        "laser-cutting-stainless-lampung",
+        "laser-cutting-acrylic-lampung"
+      ],
+      "portfolio": "/portfolio/#material",
+      "related": [
+        "finishing-panel-plat-besi",
+        "memilih-permukaan-stainless",
+        "persetujuan-desain-dan-serah-terima"
+      ],
+      "incomingRelated": 6,
+      "whatsapp": true
+    },
+    {
+      "id": "merencanakan-screen-fasad-tropis",
+      "url": "https://cuttinglaserlampung.com/artikel/merencanakan-screen-fasad-tropis/",
+      "title": "Merencanakan screen fasad untuk konteks bangunan tropis Lampung",
+      "cluster": "aplikasi",
+      "words": 724,
+      "sections": 7,
+      "primaryIntent": "Menyiapkan pertimbangan screen fasad yang merespons kondisi lokasi tropis.",
+      "targetUser": "Pemilik bangunan dan desainer yang merencanakan lapisan fasad.",
+      "uniqueValue": "Lembar observasi lokasi berdasarkan waktu, matriks fungsi screen, dan batas antara motif dekoratif dan kinerja bangunan.",
+      "cannibalizationRisk": "Rendah: informasi perencanaan mendukung URL jasa fasad, tanpa halaman lokasi duplikat.",
+      "services": [
+        "fasad-laser-cutting-lampung",
+        "laser-cutting-acp-lampung"
+      ],
+      "portfolio": "/portfolio/#eksterior",
+      "related": [
+        "skala-motif-dan-pembagian-panel",
+        "memahami-panel-acp-dan-metode-potong",
+        "merawat-panel-dekoratif"
+      ],
+      "incomingRelated": 2,
+      "whatsapp": true
+    },
+    {
+      "id": "ornamen-lampung-dan-siger-kontemporer",
+      "url": "https://cuttinglaserlampung.com/artikel/ornamen-lampung-dan-siger-kontemporer/",
+      "title": "Membawa inspirasi Lampung dan Siger ke panel kontemporer",
+      "cluster": "aplikasi",
+      "words": 672,
+      "sections": 6,
+      "primaryIntent": "Mengolah referensi visual Lampung secara kontekstual dan tidak menyalin motif tanpa dasar.",
+      "targetUser": "Pemilik ruang, perancang identitas lokal, dan desainer ornamen.",
+      "uniqueValue": "Pemisahan bentuk dan makna, jejak sumber referensi, pilihan abstraksi, serta proses persetujuan penggunaan simbol.",
+      "cannibalizationRisk": "Rendah: satu panduan menggabungkan motif Lampung dan Siger agar tidak menjadi dua artikel sinonim.",
+      "services": [
+        "laser-cutting-plat-besi-lampung",
+        "fasad-laser-cutting-lampung"
+      ],
+      "portfolio": "/portfolio/#ornamen",
+      "related": [
+        "mengubah-foto-referensi-menjadi-brief",
+        "pola-cutting-jembatan-dan-detail",
+        "skala-motif-dan-pembagian-panel"
+      ],
+      "incomingRelated": 1,
+      "whatsapp": true
+    },
+    {
+      "id": "panel-railing-bukan-struktur-utama",
+      "url": "https://cuttinglaserlampung.com/artikel/panel-railing-bukan-struktur-utama/",
+      "title": "Panel dekoratif pada railing: pisahkan pola dari fungsi pengaman",
+      "cluster": "aplikasi",
+      "words": 582,
+      "sections": 6,
+      "primaryIntent": "Membedakan keputusan motif isian railing dari penilaian sistem pengaman bangunan.",
+      "targetUser": "Pemilik tangga dan desainer yang mempertimbangkan panel dekoratif.",
+      "uniqueValue": "Peta tanggung jawab elemen pengaman dan daftar dokumen yang harus selesai sebelum ukuran pola disetujui.",
+      "cannibalizationRisk": "Rendah: tidak membuat klaim jasa atau kapasitas struktur railing yang belum terverifikasi.",
+      "services": [
+        "laser-cutting-plat-besi-lampung",
+        "laser-cutting-stainless-lampung"
+      ],
+      "portfolio": "/portfolio/#ornamen",
+      "related": [
+        "pola-cutting-jembatan-dan-detail",
+        "mengukur-bidang-sebelum-konsultasi",
+        "persetujuan-desain-dan-serah-terima"
+      ],
+      "incomingRelated": 1,
+      "whatsapp": true
+    },
+    {
+      "id": "partisi-privasi-dan-cahaya",
+      "url": "https://cuttinglaserlampung.com/artikel/partisi-privasi-dan-cahaya/",
+      "title": "Partisi berpola: menyeimbangkan privasi, cahaya, dan alur ruang",
+      "cluster": "aplikasi",
+      "words": 599,
+      "sections": 6,
+      "primaryIntent": "Memilih posisi dan bukaan partisi untuk menyaring pandangan tanpa kehilangan fungsi ruang.",
+      "targetUser": "Pemilik rumah, kantor kecil, dan ruang usaha.",
+      "uniqueValue": "Peta pandangan duduk/berdiri dan uji siang-malam, serta pemisahan privasi visual dari kebutuhan akustik.",
+      "cannibalizationRisk": "Rendah: artikel evaluasi ruang mendukung halaman jasa partisi yang ada.",
+      "services": [
+        "partisi-laser-cutting-lampung"
+      ],
+      "portfolio": "/portfolio/#interior",
+      "related": [
+        "mengubah-foto-referensi-menjadi-brief",
+        "skala-motif-dan-pembagian-panel",
+        "mdf-dan-hmr-untuk-interior"
+      ],
+      "incomingRelated": 1,
+      "whatsapp": true
+    },
+    {
+      "id": "persetujuan-desain-dan-serah-terima",
+      "url": "https://cuttinglaserlampung.com/artikel/persetujuan-desain-dan-serah-terima/",
+      "title": "Persetujuan desain dan serah terima: menjaga satu acuan pekerjaan",
+      "cluster": "perencanaan",
+      "words": 603,
+      "sections": 6,
+      "primaryIntent": "Mengelola persetujuan revisi dan pemeriksaan hasil fabrikasi secara terstruktur.",
+      "targetUser": "Pemilik proyek, desainer, dan koordinator pekerjaan.",
+      "uniqueValue": "Alur status dokumen, daftar perubahan, pemisahan persetujuan konsep dan produksi, serta catatan temuan serah terima.",
+      "cannibalizationRisk": "Rendah: koordinasi pekerjaan melengkapi file guide dan tidak menggantikan halaman layanan.",
+      "services": [
+        "laser-cutting-plat-besi-lampung",
+        "cnc-router-lampung"
+      ],
+      "portfolio": "/portfolio/#material",
+      "related": [
+        "menguji-sampel-sebelum-produksi",
+        "menyiapkan-data-penawaran-fabrikasi",
+        "merawat-panel-dekoratif"
+      ],
+      "incomingRelated": 7,
+      "whatsapp": true
+    },
+    {
+      "id": "pola-cutting-jembatan-dan-detail",
+      "url": "https://cuttinglaserlampung.com/artikel/pola-cutting-jembatan-dan-detail/",
+      "title": "Pola cutting yang tetap utuh: jembatan, pulau, dan detail kecil",
+      "cluster": "proses",
+      "words": 622,
+      "sections": 6,
+      "primaryIntent": "Mengaudit kontinuitas pola dan keterbacaan detail sebelum diproduksi.",
+      "targetUser": "Desainer motif, pemilik logo, dan perancang panel.",
+      "uniqueValue": "Audit hitam-putih, penelusuran pulau terlepas, dan prioritas perbaikan desain dengan contoh huruf dan motif.",
+      "cannibalizationRisk": "Rendah: fokus topologi pola, bukan mengulang daftar format pada panduan file.",
+      "services": [
+        "laser-cutting-plat-besi-lampung",
+        "laser-cutting-acrylic-lampung"
+      ],
+      "portfolio": "/portfolio/#ornamen",
+      "related": [
+        "memahami-kerf-dan-sambungan",
+        "skala-motif-dan-pembagian-panel",
+        "menguji-sampel-sebelum-produksi",
+        "panel-railing-bukan-struktur-utama"
+      ],
+      "incomingRelated": 4,
+      "whatsapp": true
+    },
+    {
+      "id": "pvc-bukan-bahan-untuk-laser",
+      "url": "https://cuttinglaserlampung.com/artikel/pvc-bukan-bahan-untuk-laser/",
+      "title": "PVC bukan bahan untuk laser: verifikasi material sebelum cutting",
+      "cluster": "material",
+      "words": 704,
+      "sections": 7,
+      "primaryIntent": "Memahami mengapa PVC tidak boleh diasumsikan aman untuk laser dan cara memilih tindak lanjut.",
+      "targetUser": "Pemilik lembar plastik, signage, dan panel yang belum teridentifikasi.",
+      "uniqueValue": "Alur hentikan-asumsi, identifikasi dokumen, pemisahan sampel fisik dari uji laser, serta batas pilihan CNC.",
+      "cannibalizationRisk": "Rendah: artikel keselamatan pemilihan bahan, bukan landing page jasa laser PVC.",
+      "services": [
+        "cnc-router-lampung"
+      ],
+      "portfolio": "/portfolio/#cnc",
+      "related": [
+        "memilih-spons-foam-untuk-cutting",
+        "laser-cutting-vs-cnc-router",
+        "memahami-panel-acp-dan-metode-potong"
+      ],
+      "incomingRelated": 2,
+      "whatsapp": true
+    },
+    {
+      "id": "skala-motif-dan-pembagian-panel",
+      "url": "https://cuttinglaserlampung.com/artikel/skala-motif-dan-pembagian-panel/",
+      "title": "Skala motif dan pembagian panel: merancang pola pada bidang nyata",
+      "cluster": "aplikasi",
+      "words": 693,
+      "sections": 7,
+      "primaryIntent": "Menyesuaikan pola dengan ukuran bidang dan sambungan antarpanel.",
+      "targetUser": "Desainer pola dan pemilik proyek panel arsitektur.",
+      "uniqueValue": "Contoh hitung modul hipotetis, pemeriksaan pola pada tiga jarak, dan penanganan sisa bidang tanpa mengubah detail sembarangan.",
+      "cannibalizationRisk": "Rendah: geometri komposisi mendukung pagar, fasad, dan partisi tanpa menjadi landing page komersial.",
+      "services": [
+        "fasad-laser-cutting-lampung",
+        "pagar-laser-cutting-lampung",
+        "partisi-laser-cutting-lampung"
+      ],
+      "portfolio": "/portfolio/#ornamen",
+      "related": [
+        "pola-cutting-jembatan-dan-detail",
+        "memilih-motif-pagar",
+        "merencanakan-screen-fasad-tropis",
+        "ornamen-lampung-dan-siger-kontemporer"
+      ],
+      "incomingRelated": 7,
+      "whatsapp": true
+    }
+  ]
+}

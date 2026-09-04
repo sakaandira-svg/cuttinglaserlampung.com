@@ -4,7 +4,7 @@
 
 - Node.js: 22 LTS, also recorded in `.nvmrc`
 - Package manager: npm
-- Install: `npm install`
+- Install: `npm ci` using the committed lockfile (the existing host workflow may use `npm install`)
 - Build: `npm run build`
 - Output: `dist/`
 - Runtime: static hosting; no server or database required
@@ -21,8 +21,12 @@ In Hostinger, connect the GitHub repository `sakaandira-svg/cuttinglaserlampung.
 
 ## After deployment
 
-Check the homepage, representative service page, contact CTA, robots, sitemap, canonical tags, 404, mobile layout, and WhatsApp link on the real domain. Production verification is not complete until those checks pass.
+Run `npm run audit:production` after the article hub is live. It checks every verified indexable URL, metadata, canonicals, JSON-LD, article markers, Maps/WhatsApp links, social PNGs, stylesheets, robots, sitemap, HTTPS, www, and a deliberate missing URL. Then run `npm run audit:lighthouse -- --base=https://cuttinglaserlampung.com` for the same ten representative routes on mobile and desktop. Chrome must be installed; set `CHROME_PATH` if necessary. Inspect the deployed homepage, hub, articles, and portfolio on mobile and desktop. Production verification is not complete merely because a push succeeded.
+
+`public/.htaccess` requests a permanent www-to-apex redirect, a real 404 document, and immutable caching for fingerprinted assets on hosts that execute Apache-compatible rules. Some Hostinger static/CDN hosting paths do not execute this file. Inspect the measured production report; if www remains 200 with the apex canonical, configure a path-preserving permanent www-to-apex redirect in the hosting/domain controls. Do not rewrite missing routes to a 200 homepage. Keep HTTP-to-HTTPS enforcement at the existing host layer.
+
+Deployment continues through GitHub main. Do not upload or patch production files manually. Search Console verification is documented separately in `docs/SEARCH-CONSOLE.md`.
 
 ## Current status
 
-The operator confirmed an existing live Hostinger deployment before Round 3. The redesign retains this repository, main branch, and dist output. See reports/ROUND-3-REDESIGN.md for validation of the new source release. Confirm that Hostinger has deployed the latest main revision before treating the redesigned production site as verified.
+The existing repository, main branch, verified business entity, and dist output are retained. Current release evidence is in `reports/SEO-FORTRESS-AUDIT.md`, `reports/PRODUCTION-SEO.json`, and `reports/LIGHTHOUSE-PRODUCTION.json` when the post-push audit has completed. Round 3 and Round 4 reports remain historical records.

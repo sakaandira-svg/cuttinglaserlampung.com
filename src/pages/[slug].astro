@@ -3,8 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { services } from '../data/services';
 import { whatsappUrl } from '../lib/whatsapp';
+import { publishedArticles } from '../lib/articles';
+import ArticleLinks from '../components/ArticleLinks.astro';
+import '../styles/editorial.css';
 export function getStaticPaths() { return services.map((service) => ({ params: { slug: service.slug }, props: { service } })); }
 const { service } = Astro.props;
+const readings = (await publishedArticles()).filter(a=>a.data.relatedServices.includes(service.slug)).slice(0,3);
 const schema = { '@context': 'https://schema.org', '@type': 'Service', '@id': `https://cuttinglaserlampung.com/${service.slug}/#service`, name: service.title, serviceType: service.eyebrow, areaServed: 'Lampung', description: service.summary, provider: { '@type': 'Organization', name: 'Cutting Laser Lampung', url: 'https://cuttinglaserlampung.com/' } };
 ---
 <BaseLayout title={`${service.title} | Cutting Laser Lampung`} description={service.summary} pathname={`/${service.slug}/`}>
@@ -13,4 +17,6 @@ const schema = { '@context': 'https://schema.org', '@type': 'Service', '@id': `h
   <section class="page-hero"><div class="shell"><div class="eyebrow">{service.eyebrow} / Lampung</div><h1>{service.title}</h1><p>{service.summary}</p><div class="hero-actions"><a class="button button-accent" href={whatsappUrl(service.intent)} target="_blank" rel="noopener noreferrer" data-event={`whatsapp-${service.intent}`}>Diskusikan kebutuhan Anda ↗</a><a class="button" href="/panduan-file-desain-laser-cutting/">Panduan file</a></div></div></section>
   <section class="section"><div class="shell detail-grid"><div><h2>Yang perlu dipertimbangkan</h2><ul class="check-list">{service.points.map((point) => <li>{point}</li>)}</ul><h2 style="margin-top:55px">Contoh kebutuhan</h2><p>{service.useCases.join(' · ')}</p></div><aside class="info-panel"><div class="eyebrow">Konsultasi awal</div><h3>Berikan konteks, bukan hanya file.</h3><p>Foto lokasi, ukuran bidang, fungsi akhir, dan referensi visual membantu pembahasan berjalan lebih cepat.</p><a class="button button-accent" href={whatsappUrl(service.intent)} target="_blank" rel="noopener noreferrer">Kirim detail ↗</a></aside></div></section>
   <section class="section section-tint"><div class="shell"><div class="section-heading"><h2>Bentuk yang tepat dimulai dari konteks.</h2><p>Telusuri studi visual interior, eksterior, dan ornamen untuk memperjelas arah desain. Bawa referensi yang Anda sukai ke percakapan tentang material dan pengerjaan.</p></div><a class="button button-dark" href="/portfolio/">Eksplorasi aplikasi & detail ↗</a></div></section>
+  {service.slug === 'laser-cutting-acp-lampung' && <aside class="shell service-material-note"><p>ACP adalah material komposit. Merek, jenis inti, pelapis, dan bentuk akhir perlu diperiksa sebelum memilih metode pengolahan. Istilah cutting pada halaman ini tidak berarti semua ACP dapat diproses dengan laser; routing atau metode lain dapat lebih sesuai.</p></aside>}
+  {readings.length>0&&<section class="shell service-reading"><p class="eyebrow">Sebelum memutuskan</p><h2>Panduan untuk kebutuhan ini.</h2><ArticleLinks articles={readings} /></section>}
 </BaseLayout>

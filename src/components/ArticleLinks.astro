@@ -1,0 +1,7 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { articlePath, clusters } from '../lib/articles';
+interface Props { articles: CollectionEntry<'articles'>[]; }
+const {articles} = Astro.props;
+---
+<ol class="reading-index">{articles.map((article,index)=><li><a href={articlePath(article.id)}><span class="index-tag">{String(index+1).padStart(2,'0')}</span><div><span class="eyebrow">{clusters[article.data.cluster]}</span><h3>{article.data.title}</h3></div><span aria-hidden="true">↗</span></a></li>)}</ol>
