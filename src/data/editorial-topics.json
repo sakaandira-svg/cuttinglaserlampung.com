@@ -1,0 +1,170 @@
+[
+  {
+    "id": "fundamental",
+    "label": "Proses & desain",
+    "cluster": "proses",
+    "portfolio": "cnc",
+    "services": [
+      "cnc-router-lampung"
+    ],
+    "intro": "Pisahkan keputusan file, kurva, dan tata letak sebelum membicarakan proses produksi."
+  },
+  {
+    "id": "plat-besi",
+    "label": "Plat besi",
+    "cluster": "material",
+    "portfolio": "material",
+    "services": [
+      "laser-cutting-plat-besi-lampung"
+    ],
+    "intro": "Rencanakan sambungan, pengikat, dan penggantian panel sebagai bagian dari bidang besi yang utuh."
+  },
+  {
+    "id": "stainless",
+    "label": "Stainless",
+    "cluster": "material",
+    "portfolio": "material",
+    "services": [
+      "laser-cutting-stainless-lampung"
+    ],
+    "intro": "Perhatikan arah permukaan, pantulan, dan perlindungan selama pekerjaan lain berlangsung."
+  },
+  {
+    "id": "acrylic",
+    "label": "Acrylic / akrilik",
+    "cluster": "material",
+    "portfolio": "signage",
+    "services": [
+      "laser-cutting-acrylic-lampung"
+    ],
+    "intro": "Pertemuan lubang, dudukan, dan sambungan menentukan bagaimana acrylic dibaca dan digunakan."
+  },
+  {
+    "id": "acp",
+    "label": "ACP",
+    "cluster": "material",
+    "portfolio": "eksterior",
+    "services": [
+      "laser-cutting-acp-lampung",
+      "cnc-router-lampung"
+    ],
+    "intro": "Identitas panel, arah pemasangan, dan akses di balik lapisan perlu masuk gambar rencana."
+  },
+  {
+    "id": "mdf-hmr",
+    "label": "MDF / HMR",
+    "cluster": "material",
+    "portfolio": "cnc",
+    "services": [
+      "laser-cutting-mdf-lampung",
+      "cnc-router-lampung"
+    ],
+    "intro": "Tentukan detail tepi, paparan ruang, dan cara merakit papan interior tanpa menganggap semua produk setara."
+  },
+  {
+    "id": "spons",
+    "label": "Spons & foam",
+    "cluster": "material",
+    "portfolio": "cnc",
+    "services": [
+      "cnc-router-lampung"
+    ],
+    "intro": "Mulai dari bentuk benda, cara mengambilnya, serta komposisi foam yang harus diverifikasi."
+  },
+  {
+    "id": "cnc",
+    "label": "CNC router",
+    "cluster": "proses",
+    "portfolio": "cnc",
+    "services": [
+      "cnc-router-lampung"
+    ],
+    "intro": "Terjemahkan sudut, kedalaman, dan orientasi komponen menjadi informasi yang dapat ditinjau."
+  },
+  {
+    "id": "pagar",
+    "label": "Pagar",
+    "cluster": "aplikasi",
+    "portfolio": "eksterior",
+    "services": [
+      "pagar-laser-cutting-lampung",
+      "laser-cutting-plat-besi-lampung"
+    ],
+    "intro": "Baca pagar bersama akses rumah, elemen lama, dan perubahan tinggi jalan."
+  },
+  {
+    "id": "fasad",
+    "label": "Fasad / facade",
+    "cluster": "aplikasi",
+    "portfolio": "eksterior",
+    "services": [
+      "fasad-laser-cutting-lampung"
+    ],
+    "intro": "Hubungkan ritme bidang dengan jendela, bayangan, sudut bangunan, dan kebutuhan pemeliharaan."
+  },
+  {
+    "id": "interior",
+    "label": "Partisi & interior",
+    "cluster": "aplikasi",
+    "portfolio": "interior",
+    "services": [
+      "partisi-laser-cutting-lampung"
+    ],
+    "intro": "Uji pembagian ruang dari aktivitas pengguna, lintasan berjalan, dan pertemuan dengan bangunan."
+  },
+  {
+    "id": "railing",
+    "label": "Railing",
+    "cluster": "aplikasi",
+    "portfolio": "railing",
+    "services": [
+      "laser-cutting-plat-besi-lampung",
+      "laser-cutting-stainless-lampung"
+    ],
+    "intro": "Tinjau komposisi panel isian tangga bersama perencana sistem pengaman; motif tidak menggantikan evaluasi keselamatan."
+  },
+  {
+    "id": "ornamen",
+    "label": "Ornamen Lampung",
+    "cluster": "aplikasi",
+    "portfolio": "ornamen",
+    "services": [
+      "fasad-laser-cutting-lampung",
+      "partisi-laser-cutting-lampung"
+    ],
+    "intro": "Olahlah repetisi dan ruang kosong dengan referensi budaya yang jelas serta persetujuan pemilik konteks."
+  },
+  {
+    "id": "signage",
+    "label": "Huruf & signage",
+    "cluster": "aplikasi",
+    "portfolio": "signage",
+    "services": [
+      "laser-cutting-acrylic-lampung",
+      "laser-cutting-stainless-lampung"
+    ],
+    "intro": "Bawa logo dari layar menuju ukuran, lapisan, posisi, dan kondisi baca yang nyata."
+  },
+  {
+    "id": "perencanaan",
+    "label": "Perencanaan",
+    "cluster": "perencanaan",
+    "portfolio": "material",
+    "services": [
+      "cnc-router-lampung",
+      "laser-cutting-plat-besi-lampung"
+    ],
+    "intro": "Rapikan daftar komponen, urutan kerja, pengiriman, dan perubahan agar keputusan tidak terlepas dari dokumen."
+  },
+  {
+    "id": "lampung",
+    "label": "Riset lokal Lampung",
+    "cluster": "perencanaan",
+    "portfolio": "material",
+    "services": [
+      "cnc-router-lampung",
+      "pagar-laser-cutting-lampung"
+    ],
+    "intro": "Persiapkan percakapan dengan workshop Bandar Lampung melalui kunjungan, koordinasi lokasi, dan penilaian sampel."
+  }
+]

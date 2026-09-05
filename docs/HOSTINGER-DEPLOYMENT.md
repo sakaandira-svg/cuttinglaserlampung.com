@@ -36,3 +36,9 @@ Have Hostinger review `reports/LIGHTHOUSE-PRODUCTION-TRANSPORT.json`, including 
 ## Current status
 
 The existing repository, main branch, verified business entity, and dist output are retained. Current release evidence is in `reports/SEO-FORTRESS-AUDIT.md`, `reports/PRODUCTION-SEO.json`, and `reports/LIGHTHOUSE-PRODUCTION.json` when the post-push audit has completed. Round 3 and Round 4 reports remain historical records.
+
+## Round 7 release verification
+
+The mandatory legacy redirect is /produk-laser-cutting → HTTP 301 → /portfolio/. Both public/.htaccess and public/_redirects contain the narrow rule; neither rewrites arbitrary missing paths. Verify the actual response because host support varies. Production audit also verifies the centralized article SVG assets and reports new-article HTTP 200 coverage. Run with --out=reports/ROUND-7-PRODUCTION.json. Round 7 Lighthouse uses 19 representative paths (homepage, hub, portfolio and one article per topic) on mobile and desktop; pass the paths explicitly to reproduce the 38-run matrix.
+
+If hPanel reports missing repository access, restore the existing Hostinger GitHub connection scoped to sakaandira-svg/cuttinglaserlampung.com. The authenticated operator may need to sign in. Keep main, Astro, Node 22 and dist output. Do not upload or patch production files manually. Record BLOCKED_BY_HOSTINGER_DEPLOYMENT until the new main release is actually served.

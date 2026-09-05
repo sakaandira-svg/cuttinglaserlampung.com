@@ -35,6 +35,7 @@ const whatsapp = `https://wa.me/${business.whatsappNumber}?text=${encodeURICompo
     <strong>{business.brandName}</strong>
     <address data-workshop-address>{business.address}</address>
     <p class="conversion-hours">{businessHoursText}</p>
+    <p class="conversion-hours">{article.data.workshopRelevance}</p>
     <a class="text-link" href={business.mapsUrl} data-workshop-maps={article.id} target="_blank" rel="noopener noreferrer">Buka Google Maps <span aria-hidden="true">↗</span></a>
   </aside>
 </section>

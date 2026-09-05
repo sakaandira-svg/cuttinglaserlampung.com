@@ -1,4 +1,4 @@
-import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 
 const root = process.cwd();
@@ -118,4 +118,5 @@ if (!homepage.includes('id="pilihan-visual"') || homepage.indexOf('id="pilihan-v
 if (!homepage.includes('Ilustrasi konsep') || !readFileSync(join(dist, 'portfolio/index.html'), 'utf8').includes('Bukan foto proyek')) fail('Missing concept-image disclosure');
 if (vectorStudies < 13) fail('Expected original vector studies in hero and galleries');
 if (homepage.includes('class="application-card"') || homepage.includes('class="service-card"')) fail('Homepage must use the visual application index');
-console.log(`Rendered release passed: ${htmlFiles.length} pages, ${internalLinks} internal links/anchors, ${whatsappLinks} WhatsApp links, ${images} responsive photos, ${vectorStudies} labeled vector studies; SVG references, schema, canonicals, sitemap, and zero client JavaScript verified.`);
+writeFileSync('reports/BUILD-GUARD.json',JSON.stringify({htmlPages:htmlFiles.length,internalLinks,whatsappLinks,imageInstances:images,inlineVectorStudies:vectorStudies,brokenLinks:0,clientScripts:0,homepageBytes:Buffer.byteLength(homepage)},null,2)+'\n');
+console.log(`Rendered release passed: ${htmlFiles.length} pages, ${internalLinks} internal links/anchors, ${whatsappLinks} WhatsApp links, ${images} responsive image instances, ${vectorStudies} labeled vector studies; SVG references, schema, canonicals, sitemap, and zero client JavaScript verified.`);

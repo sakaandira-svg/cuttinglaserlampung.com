@@ -1,16 +1,32 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import ArticleDiagram from '../../components/ArticleDiagram.astro';
+import ArticleVisual from '../../components/ArticleVisual.astro';
 import ArticleLinks from '../../components/ArticleLinks.astro';
-import {publishedArticles, clusters} from '../../lib/articles';
+import {publishedArticles,articlePath} from '../../lib/articles';
+import topics from '../../data/editorial-topics.json';
+import {business} from '../../config/business';
 import '../../styles/editorial.css';
+import '../../styles/journal.css';
 const articles = await publishedArticles();
+const featuredIds=['vector-vs-bitmap-untuk-cutting','transisi-panel-fasad-di-sudut-bangunan','menyiapkan-kunjungan-workshop-lampung'];
+const featured=featuredIds.map(id=>articles.find(a=>a.id===id)).filter(a=>a!==undefined);
 ---
-<BaseLayout title="Artikel Desain, Material & Fabrikasi | Cutting Laser Lampung" description="Panduan memilih material, merancang pola, dan menyiapkan proyek laser cutting atau CNC. Catatan praktis untuk keputusan fabrikasi yang lebih terarah." pathname="/artikel/">
+<BaseLayout title="Jurnal Desain, Material & Fabrikasi Lampung | Cutting Laser Lampung" description="Jelajahi panduan proses, material, pagar, fasad, interior, dan perencanaan proyek di Lampung. Mulai dari pertanyaan Anda, lalu temukan studi visual terkait." pathname="/artikel/">
   <Breadcrumbs items={[{label:'Artikel'}]} />
-  <section class="knowledge-intro shell"><p class="eyebrow">Catatan fabrikasi / {articles.length} panduan</p><h1>SEBELUM<br /><span class="cut-word">DIPOTONG.</span></h1><p>Kenali bahan. Pahami pola. Siapkan keputusan.</p><ArticleDiagram id="hub-diagram" visual={{type:'path',labels:['Garis desain','Ruang alat','Hasil bidang'],alt:'Tiga jalur bersarang dengan ruang alat berbeda sebagai pengantar panduan fabrikasi.',caption:'Satu garis di layar menyimpan banyak keputusan.'}} /></section>
-  <nav class="shell knowledge-nav" aria-label="Kelompok artikel">{Object.entries(clusters).map(([key,label])=><a href={`#${key}`}>{label} <span aria-hidden="true">↘</span></a>)}</nav>
-  {Object.entries(clusters).map(([key,label])=><section class="shell knowledge-cluster" id={key} aria-labelledby={`cluster-${key}`}><div><p class="eyebrow">Indeks pengetahuan</p><h2 id={`cluster-${key}`}>{label}</h2></div><ArticleLinks articles={articles.filter(a=>a.data.cluster===key)} /></section>)}
-  <aside class="shell editorial-policy"><h2>Cara membaca catatan ini</h2><p>Materi editorial Cutting Laser Lampung disusun dengan bantuan AI dan rujukan teknis yang dicantumkan pada artikel terkait. Panduan membantu perencanaan; spesifikasi material, metode kerja, dan lingkup layanan harus dikonfirmasi untuk setiap kebutuhan.</p><p>Ilustrasi adalah studi konsep. Tidak ada foto proyek pelanggan atau klaim pengalaman yang direkayasa. <a href="/kontak/">Kirim koreksi atau diskusikan kondisi proyek ↗</a></p><a class="text-link" href="/panduan-file-desain-laser-cutting/">Sudah punya file? Buka panduan persiapan ↗</a></aside>
+  <section class="journal-cover shell">
+    <div><p class="eyebrow">Catatan fabrikasi / {articles.length} panduan</p><h1>SEBELUM<br /><span class="cut-word">DIPOTONG.</span></h1></div>
+    <div class="journal-cover-note"><p>Garis yang tepat.<br />Keputusan yang jelas.</p><span>Jurnal tentang bahan, ruang, dan hal-hal yang perlu dipikirkan sebelum sebuah ide menjadi bidang.</span><a class="text-link" href="#indeks">Cari berdasarkan kebutuhan ↘</a></div>
+  </section>
+  <section class="shell journal-featured" aria-labelledby="featured-title">
+    <div class="journal-section-label"><p class="eyebrow">Pilihan editorial</p><h2 id="featured-title">Mulai dari sini.</h2></div>
+    <div class="featured-reading">{featured.map((a,index)=><article class:list={['featured-article',{'featured-lead':index===0}]}><a href={articlePath(a.id)} aria-label={a.data.title}><ArticleVisual id={a.id} compact priority={index===0} /><div><span class="eyebrow">{topics.find(t=>t.id===a.data.topic)?.label}</span><h3>{a.data.title}</h3><span class="text-link" aria-hidden="true">Buka catatan ↗</span></div></a></article>)}</div>
+  </section>
+  <section class="shell journal-directory" id="indeks" aria-labelledby="directory-title"><div><p class="eyebrow">Pilih sudut pandang</p><h2 id="directory-title">Dari file.<br />Sampai lokasi.</h2></div><nav aria-label="Topik jurnal">{topics.map(t=><a href={`#${t.id}`}>{t.label}<span>{String(articles.filter(a=>a.data.topic===t.id).length).padStart(2,'0')} ↘</span></a>)}</nav></section>
+  <div class="shell journal-topics">{topics.map((topic,index)=>{
+    const group=articles.filter(a=>a.data.topic===topic.id);
+    return <section class="journal-topic" id={topic.id} aria-labelledby={`topic-${topic.id}`}><header><p class="eyebrow">{String(index+1).padStart(2,'0')} / {group.length} catatan</p><h2 id={`topic-${topic.id}`}>{topic.label}</h2><p>{topic.intro}</p><a class="text-link" href={`/portfolio/#${topic.portfolio}`}>Lihat studi visual terkait ↗</a><a class="topic-service" href={`/${topic.services[0]}/`}>Buka layanan yang berkaitan ↗</a></header><div><ArticleLinks articles={group.slice(0,3)} />{group.length>3&&<details class="topic-more"><summary>Lihat {group.length-3} catatan lainnya <span aria-hidden="true">+</span></summary><ArticleLinks articles={group.slice(3)} /></details>}</div></section>;
+  })}</div>
+  <section class="shell journal-local" aria-labelledby="journal-local-title"><div><p class="eyebrow">Bawa referensi Anda</p><h2 id="journal-local-title">Lanjutkan<br />percakapannya.</h2></div><div><p>Sudah menemukan pertanyaan yang ingin dibahas? Kirim konteks proyek atau lihat lokasi workshop di Bandar Lampung.</p><div class="conversion-actions"><a class="button button-dark" href={`https://wa.me/${business.whatsappNumber}?text=${encodeURIComponent('Halo Cutting Laser Lampung, saya membaca jurnal fabrikasi dan ingin membahas referensi serta kebutuhan proyek saya.')}`} target="_blank" rel="noopener noreferrer">Konsultasi via WhatsApp ↗</a><a class="button" href={business.mapsUrl} target="_blank" rel="noopener noreferrer">Lihat Lokasi Workshop ↗</a></div></div></section>
+  <aside class="shell editorial-policy"><h2>Cara membaca catatan ini</h2><p>Materi editorial disusun dengan bantuan AI dan rujukan teknis pada artikel terkait. Panduan membantu perencanaan; spesifikasi material, metode kerja, dan lingkup layanan perlu dikonfirmasi untuk setiap kebutuhan.</p><p>Visual adalah ilustrasi editorial yang dapat diganti dengan dokumentasi berizin. Tidak ada foto proyek pelanggan atau pengalaman yang direkayasa. <a href="/kontak/">Diskusikan kondisi proyek atau sampaikan koreksi ↗</a>.</p><a class="text-link" href="/panduan-file-desain-laser-cutting/">Sudah punya file? Buka panduan persiapan ↗</a></aside>
 </BaseLayout>

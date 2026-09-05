@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {loadArticles} from './content-audit.mjs';
+import {baseline,validateRound7,inspectPrimaryVisual} from './round7-audit.mjs';
+const original=loadArticles(),images=JSON.parse(readFileSync('src/data/article-images.json','utf8'));
+const fresh=()=>structuredClone(original),newId=original.find(a=>!baseline.includes(a.id)).id;
+const checks=[];
+function rejects(name,mutate,pattern){const articles=fresh(),visuals=structuredClone(images);mutate(articles,visuals);assert.ok(validateRound7(articles,visuals).errors.some(e=>pattern.test(e)),name);checks.push(name);}
+assert.deepEqual(validateRound7(original,images).errors,[]);
+rejects('49 new articles rejected',a=>a.splice(a.findIndex(a=>a.id===newId),1),/NEW_ARTICLE_COUNT/);
+rejects('baseline article excluded rejected',a=>a.find(a=>a.id===baseline[0]).data.status='draft',/Existing Round 6/);
+rejects('draft new article excluded',a=>a.find(a=>a.id===newId).data.status='draft',/NEW_ARTICLE_COUNT/);
+rejects('noindex new article excluded',a=>a.find(a=>a.id===newId).data.noindex=true,/NEW_ARTICLE_COUNT/);
+rejects('future article excluded',a=>a.find(a=>a.id===newId).data.publishedAt='2099-01-01',/NEW_ARTICLE_COUNT/);
+rejects('release marker required',a=>a.find(a=>a.id===newId).data.release='round5',/release marker/);
+rejects('central visual required',(_a,v)=>delete v[newId],/centralized/);
+rejects('visual path containment',(_a,v)=>v[newId].src='/../private.svg',/visual path/);
+rejects('alt required',(_a,v)=>v[newId].alt='',/visual editorial/);
+rejects('photo consent required',(_a,v)=>v[newId].kind='photo',/confirmed permission/);
+rejects('workshop relevance required',a=>a[0].data.workshopRelevance='',/workshop relevance/);
+const id=original[0].id,v=images[id],html=readFileSync('dist/artikel/'+id+'/index.html','utf8');
+assert.deepEqual(inspectPrimaryVisual(html,id,v),[]);
+assert.ok(inspectPrimaryVisual(html.replace('Ilustrasi editorial; bukan foto proyek',''),id,v).length);
+checks.push('rendered concept disclosure required');
+console.log('Round 7 regression guards passed: '+checks.length+' rejected failure fixtures.');

@@ -22,7 +22,8 @@
   "relatedArticles": [
     "mengubah-foto-referensi-menjadi-brief",
     "pola-cutting-jembatan-dan-detail",
-    "skala-motif-dan-pembagian-panel"
+    "skala-motif-dan-pembagian-panel",
+    "persetujuan-referensi-budaya-untuk-panel"
   ],
   "portfolioId": "ornamen",
   "visual": {
@@ -40,7 +41,11 @@
       "label": "Kemendikbud — keragaman seni dan kerajinan Lampung",
       "url": "https://kebudayaan.kemdikbud.go.id/bpnbjabar/kesenian-tradisional-sebagai-ikon-pariwisata/"
     }
-  ]
+  ],
+  "topic": "ornamen",
+  "layout": "design-study",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Olahlah repetisi dan ruang kosong dengan referensi budaya yang jelas serta persetujuan pemilik konteks."
 }
 ---
 

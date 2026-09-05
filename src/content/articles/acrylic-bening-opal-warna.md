@@ -21,7 +21,8 @@
   "relatedArticles": [
     "huruf-timbul-jarak-baca",
     "memahami-kerf-dan-sambungan",
-    "merawat-panel-dekoratif"
+    "merawat-panel-dekoratif",
+    "lubang-dudukan-acrylic"
   ],
   "portfolioId": "signage",
   "visual": {
@@ -43,7 +44,11 @@
       "label": "PLEXIGLAS — membersihkan dan merawat acrylic",
       "url": "https://www.plexiglas.de/en/service/processing/cleaning-plexiglas"
     }
-  ]
+  ],
+  "topic": "acrylic",
+  "layout": "comparison",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Pertemuan lubang, dudukan, dan sambungan menentukan bagaimana acrylic dibaca dan digunakan."
 }
 ---
 

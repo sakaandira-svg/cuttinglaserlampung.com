@@ -23,7 +23,8 @@
     "mengukur-bidang-sebelum-konsultasi",
     "skala-motif-dan-pembagian-panel",
     "persetujuan-desain-dan-serah-terima",
-    "partisi-privasi-dan-cahaya"
+    "partisi-privasi-dan-cahaya",
+    "vector-vs-bitmap-untuk-cutting"
   ],
   "portfolioId": "interior",
   "visual": {
@@ -36,7 +37,11 @@
     "alt": "Tiga bidang beranotasi menunjukkan pemisahan referensi, konteks ruang, dan batas rancangan.",
     "caption": "Foto memulai percakapan; ukuran dan tujuan mengubahnya menjadi brief."
   },
-  "sources": []
+  "sources": [],
+  "topic": "perencanaan",
+  "layout": "field-guide",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Rapikan daftar komponen, urutan kerja, pengiriman, dan perubahan agar keputusan tidak terlepas dari dokumen."
 }
 ---
 

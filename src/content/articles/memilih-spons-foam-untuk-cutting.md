@@ -21,7 +21,8 @@
   "relatedArticles": [
     "pvc-bukan-bahan-untuk-laser",
     "menguji-sampel-sebelum-produksi",
-    "menyiapkan-data-penawaran-fabrikasi"
+    "menyiapkan-data-penawaran-fabrikasi",
+    "pola-insert-spons-untuk-peralatan"
   ],
   "portfolioId": "material",
   "visual": {
@@ -43,7 +44,11 @@
       "label": "Trotec — bahan yang tidak boleh diproses dengan laser",
       "url": "https://www.troteclaser.com/en-gb/resources/faqs/unsuitable-materials-for-laser-processing"
     }
-  ]
+  ],
+  "topic": "spons",
+  "layout": "checklist",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Mulai dari bentuk benda, cara mengambilnya, serta komposisi foam yang harus diverifikasi."
 }
 ---
 

@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ArticleVisual from './ArticleVisual.astro';
+import topics from '../data/editorial-topics.json';
+import { displayDate } from '../lib/articles';
+import { business } from '../config/business';
+interface Props { article: CollectionEntry<'articles'>; }
+const {article} = Astro.props;
+const a=article.data;
+const topic=topics.find(t=>t.id===a.topic)!;
+const formats={ 'field-guide':'Panduan praktis', comparison:'Catatan perbandingan', 'design-study':'Studi visual', checklist:'Daftar periksa' };
+---
+<header class="article-header journal-header shell">
+  <div class="journal-heading">
+    <p class="eyebrow"><a href={`/artikel/#${topic.id}`}>{topic.label}</a> / {formats[a.layout]}</p>
+    <h1>{a.title}</h1>
+    <p class="article-deck">{a.description}</p>
+    <div class="article-byline"><span>Editorial <a href="/kontak/">{business.brandName}</a></span><span>Terbit <time datetime={a.publishedAt}>{displayDate(a.publishedAt)}</time></span>{a.updatedAt!==a.publishedAt&&<span>Diperbarui <time datetime={a.updatedAt}>{displayDate(a.updatedAt)}</time></span>}</div>
+  </div>
+  <ArticleVisual id={article.id} priority />
+</header>

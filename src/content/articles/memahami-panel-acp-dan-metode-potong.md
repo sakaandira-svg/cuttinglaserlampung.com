@@ -22,7 +22,8 @@
   "relatedArticles": [
     "merencanakan-screen-fasad-tropis",
     "skala-motif-dan-pembagian-panel",
-    "menyiapkan-data-penawaran-fabrikasi"
+    "menyiapkan-data-penawaran-fabrikasi",
+    "alur-lipat-acp-dan-ukuran-jadi"
   ],
   "portfolioId": "eksterior",
   "visual": {
@@ -40,7 +41,11 @@
       "label": "ALUCOBOND — teknik routing dan folding",
       "url": "https://alucobond.com.sg/products/catalogue/processing-5/routing-and-folding-2/"
     }
-  ]
+  ],
+  "topic": "acp",
+  "layout": "field-guide",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Identitas panel, arah pemasangan, dan akses di balik lapisan perlu masuk gambar rencana."
 }
 ---
 

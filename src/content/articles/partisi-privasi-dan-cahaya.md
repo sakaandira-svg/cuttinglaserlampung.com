@@ -21,7 +21,9 @@
   "relatedArticles": [
     "mengubah-foto-referensi-menjadi-brief",
     "skala-motif-dan-pembagian-panel",
-    "mdf-dan-hmr-untuk-interior"
+    "mdf-dan-hmr-untuk-interior",
+    "partisi-dan-jalur-sirkulasi",
+    "partisi-untuk-latar-panggilan-video"
   ],
   "portfolioId": "interior",
   "visual": {
@@ -34,7 +36,11 @@
     "alt": "Tiga panel dengan bukaan berbeda menunjukkan pilihan penyaringan pandangan pada partisi.",
     "caption": "Privasi berasal dari hubungan pola, posisi, dan orang yang melihat."
   },
-  "sources": []
+  "sources": [],
+  "topic": "interior",
+  "layout": "design-study",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Uji pembagian ruang dari aktivitas pengguna, lintasan berjalan, dan pertemuan dengan bangunan."
 }
 ---
 

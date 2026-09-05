@@ -23,7 +23,8 @@
   "relatedArticles": [
     "finishing-panel-plat-besi",
     "memilih-permukaan-stainless",
-    "persetujuan-desain-dan-serah-terima"
+    "persetujuan-desain-dan-serah-terima",
+    "panel-besi-modular-untuk-penggantian"
   ],
   "portfolioId": "material",
   "visual": {
@@ -45,7 +46,11 @@
       "label": "Outokumpu — ketahanan korosi stainless",
       "url": "https://www.outokumpu.com/en/expertise/stainless-basics/corrosion-resistance"
     }
-  ]
+  ],
+  "topic": "perencanaan",
+  "layout": "field-guide",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Rapikan daftar komponen, urutan kerja, pengiriman, dan perubahan agar keputusan tidak terlepas dari dokumen."
 }
 ---
 

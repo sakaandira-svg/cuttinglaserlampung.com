@@ -22,7 +22,8 @@
   "relatedArticles": [
     "mengukur-bidang-sebelum-konsultasi",
     "finishing-panel-plat-besi",
-    "memilih-workshop-laser-cutting-lampung"
+    "memilih-workshop-laser-cutting-lampung",
+    "penamaan-komponen-dan-daftar-panel"
   ],
   "portfolioId": "material",
   "visual": {
@@ -35,7 +36,11 @@
     "alt": "Tiga bidang beranotasi menggambarkan pemisahan lingkup, opsi, dan asumsi dalam permintaan penawaran.",
     "caption": "Perbandingan menjadi jelas ketika setiap angka merujuk pada pekerjaan yang sama."
   },
-  "sources": []
+  "sources": [],
+  "topic": "perencanaan",
+  "layout": "checklist",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Rapikan daftar komponen, urutan kerja, pengiriman, dan perubahan agar keputusan tidak terlepas dari dokumen."
 }
 ---
 

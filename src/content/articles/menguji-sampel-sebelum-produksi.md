@@ -22,7 +22,8 @@
   "relatedArticles": [
     "memahami-kerf-dan-sambungan",
     "finishing-panel-plat-besi",
-    "persetujuan-desain-dan-serah-terima"
+    "persetujuan-desain-dan-serah-terima",
+    "membandingkan-sampel-di-lokasi-bandar-lampung"
   ],
   "portfolioId": "cnc",
   "visual": {
@@ -35,7 +36,11 @@
     "alt": "Tiga pola sampel berbeda menggambarkan pembandingan variabel dan kriteria penerimaan.",
     "caption": "Sampel berguna bila pertanyaan dan batas kesimpulannya jelas."
   },
-  "sources": []
+  "sources": [],
+  "topic": "perencanaan",
+  "layout": "checklist",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Rapikan daftar komponen, urutan kerja, pengiriman, dan perubahan agar keputusan tidak terlepas dari dokumen."
 }
 ---
 

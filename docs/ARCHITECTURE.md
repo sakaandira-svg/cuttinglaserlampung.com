@@ -25,3 +25,5 @@ CuttingLaserLampung.com uses Astro 5 with static output. Content is pre-rendered
 - `scripts/lighthouse-audit.mjs` and `scripts/production-audit.mjs`: repeatable local/production performance and deployed SEO audits
 
 The site has no database, no analytics by default, and no secrets in frontend code. `docs/VISUAL-SYSTEM.md` records the Round 4 composition and `docs/IMAGE-REPLACEMENT.md` describes the photo migration path. The deployment target remains Hostinger static output from `dist/`.
+
+Round 7: src/data/editorial-topics.json defines 16 browsing topics. ArticleHeader.astro and journal.css provide four static variants without changing global page CSS. src/data/article-images.json owns 74 replaceable local primary visuals rendered by ArticleVisual.astro. scripts/round7-audit.mjs and its regression fixtures enforce the original 24 IDs plus at least 50 additional published entries, topic balance, image integrity, publication eligibility, and zero email conversion. scripts/round7-reports.mjs regenerates image briefs, intent boundaries and indexing priorities.

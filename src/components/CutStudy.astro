@@ -1,9 +1,9 @@
 ---
-export type Study = 'arc' | 'weave' | 'rhythm' | 'letter' | 'contour' | 'layer';
+export type Study = 'arc' | 'weave' | 'rhythm' | 'letter' | 'contour' | 'layer' | 'stair';
 interface Props { id: string; study?: Study; tone?: 'green' | 'silver' | 'orange'; hero?: boolean; decorative?: boolean; label?: string; }
 const { id, study = 'arc', tone = 'green', hero = false, decorative = false, label = 'Studi pola potong geometris. Ilustrasi konsep, bukan foto proyek.' } = Astro.props;
 const colors = { green: ['#17493e', '#092c26', '#507b66'], silver: ['#dae0d4', '#9aa99d', '#f9fbef'], orange: ['#e66b3d', '#9f381f', '#f1a46b'] }[tone];
-const panel = 'M26 0H390L420 30V610L394 636H0V26Z';
+const panel = study === 'stair' ? 'M0 200L420 0V420L0 620Z' : 'M26 0H390L420 30V610L394 636H0V26Z';
 const slots: string[] = [];
 if (study === 'arc') {
   for (let row = 0; row < 4; row++) for (let col = 0; col < 4; col++) {
@@ -26,6 +26,11 @@ if (study === 'arc') {
   for (let n = 0; n < 7; n++) {
     const x = 22 + n * 26, y = 32 + n * 32, w = 375 - n * 52, h = 570 - n * 64;
     slots.push(`M${x} ${y}H${x + w}V${y + h}H${x}V${y + 24}H${x + 10}V${y + h - 10}H${x + w - 10}V${y + 10}H${x}Z`);
+  }
+} else if (study === 'stair') {
+  for (let col = 0; col < 6; col++) {
+    const x=24+col*64, y=225-col*30;
+    slots.push(`M${x} ${y}l32 -15v260l-32 15Z`);
   }
 } else {
   for (let row = 0; row < 7; row++) for (let col = 0; col < 3; col++) {
@@ -52,5 +57,6 @@ if (study === 'arc') {
     <path d={panel} fill="none" stroke={colors[2]} stroke-width="1" />
   </g>
   <g stroke="#dc552c" stroke-width="1.6" fill="none"><path d="M122 550H248L352 437" stroke-dasharray="5 6" /><circle cx="352" cy="437" r="7" /><path d="M640 169L740 97H859" /><circle cx="640" cy="169" r="5" fill="#dc552c" /></g>
+  {study === 'stair' && <path d="M85 674h110v-45h105v-45h105v-45h105v-45h105v-45h110" fill="none" stroke="#375748" stroke-width="3" />}
   {hero && <g fill="#375748" font-family="monospace" font-size="12" letter-spacing="2" aria-hidden="true"><text x="104" y="577">TRACE / A</text><text x="746" y="84">CUT / B</text><text x="108" y="715">+ POLA / BIDANG / RUANG</text></g>}
 </svg>

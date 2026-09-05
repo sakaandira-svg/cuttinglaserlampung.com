@@ -22,7 +22,8 @@
   "relatedArticles": [
     "memahami-panel-acp-dan-metode-potong",
     "menguji-sampel-sebelum-produksi",
-    "merawat-panel-dekoratif"
+    "merawat-panel-dekoratif",
+    "panel-hmr-dekat-area-lembap"
   ],
   "portfolioId": "interior",
   "visual": {
@@ -44,7 +45,11 @@
       "label": "SAM — batas penggunaan standard dan moisture-resistant MDF",
       "url": "https://www.samonline.co.uk/wp-content/uploads/2020/02/The-Truth-About-MDF_March2019.pdf"
     }
-  ]
+  ],
+  "topic": "mdf-hmr",
+  "layout": "comparison",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Tentukan detail tepi, paparan ruang, dan cara merakit papan interior tanpa menganggap semua produk setara."
 }
 ---
 

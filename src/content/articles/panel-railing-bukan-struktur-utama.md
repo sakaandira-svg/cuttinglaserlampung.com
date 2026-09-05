@@ -22,9 +22,10 @@
   "relatedArticles": [
     "pola-cutting-jembatan-dan-detail",
     "mengukur-bidang-sebelum-konsultasi",
-    "persetujuan-desain-dan-serah-terima"
+    "persetujuan-desain-dan-serah-terima",
+    "mockup-railing-dari-sudut-pandang-pengguna"
   ],
-  "portfolioId": "ornamen",
+  "portfolioId": "railing",
   "visual": {
     "type": "plan",
     "labels": [
@@ -40,7 +41,11 @@
       "label": "ABCB — hubungan pengaman tangga dan handrail (referensi Australia)",
       "url": "https://www.abcb.gov.au/faq/stairways-barriers-and-handrails"
     }
-  ]
+  ],
+  "topic": "railing",
+  "layout": "field-guide",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Tinjau komposisi panel isian tangga bersama perencana sistem pengaman; motif tidak menggantikan evaluasi keselamatan."
 }
 ---
 

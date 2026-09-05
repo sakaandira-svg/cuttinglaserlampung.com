@@ -22,7 +22,8 @@
   "relatedArticles": [
     "skala-motif-dan-pembagian-panel",
     "finishing-panel-plat-besi",
-    "mengukur-bidang-sebelum-konsultasi"
+    "mengukur-bidang-sebelum-konsultasi",
+    "panel-pagar-akses-meter-dan-kotak-surat"
   ],
   "portfolioId": "eksterior",
   "visual": {
@@ -35,7 +36,11 @@
     "alt": "Tiga pola bukaan berbeda memperlihatkan pilihan ritme dan kepadatan panel pagar.",
     "caption": "Pola dinilai sebagai bagian gerbang dan rumah, bukan gambar lepas."
   },
-  "sources": []
+  "sources": [],
+  "topic": "pagar",
+  "layout": "design-study",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Baca pagar bersama akses rumah, elemen lama, dan perubahan tinggi jalan."
 }
 ---
 

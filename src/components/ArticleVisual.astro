@@ -1,0 +1,11 @@
+---
+import images from '../data/article-images.json';
+interface Props { id: string; compact?: boolean; priority?: boolean; }
+const { id, compact = false, priority = false } = Astro.props;
+const visual = images[id as keyof typeof images];
+if (!visual) throw new Error(`Missing centralized article visual: ${id}`);
+---
+<figure class:list={['article-figure', 'journal-visual', { 'visual-compact': compact }]} data-article-visual={id} data-visual-kind={visual.kind}>
+  <img src={visual.src} srcset={`${visual.src} ${visual.width}w`} sizes={compact ? '(max-width: 700px) 100vw, 40vw' : '(max-width: 700px) 100vw, 90vw'} width={visual.width} height={visual.height} alt={visual.alt} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : undefined} decoding="async" />
+  {!compact && <figcaption>{visual.caption}<span>{visual.kind === 'concept' ? 'Ilustrasi editorial; bukan foto proyek atau gambar kerja.' : visual.provenance}</span></figcaption>}
+</figure>

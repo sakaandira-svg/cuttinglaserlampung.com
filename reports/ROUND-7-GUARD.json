@@ -1,0 +1,130 @@
+{
+  "existingArticleCount": 24,
+  "newArticleCount": 50,
+  "finalArticleCount": 74,
+  "clusters": [
+    {
+      "id": "fundamental",
+      "label": "Proses & desain",
+      "existing": 5,
+      "new": 4,
+      "total": 9
+    },
+    {
+      "id": "plat-besi",
+      "label": "Plat besi",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "stainless",
+      "label": "Stainless",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "acrylic",
+      "label": "Acrylic / akrilik",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "acp",
+      "label": "ACP",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "mdf-hmr",
+      "label": "MDF / HMR",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "spons",
+      "label": "Spons & foam",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "cnc",
+      "label": "CNC router",
+      "existing": 0,
+      "new": 3,
+      "total": 3
+    },
+    {
+      "id": "pagar",
+      "label": "Pagar",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "fasad",
+      "label": "Fasad / facade",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "interior",
+      "label": "Partisi & interior",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "railing",
+      "label": "Railing",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "ornamen",
+      "label": "Ornamen Lampung",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "signage",
+      "label": "Huruf & signage",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    },
+    {
+      "id": "perencanaan",
+      "label": "Perencanaan",
+      "existing": 6,
+      "new": 4,
+      "total": 10
+    },
+    {
+      "id": "lampung",
+      "label": "Riset lokal Lampung",
+      "existing": 1,
+      "new": 3,
+      "total": 4
+    }
+  ],
+  "layouts": {
+    "comparison": 18,
+    "checklist": 18,
+    "design-study": 19,
+    "field-guide": 19
+  },
+  "primaryVisualCount": 74,
+  "newPrimaryVisualCount": 50,
+  "errors": [],
+  "articleEmailCtaCount": 0,
+  "visualBytes": 257592
+}

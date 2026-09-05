@@ -22,7 +22,8 @@
   "relatedArticles": [
     "mengubah-foto-referensi-menjadi-brief",
     "menyiapkan-data-penawaran-fabrikasi",
-    "persetujuan-desain-dan-serah-terima"
+    "persetujuan-desain-dan-serah-terima",
+    "koordinasi-pengukuran-jarak-jauh-lampung"
   ],
   "portfolioId": "interior",
   "visual": {
@@ -35,7 +36,11 @@
     "alt": "Tiga gambar bidang berukuran konseptual menunjukkan acuan, batas, dan hambatan pada lokasi panel.",
     "caption": "Ukuran awal membantu diskusi; ukuran produksi memerlukan verifikasi tersendiri."
   },
-  "sources": []
+  "sources": [],
+  "topic": "perencanaan",
+  "layout": "checklist",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Rapikan daftar komponen, urutan kerja, pengiriman, dan perubahan agar keputusan tidak terlepas dari dokumen."
 }
 ---
 

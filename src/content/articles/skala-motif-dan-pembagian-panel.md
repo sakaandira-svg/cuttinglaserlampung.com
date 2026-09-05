@@ -24,7 +24,8 @@
     "pola-cutting-jembatan-dan-detail",
     "memilih-motif-pagar",
     "merencanakan-screen-fasad-tropis",
-    "ornamen-lampung-dan-siger-kontemporer"
+    "ornamen-lampung-dan-siger-kontemporer",
+    "nesting-pola-dan-arah-material"
   ],
   "portfolioId": "ornamen",
   "visual": {
@@ -37,7 +38,11 @@
     "alt": "Tiga panel dengan jumlah pengulangan berbeda menggambarkan hubungan ukuran motif dan susunan bidang.",
     "caption": "Mengubah jumlah pengulangan tidak sama dengan meregangkan seluruh motif."
   },
-  "sources": []
+  "sources": [],
+  "topic": "fundamental",
+  "layout": "design-study",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Pisahkan keputusan file, kurva, dan tata letak sebelum membicarakan proses produksi."
 }
 ---
 

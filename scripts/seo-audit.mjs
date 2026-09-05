@@ -43,10 +43,11 @@ for(const file of walk(dist).filter(f=>f.endsWith('.html'))){
     for(const id of data?.relatedArticles||[])if(!links.some(u=>u.origin===domain&&u.pathname===`/artikel/${id}/`))fail(`Missing related article ${id}`);
     if(!html.includes('class="article-prose"')||!html.includes('role="img"'))fail('Missing article body or visual');
   }
-  records.push({route,title,description,canonical,noindex,articleId,links:links.filter(u=>u.origin===domain).map(u=>u.pathname)});
+  const h1=decode((html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1]||'').replace(/<[^>]+>/g,'')).replace(/\s+/g,' ').trim();
+  records.push({route,title,description,h1,canonical,noindex,articleId,links:links.filter(u=>u.origin===domain).map(u=>u.pathname)});
 }
-const eligible=records.filter(r=>!r.noindex);const duplicateCounts={titles:0,descriptions:0,canonicals:0};
-for(const [field,count] of [['title','titles'],['description','descriptions'],['canonical','canonicals']]){const seen=new Set();for(const r of eligible){if(seen.has(r[field])){duplicateCounts[count]++;errors.push(`Duplicate ${field}: ${r.route}`)}seen.add(r[field]);}}
+const eligible=records.filter(r=>!r.noindex);const duplicateCounts={titles:0,descriptions:0,h1s:0,canonicals:0};
+for(const [field,count] of [['title','titles'],['description','descriptions'],['h1','h1s'],['canonical','canonicals']]){const seen=new Set();for(const r of eligible){if(seen.has(r[field])){duplicateCounts[count]++;errors.push(`Duplicate ${field}: ${r.route}`)}seen.add(r[field]);}}
 const sitemap=readFileSync(join(dist,'sitemap.xml'),'utf8');const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>decode(m[1]));
 if(new Set(urls).size!==urls.length)errors.push('Duplicate sitemap URL');
 for(const url of urls)if(!eligible.some(r=>r.canonical===url))errors.push(`Ineligible sitemap URL ${url}`);
@@ -54,7 +55,7 @@ for(const r of eligible)if(!urls.includes(r.canonical))errors.push(`Missing site
 for(const a of source.filter(a=>!content.articles.some(p=>p.id===a.id)))if(records.some(r=>r.articleId===a.id)||urls.includes(a.data.canonical))errors.push(`Draft, future, or noindex article exposed: ${a.id}`);
 const visited=new Set(['/']);let pending=['/'];while(pending.length){const next=[];for(const path of pending)for(const link of records.find(r=>r.route===path)?.links||[])if(!visited.has(link)){visited.add(link);next.push(link)}pending=next;}
 const orphans=eligible.filter(r=>!visited.has(r.route));for(const r of orphans)errors.push(`Orphan URL ${r.route}`);
-const report={indexableUrls:eligible.length,htmlPages:records.length,commercialPages:9,publishedArticles:content.publishedCount,articleConversionCoverage:conversionCoverage,orphanUrls:orphans.length,duplicateTitles:duplicateCounts.titles,duplicateDescriptions:duplicateCounts.descriptions,duplicateCanonicals:duplicateCounts.canonicals,canonicalErrors:errors.filter(e=>/canonical/i.test(e)).length,schemaErrors:errors.filter(e=>/schema|JSON-LD/i.test(e)).length,sitemapErrors:errors.filter(e=>/sitemap/i.test(e)).length,errors,urls:eligible.map(r=>({url:r.canonical,title:r.title,description:r.description,article:Boolean(r.articleId)}))};
+const report={indexableUrls:eligible.length,htmlPages:records.length,commercialPages:9,publishedArticles:content.publishedCount,articleConversionCoverage:conversionCoverage,orphanUrls:orphans.length,duplicateTitles:duplicateCounts.titles,duplicateDescriptions:duplicateCounts.descriptions,duplicateH1:duplicateCounts.h1s,duplicateCanonicals:duplicateCounts.canonicals,canonicalErrors:errors.filter(e=>/canonical/i.test(e)).length,schemaErrors:errors.filter(e=>/schema|JSON-LD/i.test(e)).length,sitemapErrors:errors.filter(e=>/sitemap/i.test(e)).length,errors,urls:eligible.map(r=>({url:r.canonical,title:r.title,description:r.description,article:Boolean(r.articleId)}))};
 writeFileSync('reports/SEO-GUARD.json',JSON.stringify(report,null,2)+'\n');
 if(errors.length)throw new Error(errors.join('\n'));
 console.log(`SEO guard passed: ${eligible.length} indexable URLs; ${content.publishedCount} articles; zero metadata duplicates, orphans, canonical/schema/sitemap errors.`);

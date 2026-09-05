@@ -29,7 +29,7 @@ export function validateContent(articles,serviceSlugs,today=new Date().toLocaleD
     if(!eligibleIds.has(a.id))continue;
     for(const [set,value,label] of [[titles,normalize(d.title),'title'],[ctas,normalize(d.whatsappMessage),'CTA'],[intents,normalize(d.primaryIntent),'intent']]){if(set.has(value))error(`Duplicate ${label}`);set.add(value);}
     if(!Array.isArray(d.relatedServices)||d.relatedServices.length<1||d.relatedServices.length>3||d.relatedServices.some(s=>!serviceSlugs.includes(s)))error('Invalid service relationship');
-    if(!['eksterior','interior','ornamen','signage','cnc','material'].includes(d.portfolioId))error('Missing portfolio relationship');
+    if(!['eksterior','interior','ornamen','signage','cnc','material','railing'].includes(d.portfolioId))error('Missing portfolio relationship');
     if(!Array.isArray(d.relatedArticles)||new Set(d.relatedArticles).size<2||new Set(d.relatedArticles).size!==d.relatedArticles.length||d.relatedArticles.length>5||d.relatedArticles.some(id=>id===a.id||!allIds.has(id)||!eligibleIds.has(id)))error('Invalid related reading');
     if(!d.visual?.alt||d.visual.alt.length<25||!d.visual.caption||d.visual.labels?.length!==3)error('Missing meaningful illustration metadata');
     if(/^# /m.test(a.body))error('Body must not add a second H1');

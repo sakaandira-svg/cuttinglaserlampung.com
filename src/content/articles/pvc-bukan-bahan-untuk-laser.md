@@ -21,7 +21,8 @@
   "relatedArticles": [
     "memilih-spons-foam-untuk-cutting",
     "laser-cutting-vs-cnc-router",
-    "memahami-panel-acp-dan-metode-potong"
+    "memahami-panel-acp-dan-metode-potong",
+    "pola-insert-spons-untuk-peralatan"
   ],
   "portfolioId": "cnc",
   "visual": {
@@ -39,7 +40,11 @@
       "label": "Trotec — bahan yang tidak boleh diproses dengan laser",
       "url": "https://www.troteclaser.com/en-gb/resources/faqs/unsuitable-materials-for-laser-processing"
     }
-  ]
+  ],
+  "topic": "fundamental",
+  "layout": "field-guide",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Pisahkan keputusan file, kurva, dan tata letak sebelum membicarakan proses produksi."
 }
 ---
 

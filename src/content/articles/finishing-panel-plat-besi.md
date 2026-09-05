@@ -22,7 +22,8 @@
   "relatedArticles": [
     "memilih-motif-pagar",
     "menguji-sampel-sebelum-produksi",
-    "merawat-panel-dekoratif"
+    "merawat-panel-dekoratif",
+    "lubang-pengikat-panel-besi"
   ],
   "portfolioId": "material",
   "visual": {
@@ -40,7 +41,11 @@
       "label": "Jotun — panduan aplikasi dan persiapan permukaan",
       "url": "https://www.jotun.com/api/v1/datasheets/download/merged?selectedFiles=319"
     }
-  ]
+  ],
+  "topic": "plat-besi",
+  "layout": "field-guide",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Rencanakan sambungan, pengikat, dan penggantian panel sebagai bagian dari bidang besi yang utuh."
 }
 ---
 

@@ -2,6 +2,7 @@
 # CDN-managed hosts may require the equivalent domain redirect in hPanel.
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteRule ^produk-laser-cutting/?$ https://cuttinglaserlampung.com/portfolio/ [R=301,L,NE]
   RewriteCond %{HTTP_HOST} ^www\.cuttinglaserlampung\.com$ [NC]
   RewriteRule ^ https://cuttinglaserlampung.com%{REQUEST_URI} [R=301,L,NE]
 </IfModule>

@@ -22,7 +22,8 @@
   "relatedArticles": [
     "laser-cutting-vs-cnc-router",
     "menguji-sampel-sebelum-produksi",
-    "persetujuan-desain-dan-serah-terima"
+    "persetujuan-desain-dan-serah-terima",
+    "sudut-dalam-cnc-dan-bentuk-pasangan"
   ],
   "portfolioId": "cnc",
   "visual": {
@@ -44,7 +45,11 @@
       "label": "ShopBot — panduan pengguna dan persiapan jalur alat",
       "url": "https://shopbottools.com/wp-content/uploads/2024/01/SBG-00142-User-Guide-20150317.pdf"
     }
-  ]
+  ],
+  "topic": "fundamental",
+  "layout": "field-guide",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Pisahkan keputusan file, kurva, dan tata letak sebelum membicarakan proses produksi."
 }
 ---
 

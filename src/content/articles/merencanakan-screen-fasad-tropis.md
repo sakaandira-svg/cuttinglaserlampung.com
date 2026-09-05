@@ -22,7 +22,8 @@
   "relatedArticles": [
     "skala-motif-dan-pembagian-panel",
     "memahami-panel-acp-dan-metode-potong",
-    "merawat-panel-dekoratif"
+    "merawat-panel-dekoratif",
+    "bayangan-panel-pada-jam-berbeda"
   ],
   "portfolioId": "eksterior",
   "visual": {
@@ -40,7 +41,11 @@
       "label": "Your Home, Pemerintah Australia — prinsip peneduhan",
       "url": "https://www.yourhome.gov.au/passive-design/shading"
     }
-  ]
+  ],
+  "topic": "fasad",
+  "layout": "design-study",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Hubungkan ritme bidang dengan jendela, bayangan, sudut bangunan, dan kebutuhan pemeliharaan."
 }
 ---
 

@@ -1,0 +1,4836 @@
+{
+  "base": "http://127.0.0.1:4323",
+  "transport": "default",
+  "chromeFlags": [
+    "--headless=new",
+    "--disable-gpu"
+  ],
+  "environment": "Local static production build, headless Chrome, Lighthouse simulated throttling.",
+  "runs": [
+    {
+      "path": "/",
+      "device": "mobile",
+      "time": "2026-09-05T08:14:20.517Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1067.929,
+        "largest-contentful-paint": 1067.929,
+        "total-blocking-time": 5.5,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2032.8575980816847
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+                  "selector": "section.cut-hero > div.shell > div.hero-title-block > h1#hero-title",
+                  "boundingRect": {
+                    "top": 196,
+                    "bottom": 327,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 130
+                  },
+                  "snippet": "<h1 id=\"hero-title\">",
+                  "nodeLabel": "IDE BERANI.\nDETAIL\nTERUKUR."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 456.929,
+                "percent": "43%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 611.0000000000001,
+                "percent": "57%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.96,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/",
+      "device": "mobile",
+      "time": "2026-09-05T08:14:34.735Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1090.8587499999999,
+        "largest-contentful-paint": 1102.3587499999999,
+        "total-blocking-time": 16.000000000000114,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2173.6451563817427
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,0,ARTICLE,0,A,0,FIGURE,0,IMG",
+                  "selector": "article.featured-article > a > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 614,
+                    "bottom": 800,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/vector-vs-bitmap-untuk-cutting.svg\" srcset=\"/media/articles/vector-vs-bitmap-untuk-cutting.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 40vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial proses &amp; desain: tiga studi geometri berlabel piksel r…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial proses & desain: tiga studi geometri berlabel piksel refere…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 460.85875,
+                "percent": "42%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 641.4999999999999,
+                "percent": "58%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.14,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "dom-size",
+          "score": 0.5,
+          "title": "Avoid an excessive DOM size"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/portfolio/",
+      "device": "mobile",
+      "time": "2026-09-05T08:14:51.751Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/portfolio/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 934.92395,
+        "largest-contentful-paint": 934.92395,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2074.9962199164197
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-SPAN",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,DIV,0,H1,2,SPAN",
+                  "selector": "div.shell > div.gallery-title-row > h1 > span.cut-word",
+                  "boundingRect": {
+                    "top": 219,
+                    "bottom": 256,
+                    "left": 20,
+                    "right": 286,
+                    "width": 266,
+                    "height": 37
+                  },
+                  "snippet": "<span class=\"cut-word\">",
+                  "nodeLabel": "EKSPLORASI."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 451.92395,
+                "percent": "48%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 483,
+                "percent": "52%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.32,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/arah-warna-dan-batch-panel-acp/",
+      "device": "mobile",
+      "time": "2026-09-05T08:15:01.411Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/arah-warna-dan-batch-panel-acp/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 993.8934000000002,
+        "largest-contentful-paint": 1009.8934000000002,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2033.4985499104453
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 188,
+                    "bottom": 374,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/arah-warna-dan-batch-panel-acp.svg\" srcset=\"/media/articles/arah-warna-dan-batch-panel-acp.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial acp: tiga studi geometri berlabel identitas panel, ara…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial acp: tiga studi geometri berlabel identitas panel, arah pem…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 457.8934,
+                "percent": "45%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 552.0000000000002,
+                "percent": "55%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.21,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/lubang-dudukan-acrylic/",
+      "device": "mobile",
+      "time": "2026-09-05T08:15:11.808Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/lubang-dudukan-acrylic/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1040.7279999999998,
+        "largest-contentful-paint": 1040.7279999999998,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 1040.7279999999998
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 608,
+                    "bottom": 794,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/lubang-dudukan-acrylic.svg\" srcset=\"/media/articles/lubang-dudukan-acrylic.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial acrylic / akrilik: tiga studi geometri berlabel tepi a…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial acrylic / akrilik: tiga studi geometri berlabel tepi acryli…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 456.728,
+                "percent": "44%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 583.9999999999998,
+                "percent": "56%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.19,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/sudut-dalam-cnc-dan-bentuk-pasangan/",
+      "device": "mobile",
+      "time": "2026-09-05T08:15:22.280Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/sudut-dalam-cnc-dan-bentuk-pasangan/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 909.7617,
+        "largest-contentful-paint": 909.7617,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 909.7617
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 601,
+                    "bottom": 787,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/sudut-dalam-cnc-dan-bentuk-pasangan.svg\" srcset=\"/media/articles/sudut-dalam-cnc-dan-bentuk-pasangan.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial cnc router: tiga studi geometri berlabel sudut gambar,…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial cnc router: tiga studi geometri berlabel sudut gambar, ruan…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 454.88085,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 454.88085,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/fasad-dan-akses-pembersihan-jendela/",
+      "device": "mobile",
+      "time": "2026-09-05T08:15:30.797Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/fasad-dan-akses-pembersihan-jendela/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 953.624,
+        "largest-contentful-paint": 967.124,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 953.624
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 601,
+                    "bottom": 767,
+                    "left": 40,
+                    "right": 372,
+                    "width": 332,
+                    "height": 166
+                  },
+                  "snippet": "<img src=\"/media/articles/fasad-dan-akses-pembersihan-jendela.svg\" srcset=\"/media/articles/fasad-dan-akses-pembersihan-jendela.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial fasad / facade: tiga studi geometri berlabel jendela b…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial fasad / facade: tiga studi geometri berlabel jendela belaka…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 460.624,
+                "percent": "48%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 506.5,
+                "percent": "52%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/vector-vs-bitmap-untuk-cutting/",
+      "device": "mobile",
+      "time": "2026-09-05T08:15:38.656Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/vector-vs-bitmap-untuk-cutting/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 909.1527000000001,
+        "largest-contentful-paint": 909.1527000000001,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 909.1527000000001
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 575,
+                    "bottom": 761,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/vector-vs-bitmap-untuk-cutting.svg\" srcset=\"/media/articles/vector-vs-bitmap-untuk-cutting.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial proses &amp; desain: tiga studi geometri berlabel piksel r…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial proses & desain: tiga studi geometri berlabel piksel refere…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 454.57635,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 454.5763500000001,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/partisi-dan-jalur-sirkulasi/",
+      "device": "mobile",
+      "time": "2026-09-05T08:15:46.341Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/partisi-dan-jalur-sirkulasi/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 926.60535,
+        "largest-contentful-paint": 939.10535,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 926.60535
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 548,
+                    "bottom": 734,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/partisi-dan-jalur-sirkulasi.svg\" srcset=\"/media/articles/partisi-dan-jalur-sirkulasi.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial partisi &amp; interior: tiga studi geometri berlabel jalur…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial partisi & interior: tiga studi geometri berlabel jalur peng…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 455.60535,
+                "percent": "49%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 483.50000000000006,
+                "percent": "51%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/menyiapkan-kunjungan-workshop-lampung/",
+      "device": "mobile",
+      "time": "2026-09-05T08:15:55.692Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/menyiapkan-kunjungan-workshop-lampung/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1022.08835,
+        "largest-contentful-paint": 1022.08835,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 1022.08835
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 226,
+                    "bottom": 414,
+                    "left": 40,
+                    "right": 372,
+                    "width": 332,
+                    "height": 188
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Menyiapkan kunjungan workshop di Lampung: membawa keputusan, sampel, dan pertan…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 454.08835,
+                "percent": "44%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 568,
+                "percent": "56%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.21,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/tepi-mdf-sebelum-finishing/",
+      "device": "mobile",
+      "time": "2026-09-05T08:16:06.171Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/tepi-mdf-sebelum-finishing/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1040.9809,
+        "largest-contentful-paint": 1056.9809,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2156.3182896902463
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 188,
+                    "bottom": 374,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/tepi-mdf-sebelum-finishing.svg\" srcset=\"/media/articles/tepi-mdf-sebelum-finishing.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial mdf / hmr: tiga studi geometri berlabel muka panel, te…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial mdf / hmr: tiga studi geometri berlabel muka panel, tepi te…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 469.9809,
+                "percent": "44%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 587,
+                "percent": "56%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.16,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/modul-ornamen-siger-pada-bidang-panjang/",
+      "device": "mobile",
+      "time": "2026-09-05T08:16:17.450Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/modul-ornamen-siger-pada-bidang-panjang/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 996.3287,
+        "largest-contentful-paint": 1013.3287,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2077.2961116950373
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 188,
+                    "bottom": 374,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/modul-ornamen-siger-pada-bidang-panjang.svg\" srcset=\"/media/articles/modul-ornamen-siger-pada-bidang-panjang.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial ornamen lampung: tiga studi geometri berlabel fokus tu…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial ornamen lampung: tiga studi geometri berlabel fokus tunggal…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 457.3287,
+                "percent": "45%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 556,
+                "percent": "55%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.21,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/panel-pagar-akses-meter-dan-kotak-surat/",
+      "device": "mobile",
+      "time": "2026-09-05T08:16:28.026Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/panel-pagar-akses-meter-dan-kotak-surat/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 912.4938999999999,
+        "largest-contentful-paint": 919.870425,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 912.4938999999999
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 601,
+                    "bottom": 767,
+                    "left": 40,
+                    "right": 372,
+                    "width": 332,
+                    "height": 166
+                  },
+                  "snippet": "<img src=\"/media/articles/panel-pagar-akses-meter-dan-kotak-surat.svg\" srcset=\"/media/articles/panel-pagar-akses-meter-dan-kotak-surat.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial pagar: tiga studi geometri berlabel zona perangkat, bi…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial pagar: tiga studi geometri berlabel zona perangkat, bidang …"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 456.24695,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 463.6234749999999,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.42,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/penamaan-komponen-dan-daftar-panel/",
+      "device": "mobile",
+      "time": "2026-09-05T08:16:38.026Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/penamaan-komponen-dan-daftar-panel/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 943.87195,
+        "largest-contentful-paint": 963.37195,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 943.87195
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 226,
+                    "bottom": 414,
+                    "left": 40,
+                    "right": 372,
+                    "width": 332,
+                    "height": 188
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Penamaan komponen dan daftar panel: membuat gambar, jumlah, dan posisi saling c…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 455.87195,
+                "percent": "47%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 507.49999999999994,
+                "percent": "53%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.31,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/panel-besi-baut-atau-las/",
+      "device": "mobile",
+      "time": "2026-09-05T08:16:48.362Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/panel-besi-baut-atau-las/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1022.4918,
+        "largest-contentful-paint": 1051.4918,
+        "total-blocking-time": 3,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2192.097396632251
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 575,
+                    "bottom": 761,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/panel-besi-baut-atau-las.svg\" srcset=\"/media/articles/panel-besi-baut-atau-las.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial plat besi: tiga studi geometri berlabel sambungan terl…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial plat besi: tiga studi geometri berlabel sambungan terlihat,…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 460.4918,
+                "percent": "44%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 591,
+                "percent": "56%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.18,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/ritme-panel-railing-pada-bordes/",
+      "device": "mobile",
+      "time": "2026-09-05T08:16:58.977Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/ritme-panel-railing-pada-bordes/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1179.9326,
+        "largest-contentful-paint": 1220.4326,
+        "total-blocking-time": 6.5,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2171.164399269047
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 188,
+                    "bottom": 374,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/ritme-panel-railing-pada-bordes.svg\" srcset=\"/media/articles/ritme-panel-railing-pada-bordes.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial railing: tiga studi geometri berlabel arah naik, jeda …\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial railing: tiga studi geometri berlabel arah naik, jeda borde…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 457.9326,
+                "percent": "38%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 762.5000000000001,
+                "percent": "62%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.05,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/template-penempatan-huruf-pada-dinding/",
+      "device": "mobile",
+      "time": "2026-09-05T08:17:10.046Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/template-penempatan-huruf-pada-dinding/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1114.1654999999998,
+        "largest-contentful-paint": 1145.6654999999998,
+        "total-blocking-time": 0.5,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2161.4781506055724
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 608,
+                    "bottom": 794,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/template-penempatan-huruf-pada-dinding.svg\" srcset=\"/media/articles/template-penempatan-huruf-pada-dinding.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial huruf &amp; signage: tiga studi geometri berlabel susunan …\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial huruf & signage: tiga studi geometri berlabel susunan final…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 457.1655,
+                "percent": "40%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 688.4999999999998,
+                "percent": "60%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.09,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/pola-insert-spons-untuk-peralatan/",
+      "device": "mobile",
+      "time": "2026-09-05T08:17:21.410Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/pola-insert-spons-untuk-peralatan/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1193.749,
+        "largest-contentful-paint": 1230.249,
+        "total-blocking-time": 34.5,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2220.8543415417703
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 608,
+                    "bottom": 794,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/pola-insert-spons-untuk-peralatan.svg\" srcset=\"/media/articles/pola-insert-spons-untuk-peralatan.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial spons &amp; foam: tiga studi geometri berlabel batas benda…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial spons & foam: tiga studi geometri berlabel batas benda, bag…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 457.749,
+                "percent": "37%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 772.5,
+                "percent": "63%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.05,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/arah-serat-stainless-antarpanel/",
+      "device": "mobile",
+      "time": "2026-09-05T08:17:33.130Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/arah-serat-stainless-antarpanel/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1355.1285,
+        "largest-contentful-paint": 1355.1285,
+        "total-blocking-time": 9,
+        "cumulative-layout-shift": 0,
+        "speed-index": 2234.078113779532
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 188,
+                    "bottom": 374,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"/media/articles/arah-serat-stainless-antarpanel.svg\" srcset=\"/media/articles/arah-serat-stainless-antarpanel.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial stainless: tiga studi geometri berlabel arah sejalan, …\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial stainless: tiga studi geometri berlabel arah sejalan, panel…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 458.1285,
+                "percent": "34%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 897,
+                "percent": "66%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.98,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.02,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "device": "desktop",
+      "time": "2026-09-05T08:17:44.993Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 332.0565,
+        "largest-contentful-paint": 332.0565,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 430.2509124703884
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+                  "selector": "section.cut-hero > div.shell > div.hero-title-block > h1#hero-title",
+                  "boundingRect": {
+                    "top": 258,
+                    "bottom": 497,
+                    "left": 48,
+                    "right": 575,
+                    "width": 527,
+                    "height": 239
+                  },
+                  "snippet": "<h1 id=\"hero-title\">",
+                  "nodeLabel": "IDE BERANI.\nDETAIL\nTERUKUR."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 126.0565,
+                "percent": "38%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 206.00000000000003,
+                "percent": "62%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.81,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/",
+      "device": "desktop",
+      "time": "2026-09-05T08:18:02.304Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 385.195,
+        "largest-contentful-paint": 388.195,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 532.085610155382
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,0,ARTICLE,0,A,0,FIGURE,0,IMG",
+                  "selector": "article.featured-article > a > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 545,
+                    "bottom": 898,
+                    "left": 48,
+                    "right": 755,
+                    "width": 707,
+                    "height": 353
+                  },
+                  "snippet": "<img src=\"/media/articles/vector-vs-bitmap-untuk-cutting.svg\" srcset=\"/media/articles/vector-vs-bitmap-untuk-cutting.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 40vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial proses &amp; desain: tiga studi geometri berlabel piksel r…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial proses & desain: tiga studi geometri berlabel piksel refere…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 128.195,
+                "percent": "33%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 260,
+                "percent": "67%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.69,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "dom-size",
+          "score": 0.5,
+          "title": "Avoid an excessive DOM size"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/portfolio/",
+      "device": "desktop",
+      "time": "2026-09-05T08:18:25.738Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/portfolio/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 295.201,
+        "largest-contentful-paint": 318.201,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 454.49387068501767
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-SPAN",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,DIV,0,H1,2,SPAN",
+                  "selector": "div.shell > div.gallery-title-row > h1 > span.cut-word",
+                  "boundingRect": {
+                    "top": 297,
+                    "bottom": 384,
+                    "left": 48,
+                    "right": 677,
+                    "width": 629,
+                    "height": 87
+                  },
+                  "snippet": "<span class=\"cut-word\">",
+                  "nodeLabel": "EKSPLORASI."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 125.20100000000001,
+                "percent": "39%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 193,
+                "percent": "61%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.93,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/arah-warna-dan-batch-panel-acp/",
+      "device": "desktop",
+      "time": "2026-09-05T08:18:42.281Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/arah-warna-dan-batch-panel-acp/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 384.20230000000004,
+        "largest-contentful-paint": 384.20230000000004,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 544.3019785758947
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 892,
+                    "bottom": 1086,
+                    "left": 48,
+                    "right": 1028,
+                    "width": 980,
+                    "height": 194
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Arah warna dan batch ACP: meninjau panel berdampingan sebelum pemasangan"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 129.2023,
+                "percent": "34%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 255.00000000000003,
+                "percent": "66%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.67,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/lubang-dudukan-acrylic/",
+      "device": "desktop",
+      "time": "2026-09-05T08:18:58.218Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/lubang-dudukan-acrylic/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 363.01189999999997,
+        "largest-contentful-paint": 363.01189999999997,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 489.34168185946544
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 571,
+                    "bottom": 1191,
+                    "left": 48,
+                    "right": 1287,
+                    "width": 1239,
+                    "height": 620
+                  },
+                  "snippet": "<img src=\"/media/articles/lubang-dudukan-acrylic.svg\" srcset=\"/media/articles/lubang-dudukan-acrylic.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial acrylic / akrilik: tiga studi geometri berlabel tepi a…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial acrylic / akrilik: tiga studi geometri berlabel tepi acryli…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 132.0119,
+                "percent": "36%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 230.99999999999997,
+                "percent": "64%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.77,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/sudut-dalam-cnc-dan-bentuk-pasangan/",
+      "device": "desktop",
+      "time": "2026-09-05T08:19:13.300Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/sudut-dalam-cnc-dan-bentuk-pasangan/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 358.196,
+        "largest-contentful-paint": 358.196,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 513.9980302674444
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 230,
+                    "bottom": 508,
+                    "left": 731,
+                    "right": 1287,
+                    "width": 556,
+                    "height": 278
+                  },
+                  "snippet": "<img src=\"/media/articles/sudut-dalam-cnc-dan-bentuk-pasangan.svg\" srcset=\"/media/articles/sudut-dalam-cnc-dan-bentuk-pasangan.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial cnc router: tiga studi geometri berlabel sudut gambar,…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial cnc router: tiga studi geometri berlabel sudut gambar, ruan…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 127.196,
+                "percent": "36%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 231.00000000000003,
+                "percent": "64%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.76,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/fasad-dan-akses-pembersihan-jendela/",
+      "device": "desktop",
+      "time": "2026-09-05T08:19:26.897Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/fasad-dan-akses-pembersihan-jendela/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 375.6168,
+        "largest-contentful-paint": 375.6168,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 492.8029876633798
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 228,
+                    "bottom": 491,
+                    "left": 725,
+                    "right": 1252,
+                    "width": 527,
+                    "height": 264
+                  },
+                  "snippet": "<img src=\"/media/articles/fasad-dan-akses-pembersihan-jendela.svg\" srcset=\"/media/articles/fasad-dan-akses-pembersihan-jendela.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial fasad / facade: tiga studi geometri berlabel jendela b…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial fasad / facade: tiga studi geometri berlabel jendela belaka…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 147.6168,
+                "percent": "39%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 228,
+                "percent": "61%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.78,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/vector-vs-bitmap-untuk-cutting/",
+      "device": "desktop",
+      "time": "2026-09-05T08:19:38.861Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/vector-vs-bitmap-untuk-cutting/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 391.5505,
+        "largest-contentful-paint": 391.5505,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 547.5262206944632
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 187,
+                    "bottom": 466,
+                    "left": 731,
+                    "right": 1287,
+                    "width": 556,
+                    "height": 278
+                  },
+                  "snippet": "<img src=\"/media/articles/vector-vs-bitmap-untuk-cutting.svg\" srcset=\"/media/articles/vector-vs-bitmap-untuk-cutting.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial proses &amp; desain: tiga studi geometri berlabel piksel r…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial proses & desain: tiga studi geometri berlabel piksel refere…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 128.5505,
+                "percent": "33%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 263,
+                "percent": "67%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.67,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/partisi-dan-jalur-sirkulasi/",
+      "device": "desktop",
+      "time": "2026-09-05T08:19:52.977Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/partisi-dan-jalur-sirkulasi/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 291.80805000000004,
+        "largest-contentful-paint": 291.80805000000004,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 350.88494455026193
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 204,
+                    "bottom": 333,
+                    "left": 48,
+                    "right": 1128,
+                    "width": 1080,
+                    "height": 129
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Partisi dan jalur sirkulasi: menguji posisi sebelum memilih pola"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 125.80805,
+                "percent": "43%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 166.00000000000006,
+                "percent": "57%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.94,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/menyiapkan-kunjungan-workshop-lampung/",
+      "device": "desktop",
+      "time": "2026-09-05T08:20:01.270Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/menyiapkan-kunjungan-workshop-lampung/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 274.9878,
+        "largest-contentful-paint": 274.9878,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 306.8175932978432
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 228,
+                    "bottom": 491,
+                    "left": 725,
+                    "right": 1252,
+                    "width": 527,
+                    "height": 264
+                  },
+                  "snippet": "<img src=\"/media/articles/menyiapkan-kunjungan-workshop-lampung.svg\" srcset=\"/media/articles/menyiapkan-kunjungan-workshop-lampung.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial riset lokal lampung: tiga studi geometri berlabel agen…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial riset lokal lampung: tiga studi geometri berlabel agenda di…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 125.9878,
+                "percent": "46%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 149,
+                "percent": "54%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.97,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/tepi-mdf-sebelum-finishing/",
+      "device": "desktop",
+      "time": "2026-09-05T08:20:09.153Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/tepi-mdf-sebelum-finishing/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 299.4193,
+        "largest-contentful-paint": 299.4193,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 353.9859329628845
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 892,
+                    "bottom": 1086,
+                    "left": 48,
+                    "right": 1028,
+                    "width": 980,
+                    "height": 194
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Tepi MDF sebelum finishing: menentukan sisi terlihat dan sampel pertemuan"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 129.4193,
+                "percent": "43%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 170.00000000000003,
+                "percent": "57%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.93,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/modul-ornamen-siger-pada-bidang-panjang/",
+      "device": "desktop",
+      "time": "2026-09-05T08:20:17.690Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/modul-ornamen-siger-pada-bidang-panjang/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 368.60495000000003,
+        "largest-contentful-paint": 368.60495000000003,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 489.4172265809153
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 892,
+                    "bottom": 1086,
+                    "left": 48,
+                    "right": 1028,
+                    "width": 980,
+                    "height": 194
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Modul ornamen Siger pada bidang panjang: mengatur pengulangan tanpa kehilangan …"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 129.60495,
+                "percent": "35%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 239.00000000000003,
+                "percent": "65%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.74,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/panel-pagar-akses-meter-dan-kotak-surat/",
+      "device": "desktop",
+      "time": "2026-09-05T08:20:26.754Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/panel-pagar-akses-meter-dan-kotak-surat/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 312.84755,
+        "largest-contentful-paint": 312.84755,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 390.46001087940215
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 228,
+                    "bottom": 491,
+                    "left": 725,
+                    "right": 1252,
+                    "width": 527,
+                    "height": 264
+                  },
+                  "snippet": "<img src=\"/media/articles/panel-pagar-akses-meter-dan-kotak-surat.svg\" srcset=\"/media/articles/panel-pagar-akses-meter-dan-kotak-surat.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial pagar: tiga studi geometri berlabel zona perangkat, bi…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial pagar: tiga studi geometri berlabel zona perangkat, bidang …"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 128.84755,
+                "percent": "41%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 184,
+                "percent": "59%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.9,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/penamaan-komponen-dan-daftar-panel/",
+      "device": "desktop",
+      "time": "2026-09-05T08:20:35.399Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/penamaan-komponen-dan-daftar-panel/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 287.60905,
+        "largest-contentful-paint": 287.60905,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 341.76628448461025
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 228,
+                    "bottom": 491,
+                    "left": 725,
+                    "right": 1252,
+                    "width": 527,
+                    "height": 264
+                  },
+                  "snippet": "<img src=\"/media/articles/penamaan-komponen-dan-daftar-panel.svg\" srcset=\"/media/articles/penamaan-komponen-dan-daftar-panel.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial perencanaan: tiga studi geometri berlabel kode kompone…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial perencanaan: tiga studi geometri berlabel kode komponen, da…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 126.60905,
+                "percent": "44%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 161.00000000000003,
+                "percent": "56%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.95,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/panel-besi-baut-atau-las/",
+      "device": "desktop",
+      "time": "2026-09-05T08:20:46.413Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/panel-besi-baut-atau-las/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 301.68505,
+        "largest-contentful-paint": 301.68505,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 363.35929926566274
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 202,
+                    "bottom": 480,
+                    "left": 731,
+                    "right": 1287,
+                    "width": 556,
+                    "height": 278
+                  },
+                  "snippet": "<img src=\"/media/articles/panel-besi-baut-atau-las.svg\" srcset=\"/media/articles/panel-besi-baut-atau-las.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial plat besi: tiga studi geometri berlabel sambungan terl…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial plat besi: tiga studi geometri berlabel sambungan terlihat,…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 125.68505,
+                "percent": "42%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 176,
+                "percent": "58%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.92,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/ritme-panel-railing-pada-bordes/",
+      "device": "desktop",
+      "time": "2026-09-05T08:20:58.810Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/ritme-panel-railing-pada-bordes/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 377.997,
+        "largest-contentful-paint": 377.997,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 520.514994794471
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 892,
+                    "bottom": 1086,
+                    "left": 48,
+                    "right": 1028,
+                    "width": 980,
+                    "height": 194
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Ritme panel railing pada bordes: membaca jeda di antara dua arah tangga"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 128.997,
+                "percent": "34%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 249,
+                "percent": "66%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.7,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/template-penempatan-huruf-pada-dinding/",
+      "device": "desktop",
+      "time": "2026-09-05T08:21:14.189Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/template-penempatan-huruf-pada-dinding/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 362.96965,
+        "largest-contentful-paint": 362.96965,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 468.4961761905359
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 204,
+                    "bottom": 333,
+                    "left": 48,
+                    "right": 1128,
+                    "width": 1080,
+                    "height": 129
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Template penempatan huruf: menjaga jarak dan garis dasar pada dinding nyata"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 133.96965,
+                "percent": "37%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 229,
+                "percent": "63%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.78,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/pola-insert-spons-untuk-peralatan/",
+      "device": "desktop",
+      "time": "2026-09-05T08:21:31.080Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/pola-insert-spons-untuk-peralatan/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 373.93969999999996,
+        "largest-contentful-paint": 373.93969999999996,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 493.87552018789125
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,0,DIV,1,H1",
+                  "selector": "article > header.article-header > div.journal-heading > h1",
+                  "boundingRect": {
+                    "top": 204,
+                    "bottom": 398,
+                    "left": 48,
+                    "right": 1128,
+                    "width": 1080,
+                    "height": 194
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Pola insert spons untuk peralatan: menentukan orientasi dan batas ruang benda"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 128.9397,
+                "percent": "34%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 244.99999999999997,
+                "percent": "66%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.71,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/arah-serat-stainless-antarpanel/",
+      "device": "desktop",
+      "time": "2026-09-05T08:21:45.978Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/arah-serat-stainless-antarpanel/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 359.1385,
+        "largest-contentful-paint": 359.1385,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 479.7410088974365
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,FIGURE,0,IMG",
+                  "selector": "article > header.article-header > figure.article-figure > img",
+                  "boundingRect": {
+                    "top": 167,
+                    "bottom": 786,
+                    "left": 48,
+                    "right": 1287,
+                    "width": 1239,
+                    "height": 620
+                  },
+                  "snippet": "<img src=\"/media/articles/arah-serat-stainless-antarpanel.svg\" srcset=\"/media/articles/arah-serat-stainless-antarpanel.svg 1200w\" sizes=\"(max-width: 700px) 100vw, 90vw\" width=\"1200\" height=\"600\" alt=\"Ilustrasi editorial stainless: tiga studi geometri berlabel arah sejalan, …\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "Ilustrasi editorial stainless: tiga studi geometri berlabel arah sejalan, panel…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 128.1385,
+                "percent": "36%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 231.00000000000003,
+                "percent": "64%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "max-potential-fid",
+          "score": 0.77,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    }
+  ]
+}

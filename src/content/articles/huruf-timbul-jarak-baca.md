@@ -22,7 +22,8 @@
   "relatedArticles": [
     "acrylic-bening-opal-warna",
     "memilih-permukaan-stainless",
-    "pola-cutting-jembatan-dan-detail"
+    "pola-cutting-jembatan-dan-detail",
+    "template-penempatan-huruf-pada-dinding"
   ],
   "portfolioId": "signage",
   "visual": {
@@ -35,7 +36,11 @@
     "alt": "Tiga susunan bentuk huruf menggambarkan pilihan karakter, kontras, dan ruang negatif untuk signage.",
     "caption": "Huruf harus dinilai dari tempat orang membaca, bukan hanya di layar desain."
   },
-  "sources": []
+  "sources": [],
+  "topic": "signage",
+  "layout": "design-study",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Bawa logo dari layar menuju ukuran, lapisan, posisi, dan kondisi baca yang nyata."
 }
 ---
 

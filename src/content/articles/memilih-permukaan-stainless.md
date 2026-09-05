@@ -21,7 +21,8 @@
   "relatedArticles": [
     "huruf-timbul-jarak-baca",
     "merawat-panel-dekoratif",
-    "menguji-sampel-sebelum-produksi"
+    "menguji-sampel-sebelum-produksi",
+    "arah-serat-stainless-antarpanel"
   ],
   "portfolioId": "signage",
   "visual": {
@@ -43,7 +44,11 @@
       "label": "Outokumpu — perlakuan stainless setelah fabrikasi",
       "url": "https://www.outokumpu.com/en/expertise/stainless-basics/post-fabrication-treatment"
     }
-  ]
+  ],
+  "topic": "stainless",
+  "layout": "comparison",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Perhatikan arah permukaan, pantulan, dan perlindungan selama pekerjaan lain berlangsung."
 }
 ---
 

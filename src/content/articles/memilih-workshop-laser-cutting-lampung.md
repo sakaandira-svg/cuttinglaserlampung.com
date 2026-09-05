@@ -22,7 +22,8 @@
   "relatedArticles": [
     "menyiapkan-data-penawaran-fabrikasi",
     "menguji-sampel-sebelum-produksi",
-    "persetujuan-desain-dan-serah-terima"
+    "persetujuan-desain-dan-serah-terima",
+    "menyiapkan-kunjungan-workshop-lampung"
   ],
   "portfolioId": "eksterior",
   "visual": {
@@ -35,7 +36,11 @@
     "alt": "Diagram tiga bidang menjadi kerangka evaluasi dokumentasi, ruang lingkup, dan komunikasi workshop.",
     "caption": "Pilih berdasarkan kecocokan kebutuhan dan informasi yang dapat diperiksa."
   },
-  "sources": []
+  "sources": [],
+  "topic": "lampung",
+  "layout": "checklist",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Persiapkan percakapan dengan workshop Bandar Lampung melalui kunjungan, koordinasi lokasi, dan penilaian sampel."
 }
 ---
 

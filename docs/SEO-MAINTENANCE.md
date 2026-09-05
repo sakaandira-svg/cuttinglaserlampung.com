@@ -41,3 +41,9 @@ GitHub `main` remains the only deployment source. Repository `public/.htaccess` 
 Repository history begins with the current Astro foundation. A public search snapshot showed an older homepage title/contact snippet, but did not establish a reliable old deep-URL mapping. No speculative historical redirects were created. Use Search Console and verified server logs to identify valuable old URLs, then redirect only to an equivalent destination.
 
 Google references: [helpful content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [spam policies](https://developers.google.com/search/docs/essentials/spam-policies), and [Article structured data](https://developers.google.com/search/docs/appearance/structured-data/article). Search Console setup is documented separately in `docs/SEARCH-CONSOLE.md`.
+
+## Round 7 publishing contract
+
+Declare topic, layout, release and workshopRelevance in every article. Keep the 24 baseline IDs in scripts/fixtures/round6-article-ids.json stable; the release guard counts new IDs independently of the release label. At least 50 additional published entries and 74 total entries must remain. See docs/ARTICLE-IMAGE-REPLACEMENT.md for the single image manifest and per-article replacement briefs. The hub uses 16 crawlable anchor groups with native details elements, not client filtering or thin category routes.
+
+The explicit historical URL /produk-laser-cutting is configured as a 301 to /portfolio/ in both .htaccess and _redirects. Production audit must confirm the host honors it; arbitrary missing URLs remain 404. Round 7 reports supersede earlier counts and live-status claims. Use reports/ROUND-7-RELEASE.md and the named Round 7 Lighthouse/production evidence.

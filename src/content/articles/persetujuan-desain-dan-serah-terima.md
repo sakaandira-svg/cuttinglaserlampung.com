@@ -22,7 +22,8 @@
   "relatedArticles": [
     "menguji-sampel-sebelum-produksi",
     "menyiapkan-data-penawaran-fabrikasi",
-    "merawat-panel-dekoratif"
+    "merawat-panel-dekoratif",
+    "revisi-sebagian-dan-konsistensi-batch"
   ],
   "portfolioId": "material",
   "visual": {
@@ -35,7 +36,11 @@
     "alt": "Tiga bidang dokumen menunjukkan hubungan versi gambar, lingkup produksi, dan catatan pemeriksaan hasil.",
     "caption": "Satu acuan yang jelas membantu semua pihak membandingkan hal yang sama."
   },
-  "sources": []
+  "sources": [],
+  "topic": "perencanaan",
+  "layout": "checklist",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Rapikan daftar komponen, urutan kerja, pengiriman, dan perubahan agar keputusan tidak terlepas dari dokumen."
 }
 ---
 

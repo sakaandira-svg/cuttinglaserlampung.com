@@ -23,7 +23,8 @@
     "memahami-kerf-dan-sambungan",
     "skala-motif-dan-pembagian-panel",
     "menguji-sampel-sebelum-produksi",
-    "panel-railing-bukan-struktur-utama"
+    "panel-railing-bukan-struktur-utama",
+    "garis-ganda-dan-kurva-terbuka"
   ],
   "portfolioId": "ornamen",
   "visual": {
@@ -36,7 +37,11 @@
     "alt": "Tiga panel dengan bukaan berbeda untuk membandingkan bidang utuh, penghubung pola, dan ukuran detail.",
     "caption": "Yang penting bukan hanya bentuk lubang, tetapi jalur material yang masih tersambung."
   },
-  "sources": []
+  "sources": [],
+  "topic": "fundamental",
+  "layout": "field-guide",
+  "release": "round5",
+  "workshopRelevance": "Konsultasi desain dan identitas bahan melalui WhatsApp atau kunjungan workshop sesuai kesepakatan. Pisahkan keputusan file, kurva, dan tata letak sebelum membicarakan proses produksi."
 }
 ---
 
