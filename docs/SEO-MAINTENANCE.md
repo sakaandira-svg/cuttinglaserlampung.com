@@ -14,6 +14,8 @@ The visible editorial attribution is the business organization; no fictional exp
 
 Use real publication/modified dates. Do not silently refresh dates to appear recent. Keep article images and schema consistent with visible content. The default social preview and article-specific PNG previews are produced statically from original SVG via Sharp; they are metadata assets and are not loaded as page LCP images.
 
+Social previews use IBM Plex Mono Bold under the bundled SIL OFL license. OpenType.js converts every text glyph to a path before rasterization, so a fontless Hostinger builder cannot produce missing-glyph boxes. The build rejects unsupported glyphs. `social-paths.ts` versions the image URLs; bump that version when changing the renderer to avoid stale cached previews. The font is used only during builds and does not change the website's system-font typography.
+
 ## Release commands
 
 - `npm run verify`: Astro check, static build, rendered link/image/business guard, SEO/content guard, and deliberate content-regression fixtures.
@@ -23,6 +25,8 @@ Use real publication/modified dates. Do not silently refresh dates to appear rec
 - `npm run audit:production`: compare all indexable live pages with the verified metadata inventory and check robots, sitemap, HTTPS, www, missing-page status, schema, Maps, and WhatsApp.
 
 Lighthouse can be narrowed for a targeted recheck with `--paths=/artikel/,/kontak/` and `--devices=mobile`. Never substitute a narrow recheck for the full representative release matrix without explaining its scope.
+
+The Round 5 host returned 403 for default headless Chrome transport but served the same production URLs over HTTP/1.1. `--transport=http1` disables Chrome HTTP/2 and QUIC for an explicitly labeled diagnostic audit; it does not change the website or CDN configuration. Preserve and report the default failure alongside the working matrix. Runtime failures have null scores, never fabricated zero or 100 scores. The operator should have Hostinger review the recorded request IDs, then rerun with the default transport. See `reports/LIGHTHOUSE-PRODUCTION-TRANSPORT.json`.
 
 ## Hosting and historical URLs
 

@@ -1,0 +1,319 @@
+{
+  "conclusion": "The default headless Chrome transport received HTTP 403 through Hostinger hcdn. Disabling HTTP/2 and QUIC allowed a real production HTTP/1.1 Lighthouse audit. No host security settings were changed. This isolates a transport/client-dependent response, not the exact CDN rule responsible.",
+  "defaultTransportAttempts": [
+    {
+      "url": "https://cuttinglaserlampung.com/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:20.315Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/layanan/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:24.689Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/portfolio/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:28.850Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/kontak/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:33.066Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-acrylic-lampung/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:37.431Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/pagar-laser-cutting-lampung/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:41.686Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:45.888Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/laser-cutting-vs-cnc-router/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:50.225Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/pvc-bukan-bahan-untuk-laser/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:54.573Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "device": "mobile",
+      "time": "2026-09-04T23:40:58.794Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:03.016Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/layanan/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:07.068Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/portfolio/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:11.175Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/kontak/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:15.222Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-acrylic-lampung/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:19.238Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/pagar-laser-cutting-lampung/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:23.395Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:27.498Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/laser-cutting-vs-cnc-router/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:31.619Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/pvc-bukan-bahan-untuk-laser/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:35.746Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "device": "desktop",
+      "time": "2026-09-04T23:41:39.857Z",
+      "status": 403,
+      "error": "ERRORED_DOCUMENT_REQUEST",
+      "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)",
+      "scores": null
+    }
+  ],
+  "headerDiagnostic": {
+    "time": "2026-09-04T23:43:01Z",
+    "url": "https://cuttinglaserlampung.com/",
+    "status": 403,
+    "server": "hcdn",
+    "requestId": "069cbc3247163404851c90276f7c27cd-dci-edge4",
+    "cacheControl": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+  },
+  "http1Diagnostic": {
+    "path": "/",
+    "device": "desktop",
+    "time": "2026-09-04T23:45:10.355Z",
+    "version": "12.8.2",
+    "finalUrl": "https://cuttinglaserlampung.com/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 349,
+      "largest-contentful-paint": 349,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0,
+      "speed-index": 404.7466916600863
+    },
+    "lcpElement": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-0-H1",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+                "selector": "section.cut-hero > div.shell > div.hero-title-block > h1#hero-title",
+                "boundingRect": {
+                  "top": 258,
+                  "bottom": 497,
+                  "left": 48,
+                  "right": 575,
+                  "width": 527,
+                  "height": 239
+                },
+                "snippet": "<h1 id=\"hero-title\">",
+                "nodeLabel": "IDE BERANI.\nDETAIL\nTERUKUR."
+              }
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "phase",
+              "valueType": "text",
+              "label": "Phase"
+            },
+            {
+              "key": "percent",
+              "valueType": "text",
+              "label": "% of LCP"
+            },
+            {
+              "key": "timing",
+              "valueType": "ms",
+              "label": "Timing"
+            }
+          ],
+          "items": [
+            {
+              "phase": "TTFB",
+              "timing": 160,
+              "percent": "46%"
+            },
+            {
+              "phase": "Load Delay",
+              "timing": 0,
+              "percent": "0%"
+            },
+            {
+              "phase": "Load Time",
+              "timing": 0,
+              "percent": "0%"
+            },
+            {
+              "phase": "Render Delay",
+              "timing": 189,
+              "percent": "54%"
+            }
+          ]
+        }
+      ]
+    },
+    "documentResponse": {
+      "status": 200,
+      "requestId": "ebe3ea893e648bb3f2ee17853c276d2e-dci-edge3"
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "failedAudits": [
+      {
+        "id": "render-blocking-resources",
+        "score": 0.5,
+        "title": "Eliminate render-blocking resources"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render blocking requests"
+      }
+    ]
+  },
+  "independentPageSpeedAttempt": {
+    "status": 429,
+    "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'."
+  },
+  "operatorAction": "Ask Hostinger to investigate the recorded request ID and why standard Lighthouse Chrome transport receives 403. In hPanel inspect Performance > CDN > Manage > Security and traffic rules; do not broadly disable protection. Repeat default-transport Lighthouse after the host resolves the legitimate-audit block.",
+  "reference": "https://www.hostinger.com/support/hostinger-cdn-how-to-fix-blocked-legitimate-requests/"
+}

@@ -1,0 +1,1030 @@
+{
+  "runAt": "2026-09-05T00:00:20.074Z",
+  "sourceCommit": "cfa3b5e6fc830acbb4a0f3d002cab5c6c5936a0a",
+  "checkedUrls": 40,
+  "errors": [],
+  "externalActions": [],
+  "sitemap": {
+    "status": 200,
+    "urls": 40
+  },
+  "robots": {
+    "status": 200
+  },
+  "missingStatus": 404,
+  "httpRedirect": {
+    "status": 301,
+    "location": "https://cuttinglaserlampung.com/"
+  },
+  "www": {
+    "status": 301,
+    "location": "https://cuttinglaserlampung.com/"
+  },
+  "assets": [
+    {
+      "url": "https://cuttinglaserlampung.com/media/social-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 34094,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/_astro/_slug_.D1Ji6Cib.css",
+      "status": 200,
+      "type": "text/css",
+      "bytes": 27072,
+      "encoding": "br",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/acrylic-bening-opal-warna-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 82881,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/_astro/_slug_.yRajbbOF.css",
+      "status": 200,
+      "type": "text/css",
+      "bytes": 6231,
+      "encoding": "br",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/finishing-panel-plat-besi-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 81619,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/huruf-timbul-jarak-baca-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 58779,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/laser-cutting-vs-cnc-router-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 70944,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/mdf-dan-hmr-untuk-interior-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 77657,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/memahami-kerf-dan-sambungan-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 72473,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/memahami-panel-acp-dan-metode-potong-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 82781,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/memilih-motif-pagar-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 75420,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/memilih-permukaan-stainless-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 80359,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/memilih-spons-foam-untuk-cutting-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 55586,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/memilih-workshop-laser-cutting-lampung-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 63442,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/mengubah-foto-referensi-menjadi-brief-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 58269,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/menguji-sampel-sebelum-produksi-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 67500,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/mengukur-bidang-sebelum-konsultasi-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 56320,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/menyiapkan-data-penawaran-fabrikasi-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 63605,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/merawat-panel-dekoratif-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 56869,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/merencanakan-screen-fasad-tropis-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 80061,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/ornamen-lampung-dan-siger-kontemporer-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 75303,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/panel-railing-bukan-struktur-utama-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 63905,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/partisi-privasi-dan-cahaya-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 78753,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/persetujuan-desain-dan-serah-terima-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 64321,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/pola-cutting-jembatan-dan-detail-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 60206,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/pvc-bukan-bahan-untuk-laser-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 58928,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/media/artikel/skala-motif-dan-pembagian-panel-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 82724,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800",
+      "valid": true
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://cuttinglaserlampung.com/area-layanan/",
+      "status": 200,
+      "responseMs": 109,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/acrylic-bening-opal-warna/",
+      "status": 200,
+      "responseMs": 27,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/finishing-panel-plat-besi/",
+      "status": 200,
+      "responseMs": 18,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/huruf-timbul-jarak-baca/",
+      "status": 200,
+      "responseMs": 24,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/",
+      "status": 200,
+      "responseMs": 28,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/laser-cutting-vs-cnc-router/",
+      "status": 200,
+      "responseMs": 32,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/mdf-dan-hmr-untuk-interior/",
+      "status": 200,
+      "responseMs": 28,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memahami-kerf-dan-sambungan/",
+      "status": 200,
+      "responseMs": 22,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memahami-panel-acp-dan-metode-potong/",
+      "status": 200,
+      "responseMs": 20,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-motif-pagar/",
+      "status": 200,
+      "responseMs": 35,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-permukaan-stainless/",
+      "status": 200,
+      "responseMs": 23,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-spons-foam-untuk-cutting/",
+      "status": 200,
+      "responseMs": 36,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/memilih-workshop-laser-cutting-lampung/",
+      "status": 200,
+      "responseMs": 27,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/mengubah-foto-referensi-menjadi-brief/",
+      "status": 200,
+      "responseMs": 25,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/menguji-sampel-sebelum-produksi/",
+      "status": 200,
+      "responseMs": 19,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/mengukur-bidang-sebelum-konsultasi/",
+      "status": 200,
+      "responseMs": 26,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/menyiapkan-data-penawaran-fabrikasi/",
+      "status": 200,
+      "responseMs": 31,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/merawat-panel-dekoratif/",
+      "status": 200,
+      "responseMs": 19,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/merencanakan-screen-fasad-tropis/",
+      "status": 200,
+      "responseMs": 29,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/ornamen-lampung-dan-siger-kontemporer/",
+      "status": 200,
+      "responseMs": 29,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/panel-railing-bukan-struktur-utama/",
+      "status": 200,
+      "responseMs": 33,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/partisi-privasi-dan-cahaya/",
+      "status": 200,
+      "responseMs": 25,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/persetujuan-desain-dan-serah-terima/",
+      "status": 200,
+      "responseMs": 32,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/pola-cutting-jembatan-dan-detail/",
+      "status": 200,
+      "responseMs": 37,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/pvc-bukan-bahan-untuk-laser/",
+      "status": 200,
+      "responseMs": 22,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/artikel/skala-motif-dan-pembagian-panel/",
+      "status": 200,
+      "responseMs": 28,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/cnc-router-lampung/",
+      "status": 200,
+      "responseMs": 32,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/fasad-laser-cutting-lampung/",
+      "status": 200,
+      "responseMs": 27,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/",
+      "status": 200,
+      "responseMs": 15,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/kontak/",
+      "status": 200,
+      "responseMs": 34,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-acp-lampung/",
+      "status": 200,
+      "responseMs": 24,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-acrylic-lampung/",
+      "status": 200,
+      "responseMs": 30,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-mdf-lampung/",
+      "status": 200,
+      "responseMs": 30,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-plat-besi-lampung/",
+      "status": 200,
+      "responseMs": 15,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/laser-cutting-stainless-lampung/",
+      "status": 200,
+      "responseMs": 33,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/layanan/",
+      "status": 200,
+      "responseMs": 27,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/pagar-laser-cutting-lampung/",
+      "status": 200,
+      "responseMs": 30,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/panduan-file-desain-laser-cutting/",
+      "status": 200,
+      "responseMs": 30,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/partisi-laser-cutting-lampung/",
+      "status": 200,
+      "responseMs": 36,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    },
+    {
+      "url": "https://cuttinglaserlampung.com/portfolio/",
+      "status": 200,
+      "responseMs": 26,
+      "encoding": "br",
+      "xRobots": null,
+      "checks": {
+        "status": true,
+        "https": true,
+        "title": true,
+        "description": true,
+        "canonical": true,
+        "indexable": true,
+        "schema": true,
+        "article": true,
+        "maps": true,
+        "whatsapp": true
+      }
+    }
+  ]
+}
