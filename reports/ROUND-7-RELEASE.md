@@ -78,7 +78,7 @@ This is an intent/coverage map, not a ranking or indexation guarantee. Commercia
 
 ## Quality gates and browser review
 
-Astro check, build and npm run verify passed. The suite rejects 13 content failures, 9 conversion failures and 12 Round 7 failures, including count regression, missing baseline, publication exclusions, invalid image paths, missing alt, unapproved photo claims and email conversion. All 74 source intents and boundaries are documented in [ARTICLE-CANNIBALIZATION-AUDIT](ARTICLE-CANNIBALIZATION-AUDIT.md). The generated [CONTENT-GRAPH](CONTENT-GRAPH.md) maps every relationship. [INDEXING-PRIORITY](INDEXING-PRIORITY.md) groups nine commercial owners, 19 priority supporting guides and remaining informational content.
+Astro check passed across 58 files with 0 errors, 0 warnings and 0 hints. Build and npm run verify passed. The suite rejects 13 content failures, 9 conversion failures and 12 Round 7 failures, including count regression, missing baseline, publication exclusions, invalid image paths, missing alt, unapproved photo claims and email conversion. All 74 source intents and boundaries are documented in [ARTICLE-CANNIBALIZATION-AUDIT](ARTICLE-CANNIBALIZATION-AUDIT.md). The generated [CONTENT-GRAPH](CONTENT-GRAPH.md) maps every relationship. [INDEXING-PRIORITY](INDEXING-PRIORITY.md) groups nine commercial owners, 19 priority supporting guides and remaining informational content.
 
 Browser review covered the hub, four layout variants, mobile inline WhatsApp/Maps actions and native topic expansion. Checked mobile width: 390 px; desktop: 1280 px. No horizontal overflow or broken primary visual was observed. All 74 article links exist in server-rendered hub HTML.
 
@@ -88,9 +88,13 @@ See [ROUND-7-LIGHTHOUSE-LOCAL.json](ROUND-7-LIGHTHOUSE-LOCAL.json) for the measu
 
 ## Git and production
 
-Implementation commit and push are pending final evidence collection. hPanel currently reports missing repository access and still lists cb943c0c as deployed. GitHub authentication is required to restore the existing deployment connection. No claim of live Round 7 success is made.
+Implementation commit: 8bf83e0941c2f9f191080cf2886bfd860a59c86a. GitHub push to origin/main succeeded.
 
-The explicit legacy 301 is present in public/.htaccess and public/_redirects. The live response must be checked separately; repository rules alone do not prove host enforcement. Unknown URLs must remain HTTP 404.
+**BLOCKED_BY_HOSTINGER_DEPLOYMENT.** At 2026-09-05T08:25:47Z the live audit checked all 90 expected URLs: 40 returned 200 and all 50 new articles returned 404. The live sitemap has 40 URLs, versus 90 in the verified release. The exact Round 6 reusable conversion-module coverage is 0/74 on production; the older article pages have different markup. The 1,118 failed release comparisons are recorded in [ROUND-7-PRODUCTION.json](ROUND-7-PRODUCTION.json), not concealed as a local SEO pass.
+
+The authenticated hPanel dashboard lists cb943c0c as deployed and reports missing repository access. Manage access opens the Hostinger GitHub sign-in page; operator authentication is still required. Restore the existing connection for this repository, deploy latest main, then rerun the production audit and live Lighthouse matrix. Production Lighthouse for the Round 7 matrix is not claimed because the new URLs are not deployed. No manual production file uploads or unrelated hosting changes were made.
+
+The explicit legacy 301 is present in public/.htaccess and public/_redirects, but the live legacy URL currently returns 404. This requirement remains blocked with deployment. The deliberate unknown URL correctly returns 404. HTTP-to-HTTPS and www-to-apex both return 301 to the correct apex URL. The existing live portfolio returns 200.
 
 ## New article URL list — 50
 
