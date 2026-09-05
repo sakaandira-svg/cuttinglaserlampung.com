@@ -42,9 +42,15 @@ Visual inspection covered desktop at 1200 px and mobile at 320 and 390 px. At 32
 
 ## Deployment evidence
 
-Pending the authorized push and production checks. Production results will be recorded after the corrected HTML is observed on the live domain; a Git push alone is not deployment evidence.
+Implementation commit `52a68d0a2a1759f80a4ea3b950a4f1f5d28a17ec` was pushed to `origin main` on 5 September 2026 at 12:04 WIB. **Production deployment is not confirmed.** The live audit at 12:12 WIB still received the previous article markup across all 24 articles. Fresh-query requests also returned the previous build, with `Last-Modified: Sat, 05 Sep 2026 00:05:22 GMT` and CDN status `DYNAMIC`.
 
-The known Round 5 Hostinger/headless-Chrome transport limitation remains tracked in [LIGHTHOUSE-PRODUCTION-TRANSPORT.json](LIGHTHOUSE-PRODUCTION-TRANSPORT.json). Production Lighthouse uses explicitly labeled HTTP/1.1 diagnostic transport; this correction does not claim to change host/CDN transport behavior or establish field Core Web Vitals.
+The full [production audit](ROUND-6-PRODUCTION.json) checked 40 URLs and 27 assets. Existing HTTP, metadata, canonical, schema, sitemap, robots, social-image, stylesheet, redirect, and 404 checks passed. The new conversion-module checks failed because the released component was absent: the strict module counters are zero for service, portfolio, contextual WhatsApp, Maps, and address, while related reading is 24 / 24. Those zero counters describe the missing **new component**, not the absence of the older site's service, portfolio, or WhatsApp links. Local coverage in the table above is fully verified; it must not be presented as deployed coverage yet.
+
+GitHub exposes no attached status checks, workflow runs, deployment records, or repository webhooks for this release. This does not rule out a Hostinger GitHub App integration. The available Hostinger browser session redirects to the sign-in screen, so the deployment configuration and build logs cannot yet be inspected. Hostinger sign-in was requested to continue verification; no hosting settings or credentials were changed.
+
+Next: inspect/redeploy the existing project's latest `main` commit through Hostinger, verify the new component on the live domain, rerun `npm run audit:production -- --out=reports/ROUND-6-PRODUCTION.json`, and run the same four-route/two-device production Lighthouse matrix. No Round 6 production Lighthouse score is claimed while the old build is served.
+
+The known Round 5 Hostinger/headless-Chrome transport limitation remains tracked in [LIGHTHOUSE-PRODUCTION-TRANSPORT.json](LIGHTHOUSE-PRODUCTION-TRANSPORT.json). The follow-up production Lighthouse run should explicitly label HTTP/1.1 diagnostic transport if still needed; this correction does not claim to change host/CDN transport behavior or establish field Core Web Vitals.
 
 ## Scope isolation
 
