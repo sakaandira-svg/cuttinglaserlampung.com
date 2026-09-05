@@ -4,6 +4,7 @@
   "description": "Uji huruf timbul dari posisi pembaca, latar, dan kondisi cahaya. Bedakan lettering potong datar, konstruksi timbul, serta kebutuhan pemasangan sejak brief.",
   "cluster": "aplikasi",
   "primaryIntent": "Merencanakan keterbacaan signage dan huruf timbul sebelum memilih bahan.",
+  "targetKeywordCluster": "jarak baca huruf timbul, kontras, dan susunan signage",
   "targetUser": "Pemilik usaha dan desainer identitas bangunan.",
   "uniqueValue": "Protokol uji baca pratinjau, hierarki pesan, serta pemisahan huruf potong datar dari konstruksi timbul.",
   "cannibalizationRisk": "Rendah: tidak membuat halaman jasa lettering baru; bahan mengarah ke acrylic atau stainless.",

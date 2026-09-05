@@ -4,6 +4,7 @@
   "description": "Pahami hubungan panel isian, rangka, pegangan, dan pengikat. Siapkan pertanyaan kepada perancang sebelum menggunakan motif potong pada railing tangga.",
   "cluster": "aplikasi",
   "primaryIntent": "Membedakan keputusan motif isian railing dari penilaian sistem pengaman bangunan.",
+  "targetKeywordCluster": "batas fungsi panel isian railing dan struktur pengaman",
   "targetUser": "Pemilik tangga dan desainer yang mempertimbangkan panel dekoratif.",
   "uniqueValue": "Peta tanggung jawab elemen pengaman dan daftar dokumen yang harus selesai sebelum ukuran pola disetujui.",
   "cannibalizationRisk": "Rendah: tidak membuat klaim jasa atau kapasitas struktur railing yang belum terverifikasi.",

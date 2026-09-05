@@ -4,10 +4,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleDiagram from '../../components/ArticleDiagram.astro';
 import ArticleLinks from '../../components/ArticleLinks.astro';
-import ProjectPlate from '../../components/ProjectPlate.astro';
+import ArticleConversion from '../../components/ArticleConversion.astro';
 import { publishedArticles, articlePath, displayDate, clusters } from '../../lib/articles';
-import { services } from '../../data/services';
-import { portfolio } from '../../data/portfolio';
 import { business, siteUrl } from '../../config/business';
 import { articleSocialPath } from '../../lib/social-paths';
 import '../../styles/editorial.css';
@@ -17,20 +15,17 @@ const {article} = Astro.props; const a = article.data;
 const {Content,headings} = await render(article);
 const all = await publishedArticles();
 const related = a.relatedArticles.map(id=>all.find(item=>item.id===id)).filter((item): item is CollectionEntry<'articles'>=>Boolean(item));
-const relatedServices = a.relatedServices.map(slug=>services.find(s=>s.slug===slug)).filter((s): s is typeof services[number]=>Boolean(s));
-const study = portfolio.find(p=>p.id===a.portfolioId)!;
-const wa = `https://wa.me/${business.whatsappNumber}?text=${encodeURIComponent(a.whatsappMessage)}`;
 const ogImage = `${siteUrl}${articleSocialPath(article.id)}`;
 const articleSchema = {'@type':'Article','@id':`${a.canonical}#article`,headline:a.title,description:a.description,inLanguage:'id-ID',datePublished:a.publishedAt,dateModified:a.updatedAt,author:{'@id':`${siteUrl}/#organization`},publisher:{'@id':`${siteUrl}/#organization`},mainEntityOfPage:{'@id':`${a.canonical}#webpage`},isPartOf:{'@id':`${siteUrl}/#website`},image:[ogImage],articleSection:clusters[a.cluster]};
 ---
-<BaseLayout title={`${a.title} | Cutting Laser Lampung`} description={a.description} pathname={articlePath(article.id)} ogType="article" ogImage={ogImage} extraSchema={[articleSchema]}>
+<BaseLayout title={`${a.title} | Cutting Laser Lampung`} description={a.description} pathname={articlePath(article.id)} ogType="article" ogImage={ogImage} extraSchema={[articleSchema]} floatingWhatsApp={false}>
   <Breadcrumbs items={[{label:'Artikel',href:'/artikel/'},{label:a.title}]} />
   <article data-article={article.id}>
     <header class="article-header shell"><p class="eyebrow">{clusters[a.cluster]} / Catatan fabrikasi</p><h1>{a.title}</h1><p class="article-deck">{a.description}</p><div class="article-byline"><span>Editorial <a href="/kontak/">{business.brandName}</a></span><span>Terbit <time datetime={a.publishedAt}>{displayDate(a.publishedAt)}</time></span>{a.updatedAt!==a.publishedAt&&<span>Diperbarui <time datetime={a.updatedAt}>{displayDate(a.updatedAt)}</time></span>}</div><ArticleDiagram visual={a.visual} id={`figure-${article.id}`} /></header>
     <div class="article-layout shell"><aside class="article-toc"><p class="eyebrow">Dalam catatan ini</p><nav aria-label="Daftar isi artikel"><ol>{headings.filter(h=>h.depth===2).map(h=><li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav><a class="text-link" href="/artikel/">Kembali ke indeks ↗</a></aside><div class="article-main"><div class="article-takeaway"><span class="eyebrow">Keputusan utama</span><p>{a.takeaway}</p></div><div class="article-prose"><Content /></div>
     {a.sources.length>0&&<aside class="article-sources"><h2>Rujukan teknis</h2><ul>{a.sources.map(s=><li><a href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a></li>)}</ul><p>Rujukan produsen menjelaskan prinsip atau produk mereka, bukan daftar mesin dan kemampuan workshop ini.</p></aside>}
     <p class="article-editorial-note">Catatan perencanaan disusun dengan bantuan AI. Konfirmasi bahan, ukuran, dan metode untuk proyek Anda. <a href="/artikel/#main-content">Tentang catatan editorial</a>.</p></div></div>
-    <section class="article-application shell" aria-labelledby="application-title"><div><p class="eyebrow">Dari catatan ke bidang</p><h2 id="application-title">Lihat penerapannya.</h2><p>Studi visual untuk membantu diskusi. {study.kind==='concept'?'Ilustrasi konsep, bukan foto proyek pelanggan.':'Dokumentasi proyek dengan detail terverifikasi.'}</p><ul class="article-service-links">{relatedServices.map(s=><li><a href={`/${s.slug}/`} data-related-service={s.slug}>{s.title} ↗</a></li>)}</ul><div class="article-conversation"><h3>Bawa pertanyaan ini ke workshop.</h3><a class="button button-dark" href={wa} data-article-whatsapp={article.id} target="_blank" rel="noopener noreferrer">Diskusikan {a.visual.labels[0].toLowerCase()} ↗</a><a class="text-link" href="/kontak/">Alamat, Maps & jam workshop ↗</a></div></div><div data-related-portfolio={a.portfolioId}><ProjectPlate item={study} instance={`article-${article.id}`} /></div></section>
+    <ArticleConversion article={article} />
     <section class="shell article-related" aria-labelledby="related-title"><p class="eyebrow">Lanjutkan keputusan</p><h2 id="related-title">Catatan yang berkaitan.</h2><ArticleLinks articles={related} /></section>
   </article>
 </BaseLayout>

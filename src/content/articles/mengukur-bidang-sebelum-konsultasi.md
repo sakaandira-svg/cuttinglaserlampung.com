@@ -4,6 +4,7 @@
   "description": "Catat ukuran awal, titik acuan, hambatan, dan status pengukuran. Buat sketsa yang membantu konsultasi tanpa menganggap ukuran perkiraan sebagai ukuran produksi.",
   "cluster": "perencanaan",
   "primaryIntent": "Menyiapkan ukuran awal dan dokumentasi lokasi untuk konsultasi fabrikasi.",
+  "targetKeywordCluster": "cara mengukur bidang dan menyiapkan sketsa konsultasi",
   "targetUser": "Pemilik proyek yang akan mengirim sketsa melalui WhatsApp.",
   "uniqueValue": "Pemisahan ukuran bukaan dan panel, penamaan titik acuan, pemeriksaan silang, serta batas survei mandiri.",
   "cannibalizationRisk": "Rendah: fokus pengumpulan data lokasi, bukan format file atau halaman kontak kedua.",

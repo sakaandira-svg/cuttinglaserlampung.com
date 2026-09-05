@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { business, businessHoursText } from '../config/business';
+import { services } from '../data/services';
+import { portfolio } from '../data/portfolio';
+import ProjectPlate from './ProjectPlate.astro';
+
+interface Props { article: CollectionEntry<'articles'>; }
+const { article } = Astro.props;
+const relatedServices = article.data.relatedServices.map(slug => services.find(service => service.slug === slug)!);
+const study = portfolio.find(item => item.id === article.data.portfolioId)!;
+const whatsapp = `https://wa.me/${business.whatsappNumber}?text=${encodeURIComponent(article.data.whatsappMessage)}`;
+---
+<section class="article-application article-conversion shell" data-article-conversion={article.id} aria-labelledby="application-title">
+  <div class="conversion-intro">
+    <p class="eyebrow">Dari referensi ke percakapan</p>
+    <h2 id="application-title">Punya desain<br />atau referensi?</h2>
+    <p>Diskusikan material, ukuran, pola, dan kebutuhan proyek Anda. Kirim desain atau referensi untuk memulai percakapan.</p>
+    <div class="conversion-actions">
+      <a class="button button-dark" href={whatsapp} data-article-whatsapp={article.id} target="_blank" rel="noopener noreferrer">Konsultasi via WhatsApp <span aria-hidden="true">↗</span></a>
+      <a class="button" href={business.mapsUrl} data-article-maps={article.id} target="_blank" rel="noopener noreferrer">Lihat Lokasi Workshop <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="conversion-proof" data-related-portfolio={study.id}>
+    <p class="eyebrow">Lihat penerapan / {study.category}</p>
+    <ProjectPlate item={study} instance={`article-${article.id}`} />
+    <p class="conversion-provenance">{study.kind === 'concept' ? 'Ilustrasi konsep untuk membantu diskusi desain, bukan foto proyek pelanggan.' : 'Dokumentasi proyek dengan detail terverifikasi.'}</p>
+  </div>
+  <div class="conversion-services">
+    <h3>Layanan yang berkaitan</h3>
+    <ul class="article-service-links">{relatedServices.map(service => <li><a href={`/${service.slug}/`} data-related-service={service.slug}>{service.title} <span aria-hidden="true">↗</span></a></li>)}</ul>
+  </div>
+  <aside class="conversion-workshop" aria-label="Workshop di Bandar Lampung">
+    <p class="eyebrow">Konsultasi langsung di Bandar Lampung</p>
+    <strong>{business.brandName}</strong>
+    <address data-workshop-address>{business.address}</address>
+    <p class="conversion-hours">{businessHoursText}</p>
+    <a class="text-link" href={business.mapsUrl} data-workshop-maps={article.id} target="_blank" rel="noopener noreferrer">Buka Google Maps <span aria-hidden="true">↗</span></a>
+  </aside>
+</section>

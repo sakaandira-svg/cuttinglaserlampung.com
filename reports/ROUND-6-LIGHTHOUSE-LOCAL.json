@@ -1,0 +1,961 @@
+{
+  "base": "http://127.0.0.1:4323",
+  "transport": "default",
+  "chromeFlags": [
+    "--headless=new",
+    "--disable-gpu"
+  ],
+  "environment": "Local static production build, headless Chrome, Lighthouse simulated throttling.",
+  "runs": [
+    {
+      "path": "/",
+      "device": "mobile",
+      "time": "2026-09-05T04:57:33.580Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 825.12835,
+        "largest-contentful-paint": 825.12835,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 825.12835
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+                  "selector": "section.cut-hero > div.shell > div.hero-title-block > h1#hero-title",
+                  "boundingRect": {
+                    "top": 196,
+                    "bottom": 327,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 130
+                  },
+                  "snippet": "<h1 id=\"hero-title\">",
+                  "nodeLabel": "IDE BERANI.\nDETAIL\nTERUKUR."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 453.12835,
+                "percent": "55%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 371.99999999999994,
+                "percent": "45%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/portfolio/",
+      "device": "mobile",
+      "time": "2026-09-05T04:57:41.225Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/portfolio/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 860.3745,
+        "largest-contentful-paint": 906.749,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 860.3745
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-SPAN",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,DIV,0,H1,2,SPAN",
+                  "selector": "div.shell > div.gallery-title-row > h1 > span.cut-word",
+                  "boundingRect": {
+                    "top": 219,
+                    "bottom": 256,
+                    "left": 20,
+                    "right": 286,
+                    "width": 266,
+                    "height": 37
+                  },
+                  "snippet": "<span class=\"cut-word\">",
+                  "nodeLabel": "EKSPLORASI."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 453.3745,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 453.3745,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0.5,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/memilih-motif-pagar/",
+      "device": "mobile",
+      "time": "2026-09-05T04:57:48.655Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/memilih-motif-pagar/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 905.9821999999999,
+        "largest-contentful-paint": 905.9821999999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 905.9821999999999
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 213,
+                    "bottom": 342,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 130
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Memilih motif pagar: privasi, ritme, dan pandangan dari jalan"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 452.9911,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 452.9910999999999,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/pvc-bukan-bahan-untuk-laser/",
+      "device": "mobile",
+      "time": "2026-09-05T04:57:56.058Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/pvc-bukan-bahan-untuk-laser/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 904.2902999999999,
+        "largest-contentful-paint": 904.2902999999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 904.2902999999999
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 213,
+                    "bottom": 386,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 173
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "PVC bukan bahan untuk laser: verifikasi material sebelum cutting"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 452.14515,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 452.1451499999999,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "device": "desktop",
+      "time": "2026-09-05T04:58:03.787Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 216.42814999999996,
+        "largest-contentful-paint": 244.85629999999998,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 216.42814999999996
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,0,DIV,1,H1",
+                  "selector": "section.cut-hero > div.shell > div.hero-title-block > h1#hero-title",
+                  "boundingRect": {
+                    "top": 258,
+                    "bottom": 497,
+                    "left": 48,
+                    "right": 575,
+                    "width": 527,
+                    "height": 239
+                  },
+                  "snippet": "<h1 id=\"hero-title\">",
+                  "nodeLabel": "IDE BERANI.\nDETAIL\nTERUKUR."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 122.42815,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 122.42814999999997,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/portfolio/",
+      "device": "desktop",
+      "time": "2026-09-05T04:58:11.636Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/portfolio/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 207.98580000000004,
+        "largest-contentful-paint": 243.97160000000002,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 207.98580000000004
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-SPAN",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,DIV,0,H1,2,SPAN",
+                  "selector": "div.shell > div.gallery-title-row > h1 > span.cut-word",
+                  "boundingRect": {
+                    "top": 297,
+                    "bottom": 384,
+                    "left": 48,
+                    "right": 677,
+                    "width": 629,
+                    "height": 87
+                  },
+                  "snippet": "<span class=\"cut-word\">",
+                  "nodeLabel": "EKSPLORASI."
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 121.9858,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 121.98580000000003,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/memilih-motif-pagar/",
+      "device": "desktop",
+      "time": "2026-09-05T04:58:19.103Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/memilih-motif-pagar/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 245.279,
+        "largest-contentful-paint": 245.279,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 245.279
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 211,
+                    "bottom": 355,
+                    "left": 48,
+                    "right": 1128,
+                    "width": 1080,
+                    "height": 144
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "Memilih motif pagar: privasi, ritme, dan pandangan dari jalan"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 122.6395,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 122.6395,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    },
+    {
+      "path": "/artikel/pvc-bukan-bahan-untuk-laser/",
+      "device": "desktop",
+      "time": "2026-09-05T04:58:26.687Z",
+      "version": "12.8.2",
+      "finalUrl": "http://127.0.0.1:4323/artikel/pvc-bukan-bahan-untuk-laser/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 245.1343,
+        "largest-contentful-paint": 245.1343,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "speed-index": 245.1343
+      },
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-H1",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,ARTICLE,0,HEADER,1,H1",
+                  "selector": "main#main-content > article > header.article-header > h1",
+                  "boundingRect": {
+                    "top": 211,
+                    "bottom": 355,
+                    "left": 48,
+                    "right": 1128,
+                    "width": 1080,
+                    "height": 144
+                  },
+                  "snippet": "<h1>",
+                  "nodeLabel": "PVC bukan bahan untuk laser: verifikasi material sebelum cutting"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 122.56715,
+                "percent": "50%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 122.56715,
+                "percent": "50%"
+              }
+            ]
+          }
+        ]
+      },
+      "documentResponse": {
+        "status": 200,
+        "protocol": "http/1.1"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "render-blocking-resources",
+          "score": 0,
+          "title": "Eliminate render-blocking resources"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render blocking requests"
+        }
+      ]
+    }
+  ]
+}

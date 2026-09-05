@@ -4,6 +4,7 @@
   "description": "Pelajari perbedaan memperbesar motif dan menambah pengulangan. Atur tepi, modul, sambungan, dan titik acuan agar pola tetap terbaca setelah dipasang.",
   "cluster": "aplikasi",
   "primaryIntent": "Menyesuaikan pola dengan ukuran bidang dan sambungan antarpanel.",
+  "targetKeywordCluster": "skala motif cutting, pengulangan pola, dan sambungan panel",
   "targetUser": "Desainer pola dan pemilik proyek panel arsitektur.",
   "uniqueValue": "Contoh hitung modul hipotetis, pemeriksaan pola pada tiga jarak, dan penanganan sisa bidang tanpa mengubah detail sembarangan.",
   "cannibalizationRisk": "Rendah: geometri komposisi mendukung pagar, fasad, dan partisi tanpa menjadi landing page komersial.",

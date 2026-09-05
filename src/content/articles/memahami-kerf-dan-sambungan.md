@@ -4,6 +4,7 @@
   "description": "Pahami perbedaan garis desain, material yang terbuang, dan ukuran sambungan. Susun uji kecocokan tanpa memakai angka kerf yang belum terverifikasi.",
   "cluster": "proses",
   "primaryIntent": "Memahami pengaruh lebar potong terhadap ukuran dan pasangan sambungan.",
+  "targetKeywordCluster": "kerf cutting, kelonggaran, dan uji sambungan panel",
   "targetUser": "Desainer komponen rakitan dan pembuat display.",
   "uniqueValue": "Membedakan kerf, toleransi, dan kelonggaran serta menyusun uji pasangan dengan catatan versi dan kondisi finishing.",
   "cannibalizationRisk": "Rendah: pembahasan geometri sambungan melengkapi panduan file, bukan menduplikasi layanan.",

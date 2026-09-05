@@ -4,6 +4,7 @@
   "description": "Bandingkan karakter visual permukaan stainless dan dampaknya pada pola, sambungan, serta jejak pemakaian. Siapkan spesifikasi tampilan yang dapat diperiksa.",
   "cluster": "material",
   "primaryIntent": "Menentukan karakter permukaan stainless untuk panel dan signage.",
+  "targetKeywordCluster": "memilih permukaan stainless, pantulan, dan arah serat",
   "targetUser": "Desainer interior, pemilik signage, dan pemilik bangunan.",
   "uniqueValue": "Uji pantulan dan arah permukaan dengan mockup, pembagian sisi terlihat, serta catatan penerimaan hasil.",
   "cannibalizationRisk": "Rendah: fokus pemilihan tampilan, tidak menjadi halaman jasa stainless kedua.",

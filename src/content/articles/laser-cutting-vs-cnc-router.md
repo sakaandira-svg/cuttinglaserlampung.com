@@ -4,6 +4,7 @@
   "description": "Bandingkan potong tembus, kantong, detail sudut, dan karakter tepi untuk menentukan pertanyaan yang tepat sebelum memilih laser cutting atau CNC router.",
   "cluster": "proses",
   "primaryIntent": "Membandingkan proses berdasarkan geometri dan hasil akhir yang dibutuhkan.",
+  "targetKeywordCluster": "perbedaan laser cutting dan CNC router menurut bentuk akhir",
   "targetUser": "Pemilik proyek dan desainer yang belum menentukan proses.",
   "uniqueValue": "Matriks bentuk akhir, contoh keputusan bertahap, dan daftar informasi untuk menilai proses tanpa mengasumsikan mesin workshop.",
   "cannibalizationRisk": "Rendah: membahas keputusan proses, tidak menargetkan pemesanan jasa CNC di Lampung.",

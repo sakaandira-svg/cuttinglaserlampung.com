@@ -4,6 +4,7 @@
   "description": "Kelola revisi, material, jumlah, dan kriteria penerimaan dari gambar sampai hasil. Gunakan catatan sederhana agar file lama tidak tertukar dengan desain final.",
   "cluster": "perencanaan",
   "primaryIntent": "Mengelola persetujuan revisi dan pemeriksaan hasil fabrikasi secara terstruktur.",
+  "targetKeywordCluster": "persetujuan desain fabrikasi, revisi, dan serah terima",
   "targetUser": "Pemilik proyek, desainer, dan koordinator pekerjaan.",
   "uniqueValue": "Alur status dokumen, daftar perubahan, pemisahan persetujuan konsep dan produksi, serta catatan temuan serah terima.",
   "cannibalizationRisk": "Rendah: koordinasi pekerjaan melengkapi file guide dan tidak menggantikan halaman layanan.",

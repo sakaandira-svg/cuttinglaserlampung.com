@@ -4,6 +4,7 @@
   "description": "Tinjau arah matahari, pandangan, hujan, akses perawatan, dan modul screen. Susun brief fasad berdasarkan lokasi nyata tanpa menjanjikan penghematan energi.",
   "cluster": "aplikasi",
   "primaryIntent": "Menyiapkan pertimbangan screen fasad yang merespons kondisi lokasi tropis.",
+  "targetKeywordCluster": "screen fasad tropis, arah cahaya, dan pembagian panel",
   "targetUser": "Pemilik bangunan dan desainer yang merencanakan lapisan fasad.",
   "uniqueValue": "Lembar observasi lokasi berdasarkan waktu, matriks fungsi screen, dan batas antara motif dekoratif dan kinerja bangunan.",
   "cannibalizationRisk": "Rendah: informasi perencanaan mendukung URL jasa fasad, tanpa halaman lokasi duplikat.",

@@ -4,6 +4,7 @@
   "description": "Susun catatan perawatan untuk panel metal, acrylic, atau bahan berlapis. Kenali batas pembersihan, dokumentasi perubahan, dan akses yang perlu direncanakan.",
   "cluster": "aplikasi",
   "primaryIntent": "Menyusun rutinitas pemeriksaan dan perawatan berdasarkan material panel.",
+  "targetKeywordCluster": "perawatan panel dekoratif menurut material dan finishing",
   "targetUser": "Pemilik panel, pengelola ruang, dan penanggung jawab bangunan.",
   "uniqueValue": "Kartu perawatan material, pemisahan kotoran dari kerusakan, serta prosedur pelaporan tanpa mencoba perbaikan yang tidak sesuai.",
   "cannibalizationRisk": "Rendah: artikel purna-pemakaian mendukung layanan bahan dan tidak mengklaim jasa perawatan.",

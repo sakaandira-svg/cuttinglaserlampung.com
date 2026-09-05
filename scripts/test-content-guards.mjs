@@ -14,7 +14,13 @@ const failures=[
  ['thin empty body',a=>{a[0].body='## Ringkasan\nSatu paragraf pendek.';}],
  ['wrong canonical',a=>{a[0].data.canonical='https://example.com/';}],
  ['second H1',a=>{a[0].body='# Extra title\n'+a[0].body;}],
+ ['missing portfolio relationship',a=>{a[0].data.portfolioId='';}],
+ ['missing keyword cluster',a=>{delete a[0].data.targetKeywordCluster;}],
+ ['obsolete article mailto',a=>{a[0].body+='\n[Kirim lewat email](mailto:example@example.com)';}],
+ ['obsolete email CTA metadata',a=>{a[0].data.emailSubject='Diskusi desain';}],
+ ['six related articles',a=>{a[0].data.relatedArticles=a.slice(1,7).map(entry=>entry.id);}],
 ];
 for(const [label,mutate] of failures){const fixture=structuredClone(original);mutate(fixture);assert.ok(run(fixture).errors.length,`Guard failed to reject ${label}`);}
 for(const kind of ['draft','future','noindex']){const fixture=structuredClone(original);const extra=structuredClone(original[0]);extra.id=`excluded-${kind}`;extra.data.canonical=`https://cuttinglaserlampung.com/artikel/${extra.id}/`;if(kind==='draft')extra.data.status='draft';if(kind==='noindex')extra.data.noindex=true;if(kind==='future')extra.data.publishedAt=extra.data.updatedAt='2099-01-01';fixture.push(extra);const result=run(fixture);assert.equal(result.publishedCount,original.length);assert.equal(result.draftOrExcludedCount,1);assert.equal(result.errors.length,0);}
-console.log('Content guard regressions passed: 8 rejected failure cases; draft, future, and noindex exclusions verified.');
+const fiveRelated=structuredClone(original);fiveRelated[0].data.relatedArticles=fiveRelated.slice(1,6).map(a=>a.id);assert.equal(run(fiveRelated).errors.length,0,'Five valid related articles should be accepted');
+console.log(`Content guard regressions passed: ${failures.length} rejected failure cases; five related articles accepted; draft, future, and noindex exclusions verified.`);

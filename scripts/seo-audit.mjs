@@ -1,12 +1,14 @@
 import {readFileSync,readdirSync,existsSync,writeFileSync} from 'node:fs';
 import {resolve,join} from 'node:path';
 import {auditContent,loadArticles} from './content-audit.mjs';
+import {conversionBusiness,inspectArticleConversion} from './article-conversion.mjs';
 const root=process.cwd(),dist=resolve(root,'dist'),domain='https://cuttinglaserlampung.com';
 const walk=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(d,e.name)):[join(d,e.name)]);
 const decode=s=>s.replace(/&#(x[0-9a-f]+|[0-9]+);/gi,(_,n)=>String.fromCodePoint(n[0].toLowerCase()==='x'?parseInt(n.slice(1),16):Number(n))).replaceAll('&amp;','&').replaceAll('&#39;',"'").replaceAll('&quot;','"').replaceAll('&lt;','<').replaceAll('&gt;','>');
 const attr=(tag,key)=>tag.match(new RegExp(`\\s${key}="([^"]*)"`))?.[1];
 const errors=[];const records=[];const source=loadArticles();
 const content=auditContent();
+const conversionEntity=conversionBusiness(),conversionCoverage={services:0,portfolio:0,relatedArticles:0,whatsapp:0,maps:0,workshopAddress:0};
 for(const file of walk(dist).filter(f=>f.endsWith('.html'))){
   const html=readFileSync(file,'utf8');const route=file.slice(dist.length).replaceAll('\\','/').replace(/index\.html$/,'');
   const meta=(key,value)=>[...html.matchAll(/<meta\b[^>]*>/g)].map(m=>m[0]).find(t=>attr(t,key)===value);
@@ -29,6 +31,7 @@ for(const file of walk(dist).filter(f=>f.endsWith('.html'))){
   const articleId=html.match(/data-article="([^"]+)"/)?.[1];
   if(articleId){
     const article=source.find(a=>a.id===articleId),data=article?.data;
+    if(article){const conversion=inspectArticleConversion(html,article,conversionEntity);conversion.errors.forEach(fail);for(const [key,ok] of Object.entries(conversion.coverage))if(ok)conversionCoverage[key]++;}
     if(!data||noindex||data.status!=='published'||data.noindex)fail('Ineligible article rendered');
     const node=nodes.find(n=>n['@type']==='Article');
     if(!node||node.headline!==data?.title||node.description!==description||node.author?.['@id']!==domain+'/#organization'||node.publisher?.['@id']!==domain+'/#organization'||!node.image?.includes(ogImage))fail('Article schema mismatch');
@@ -51,7 +54,7 @@ for(const r of eligible)if(!urls.includes(r.canonical))errors.push(`Missing site
 for(const a of source.filter(a=>!content.articles.some(p=>p.id===a.id)))if(records.some(r=>r.articleId===a.id)||urls.includes(a.data.canonical))errors.push(`Draft, future, or noindex article exposed: ${a.id}`);
 const visited=new Set(['/']);let pending=['/'];while(pending.length){const next=[];for(const path of pending)for(const link of records.find(r=>r.route===path)?.links||[])if(!visited.has(link)){visited.add(link);next.push(link)}pending=next;}
 const orphans=eligible.filter(r=>!visited.has(r.route));for(const r of orphans)errors.push(`Orphan URL ${r.route}`);
-const report={indexableUrls:eligible.length,htmlPages:records.length,commercialPages:9,publishedArticles:content.publishedCount,orphanUrls:orphans.length,duplicateTitles:duplicateCounts.titles,duplicateDescriptions:duplicateCounts.descriptions,duplicateCanonicals:duplicateCounts.canonicals,canonicalErrors:errors.filter(e=>/canonical/i.test(e)).length,schemaErrors:errors.filter(e=>/schema|JSON-LD/i.test(e)).length,sitemapErrors:errors.filter(e=>/sitemap/i.test(e)).length,errors,urls:eligible.map(r=>({url:r.canonical,title:r.title,description:r.description,article:Boolean(r.articleId)}))};
+const report={indexableUrls:eligible.length,htmlPages:records.length,commercialPages:9,publishedArticles:content.publishedCount,articleConversionCoverage:conversionCoverage,orphanUrls:orphans.length,duplicateTitles:duplicateCounts.titles,duplicateDescriptions:duplicateCounts.descriptions,duplicateCanonicals:duplicateCounts.canonicals,canonicalErrors:errors.filter(e=>/canonical/i.test(e)).length,schemaErrors:errors.filter(e=>/schema|JSON-LD/i.test(e)).length,sitemapErrors:errors.filter(e=>/sitemap/i.test(e)).length,errors,urls:eligible.map(r=>({url:r.canonical,title:r.title,description:r.description,article:Boolean(r.articleId)}))};
 writeFileSync('reports/SEO-GUARD.json',JSON.stringify(report,null,2)+'\n');
 if(errors.length)throw new Error(errors.join('\n'));
 console.log(`SEO guard passed: ${eligible.length} indexable URLs; ${content.publishedCount} articles; zero metadata duplicates, orphans, canonical/schema/sitemap errors.`);

@@ -4,6 +4,7 @@
   "description": "Rancang partisi dari arah pandang dan aktivitas penghuni. Bandingkan posisi, pola, serta cahaya siang dan malam sebelum memilih bukaan dekoratif.",
   "cluster": "aplikasi",
   "primaryIntent": "Memilih posisi dan bukaan partisi untuk menyaring pandangan tanpa kehilangan fungsi ruang.",
+  "targetKeywordCluster": "pola partisi interior untuk privasi, cahaya, dan arah pandang",
   "targetUser": "Pemilik rumah, kantor kecil, dan ruang usaha.",
   "uniqueValue": "Peta pandangan duduk/berdiri dan uji siang-malam, serta pemisahan privasi visual dari kebutuhan akustik.",
   "cannibalizationRisk": "Rendah: artikel evaluasi ruang mendukung halaman jasa partisi yang ada.",

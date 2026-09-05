@@ -4,6 +4,7 @@
   "description": "Tentukan acrylic dari cara melihat objek, latar, pencahayaan, dan kondisi tepinya. Pelajari cara membandingkan sampel untuk signage serta display interior.",
   "cluster": "material",
   "primaryIntent": "Memilih karakter visual acrylic menurut fungsi display dan signage.",
+  "targetKeywordCluster": "memilih acrylic bening, opal, dan berwarna untuk display",
   "targetUser": "Pemilik usaha, desainer display, dan perancang lettering.",
   "uniqueValue": "Membandingkan kebutuhan melihat objek dan membaca huruf melalui uji latar, sampel, serta posisi tepi.",
   "cannibalizationRisk": "Rendah: keputusan tampilan acrylic/akrilik mendukung satu URL komersial yang sama.",

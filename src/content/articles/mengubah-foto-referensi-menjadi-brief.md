@@ -4,6 +4,7 @@
   "description": "Pisahkan motif, warna, proporsi, dan konteks ruang dari foto inspirasi. Susun brief yang jelas tanpa menganggap foto sebagai ukuran atau file produksi.",
   "cluster": "proses",
   "primaryIntent": "Mengubah inspirasi visual menjadi kebutuhan desain yang dapat dikomunikasikan.",
+  "targetKeywordCluster": "menyusun brief desain cutting dari foto referensi",
   "targetUser": "Pemilik rumah atau usaha yang belum mempunyai gambar kerja.",
   "uniqueValue": "Metode anotasi referensi, daftar hal yang disukai dan dihindari, serta contoh brief tanpa menyalin karya orang lain.",
   "cannibalizationRisk": "Rendah: menyiapkan kebutuhan sebelum file, bukan duplikasi panduan ekspor file.",

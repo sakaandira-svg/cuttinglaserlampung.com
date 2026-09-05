@@ -4,6 +4,7 @@
   "description": "Bedakan nama papan, grade tahan lembap, kondisi ruang, dan detail tepi. Susun pertanyaan material sebelum memilih MDF atau papan yang dipasarkan sebagai HMR.",
   "cluster": "material",
   "primaryIntent": "Menilai kecocokan MDF dan papan berlabel HMR untuk kondisi interior tertentu.",
+  "targetKeywordCluster": "MDF vs HMR untuk interior dan batas ketahanan lembap",
   "targetUser": "Pemilik interior, pembuat display, dan perancang panel dekoratif.",
   "uniqueValue": "Memisahkan label pemasaran dari spesifikasi, memetakan sumber lembap, serta menilai detail tepi dan pembongkaran.",
   "cannibalizationRisk": "Rendah: tidak membuat halaman jasa HMR yang belum terverifikasi; pemesanan mengarah ke MDF atau penilaian CNC.",

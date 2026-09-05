@@ -4,6 +4,7 @@
   "description": "Nilai kecocokan workshop lewat dokumentasi relevan, kejelasan material, file, lingkup, dan komunikasi. Hindari memilih hanya dari mesin atau foto promosi.",
   "cluster": "perencanaan",
   "primaryIntent": "Mengevaluasi penyedia fabrikasi lokal melalui bukti dan kejelasan proses.",
+  "targetKeywordCluster": "pertanyaan sebelum memilih workshop laser cutting di Lampung",
   "targetUser": "Pemilik kebutuhan custom di Bandar Lampung dan wilayah Lampung.",
   "uniqueValue": "Daftar evaluasi penyedia yang netral, pemisahan dokumentasi nyata dan konsep, serta persiapan kunjungan lokal.",
   "cannibalizationRisk": "Sedang, dikendalikan: artikel evaluasi penyedia, bukan halaman jasa umum atau klaim workshop terbaik.",

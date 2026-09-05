@@ -4,6 +4,7 @@
   "description": "Spons bukan satu jenis material. Kenali kebutuhan insert, lapisan perekat, komposisi, dan cara menilai hasil sebelum menyepakati metode pemotongan foam.",
   "cluster": "material",
   "primaryIntent": "Mempersiapkan data foam atau spons untuk menilai metode potong yang sesuai.",
+  "targetKeywordCluster": "identifikasi spons dan foam sebelum memilih metode cutting",
   "targetUser": "Pemilik kebutuhan insert, kemasan, display, atau bantalan custom.",
   "uniqueValue": "Memisahkan sifat tekan dari dimensi potong dan menyusun uji fungsi insert tanpa mengasumsikan semua foam laser-safe.",
   "cannibalizationRisk": "Rendah: bukan klaim jasa laser spons; hanya konsultasi material dan metode yang perlu diverifikasi.",

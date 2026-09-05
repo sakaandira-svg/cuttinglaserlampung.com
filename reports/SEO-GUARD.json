@@ -3,6 +3,14 @@
   "htmlPages": 41,
   "commercialPages": 9,
   "publishedArticles": 24,
+  "articleConversionCoverage": {
+    "services": 24,
+    "portfolio": 24,
+    "relatedArticles": 24,
+    "whatsapp": 24,
+    "maps": 24,
+    "workshopAddress": 24
+  },
   "orphanUrls": 0,
   "duplicateTitles": 0,
   "duplicateDescriptions": 0,

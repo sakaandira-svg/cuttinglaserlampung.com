@@ -4,6 +4,7 @@
   "description": "Tinjau tepi potong, sambungan, akses pelapisan, dan perawatan panel besi. Gunakan lingkup finishing yang jelas saat membandingkan rancangan dan penawaran.",
   "cluster": "material",
   "primaryIntent": "Menentukan informasi finishing dan perlindungan panel besi sebelum produksi.",
+  "targetKeywordCluster": "finishing panel plat besi, tepi potong, dan perlindungan permukaan",
   "targetUser": "Pemilik pagar, panel eksterior, dan perancang interior.",
   "uniqueValue": "Menghubungkan geometri panel dengan akses finishing dan perawatan serta membedakan sampel warna dari sistem perlindungan.",
   "cannibalizationRisk": "Rendah: membahas keputusan finishing, sementara pesanan potong besi tetap pada halaman layanan.",

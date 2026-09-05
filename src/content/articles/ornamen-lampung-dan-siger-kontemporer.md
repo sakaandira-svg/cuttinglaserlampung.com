@@ -4,6 +4,7 @@
   "description": "Susun brief ornamen lokal dengan asal referensi yang jelas. Bedakan inspirasi geometris, penggunaan simbol, dan klaim makna sebelum membuat panel custom.",
   "cluster": "aplikasi",
   "primaryIntent": "Mengolah referensi visual Lampung secara kontekstual dan tidak menyalin motif tanpa dasar.",
+  "targetKeywordCluster": "inspirasi ornamen Lampung dan Siger untuk panel kontemporer",
   "targetUser": "Pemilik ruang, perancang identitas lokal, dan desainer ornamen.",
   "uniqueValue": "Pemisahan bentuk dan makna, jejak sumber referensi, pilihan abstraksi, serta proses persetujuan penggunaan simbol.",
   "cannibalizationRisk": "Rendah: satu panduan menggabungkan motif Lampung dan Siger agar tidak menjadi dua artikel sinonim.",

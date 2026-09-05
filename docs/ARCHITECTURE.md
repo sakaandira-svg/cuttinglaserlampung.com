@@ -12,6 +12,7 @@ CuttingLaserLampung.com uses Astro 5 with static output. Content is pre-rendered
 - `src/lib/whatsapp.ts`: contextual CTA/message generator
 - `src/layouts/`: metadata, schema, and shared document shell
 - `src/components/`: original vector studies, cut-path hero, project mosaics, application index, material strip, fabrication flow, navigation, breadcrumbs, and CTA
+- `src/components/ArticleConversion.astro`: shared static article module with contextual WhatsApp, direct Maps, relevant visual/service links, and the configured workshop address; articles opt out of the generic floating CTA in `BaseLayout.astro`
 - `src/pages/`: intent-led static routes
 - `src/data/portfolio.ts`: typed concept/project records, stable gallery anchors, and provenance
 - `src/assets/portfolio/`: historical source images and future verified project photographs
@@ -19,6 +20,8 @@ CuttingLaserLampung.com uses Astro 5 with static output. Content is pre-rendered
 - `scripts/verify.mjs`: rendered route, link, business, schema, image, SVG, and zero-client-JavaScript invariants
 - `scripts/content-audit.mjs` and `scripts/seo-audit.mjs`: content value/duplication, metadata, publication eligibility, related content, and crawl graph guards
 - `scripts/test-content-guards.mjs`: deliberate invalid-content regression cases
+- `scripts/article-conversion.mjs` and `scripts/test-article-conversion.mjs`: shared local/live rendered conversion validation and negative regression fixtures, including rejection of obsolete article email actions
+- `scripts/content-graph.mjs`: generates `reports/CONTENT-GRAPH.md` from published article relationships and verified business configuration during verification
 - `scripts/lighthouse-audit.mjs` and `scripts/production-audit.mjs`: repeatable local/production performance and deployed SEO audits
 
 The site has no database, no analytics by default, and no secrets in frontend code. `docs/VISUAL-SYSTEM.md` records the Round 4 composition and `docs/IMAGE-REPLACEMENT.md` describes the photo migration path. The deployment target remains Hostinger static output from `dist/`.

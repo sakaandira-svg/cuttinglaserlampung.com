@@ -4,6 +4,7 @@
   "description": "Periksa bagian pola yang dapat terlepas, sambungan tipis, dan detail yang hilang saat diperkecil. Gunakan audit visual sebelum file masuk tahap produksi.",
   "cluster": "proses",
   "primaryIntent": "Mengaudit kontinuitas pola dan keterbacaan detail sebelum diproduksi.",
+  "targetKeywordCluster": "jembatan pola cutting, pulau terlepas, dan detail kecil",
   "targetUser": "Desainer motif, pemilik logo, dan perancang panel.",
   "uniqueValue": "Audit hitam-putih, penelusuran pulau terlepas, dan prioritas perbaikan desain dengan contoh huruf dan motif.",
   "cannibalizationRisk": "Rendah: fokus topologi pola, bukan mengulang daftar format pada panduan file.",

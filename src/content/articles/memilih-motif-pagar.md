@@ -4,6 +4,7 @@
   "description": "Bandingkan pola pagar dari arah pandang, pembagian daun, dan konteks rumah. Gunakan simulasi sederhana sebelum mengunci motif serta detail panel.",
   "cluster": "aplikasi",
   "primaryIntent": "Memilih komposisi motif pagar berdasarkan privasi dan tampak rumah.",
+  "targetKeywordCluster": "cara memilih motif pagar dari privasi dan skala gerbang",
   "targetUser": "Pemilik rumah atau ruko yang sedang membandingkan pola.",
   "uniqueValue": "Pemetaan zona pandang, penilaian gerbang terbuka/tertutup, dan perbandingan pola dalam satu elevasi.",
   "cannibalizationRisk": "Rendah: panduan memilih motif mengarahkan pesanan ke URL pagar yang sudah ada.",

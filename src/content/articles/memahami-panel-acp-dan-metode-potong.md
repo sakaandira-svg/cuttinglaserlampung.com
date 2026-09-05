@@ -4,6 +4,7 @@
   "description": "Kenali ACP sebagai panel komposit. Periksa inti, permukaan, arah pemasangan, dan bentuk akhir sebelum menyepakati metode pengolahan yang sesuai.",
   "cluster": "material",
   "primaryIntent": "Memahami data ACP yang diperlukan untuk memilih metode pengolahan.",
+  "targetKeywordCluster": "komposisi ACP, metode potong, routing, dan lipatan panel",
   "targetUser": "Pemilik signage dan perancang panel fasad.",
   "uniqueValue": "Membedakan potong profil dari routing lipatan dan menekankan pemeriksaan produk komposit serta batas klaim ketahanan.",
   "cannibalizationRisk": "Rendah: panduan identifikasi dan bentuk akhir mendukung URL layanan ACP yang ada.",

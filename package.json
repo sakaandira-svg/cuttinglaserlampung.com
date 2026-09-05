@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "verify": "npm run check && npm run build && node scripts/verify.mjs && node scripts/seo-audit.mjs && node scripts/test-content-guards.mjs",
+    "verify": "npm run check && npm run build && node scripts/verify.mjs && node scripts/seo-audit.mjs && node scripts/test-content-guards.mjs && node scripts/test-article-conversion.mjs && node scripts/content-graph.mjs",
     "audit:content": "node scripts/content-audit.mjs",
     "audit:lighthouse": "node scripts/lighthouse-audit.mjs",
     "audit:production": "node scripts/production-audit.mjs"

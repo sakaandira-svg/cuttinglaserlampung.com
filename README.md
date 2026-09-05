@@ -29,3 +29,5 @@ npm run verify
 Deployment guidance is in `docs/HOSTINGER-DEPLOYMENT.md`. GitHub main feeds the existing Hostinger static deployment. See `reports/SEO-FORTRESS-AUDIT.md` for Round 5 release evidence, article URLs, commercial intent mapping, and local/production Lighthouse results. The approved design remains documented in `docs/VISUAL-SYSTEM.md` and `reports/ROUND-4-REDESIGN.md`.
 
 The 24-article editorial library uses Astro content collections. See `docs/SEO-MAINTENANCE.md` for publishing and verification, `docs/IMAGE-REPLACEMENT.md` for portfolio photography, `reports/CONTENT-ROADMAP.md` for gated future topics, and `docs/SEARCH-CONSOLE.md` for domain verification and sitemap submission. Roadmap entries are not published routes.
+
+The Round 6 conversion correction uses WhatsApp as the primary article action, with direct Maps access, relevant portfolio/service links, and a compact verified workshop block. See `reports/ROUND-6-CONVERSION.md` for validation and deployment evidence and `reports/CONTENT-GRAPH.md` for all 24 article mappings.

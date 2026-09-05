@@ -1,6 +1,7 @@
 import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {obsoleteEmailAction} from './article-conversion.mjs';
 
 export function loadArticles(root=process.cwd()) {
   return readdirSync(resolve(root,'src/content/articles')).filter(f=>f.endsWith('.md')).map(file=>{
@@ -10,7 +11,7 @@ export function loadArticles(root=process.cwd()) {
     return {id:file.slice(0,-3),data:JSON.parse(match[1]),body:match[2]};
   });
 }
-const normalize=s=>s.toLowerCase().replace(/\[[^\]]+\]\([^)]*\)/g,m=>m.match(/\[([^\]]+)\]/)[1]).replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim();
+const normalize=s=>(s||'').toLowerCase().replace(/\[[^\]]+\]\([^)]*\)/g,m=>m.match(/\[([^\]]+)\]/)[1]).replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim();
 const tokens=s=>new Set(normalize(s).split(' ').filter(w=>w.length>3));
 const similarity=(a,b)=>{const union=new Set([...a,...b]);return union.size?[...a].filter(t=>b.has(t)).length/union.size:0;};
 export function validateContent(articles,serviceSlugs,today=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Jakarta'})) {
@@ -21,14 +22,15 @@ export function validateContent(articles,serviceSlugs,today=new Date().toLocaleD
     const d=a.data;const error=m=>errors.push(`${a.id}: ${m}`);
     if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(a.id))error('Invalid slug');
     if(!['published','draft'].includes(d.status)||typeof d.noindex!=='boolean')error('Missing publication controls');
-    for(const key of ['title','description','primaryIntent','targetUser','uniqueValue','cannibalizationRisk','takeaway','whatsappMessage']) if(typeof d[key]!=='string'||d[key].trim().length<15)error(`Missing editorial field ${key}`);
+    for(const key of ['title','description','primaryIntent','targetKeywordCluster','targetUser','uniqueValue','cannibalizationRisk','takeaway','whatsappMessage']) if(typeof d[key]!=='string'||d[key].trim().length<15)error(`Missing editorial field ${key}`);
+    if(obsoleteEmailAction(a.body)||Object.keys(d).some(key=>/email|mailto/i.test(key)))error('Obsolete article email CTA or metadata');
     if(d.canonical!==`https://cuttinglaserlampung.com/artikel/${a.id}/`)error('Incorrect source canonical');
     if(!/^\d{4}-\d{2}-\d{2}$/.test(d.publishedAt)||!/^\d{4}-\d{2}-\d{2}$/.test(d.updatedAt)||d.updatedAt<d.publishedAt)error('Invalid editorial dates');
     if(!eligibleIds.has(a.id))continue;
     for(const [set,value,label] of [[titles,normalize(d.title),'title'],[ctas,normalize(d.whatsappMessage),'CTA'],[intents,normalize(d.primaryIntent),'intent']]){if(set.has(value))error(`Duplicate ${label}`);set.add(value);}
     if(!Array.isArray(d.relatedServices)||d.relatedServices.length<1||d.relatedServices.length>3||d.relatedServices.some(s=>!serviceSlugs.includes(s)))error('Invalid service relationship');
     if(!['eksterior','interior','ornamen','signage','cnc','material'].includes(d.portfolioId))error('Missing portfolio relationship');
-    if(!Array.isArray(d.relatedArticles)||new Set(d.relatedArticles).size<2||d.relatedArticles.length>4||d.relatedArticles.some(id=>id===a.id||!allIds.has(id)||!eligibleIds.has(id)))error('Invalid related reading');
+    if(!Array.isArray(d.relatedArticles)||new Set(d.relatedArticles).size<2||new Set(d.relatedArticles).size!==d.relatedArticles.length||d.relatedArticles.length>5||d.relatedArticles.some(id=>id===a.id||!allIds.has(id)||!eligibleIds.has(id)))error('Invalid related reading');
     if(!d.visual?.alt||d.visual.alt.length<25||!d.visual.caption||d.visual.labels?.length!==3)error('Missing meaningful illustration metadata');
     if(/^# /m.test(a.body))error('Body must not add a second H1');
     const headings=[...a.body.matchAll(/^## (.+)$/gm)].map(m=>m[1]);
@@ -38,7 +40,7 @@ export function validateContent(articles,serviceSlugs,today=new Date().toLocaleD
     if(wordCount<450||headings.length<4||paragraphs.length<8||Object.values(aids).filter(Boolean).length<2)error('Insufficient content/value signals; expand or refocus, do not pad');
     const incoming=published.filter(other=>other.data.relatedArticles?.includes(a.id)).map(other=>other.id);
     if(!incoming.length)warnings.push(`${a.id}: no incoming related-article relationship (hub still links it)`);
-    metrics.push({id:a.id,url:d.canonical,title:d.title,cluster:d.cluster,words:wordCount,sections:headings.length,primaryIntent:d.primaryIntent,targetUser:d.targetUser,uniqueValue:d.uniqueValue,cannibalizationRisk:d.cannibalizationRisk,services:d.relatedServices,portfolio:`/portfolio/#${d.portfolioId}`,related:d.relatedArticles,incomingRelated:incoming.length,whatsapp:true});
+    metrics.push({id:a.id,url:d.canonical,title:d.title,cluster:d.cluster,words:wordCount,sections:headings.length,primaryIntent:d.primaryIntent,targetKeywordCluster:d.targetKeywordCluster,targetUser:d.targetUser,uniqueValue:d.uniqueValue,cannibalizationRisk:d.cannibalizationRisk,services:d.relatedServices,portfolio:`/portfolio/#${d.portfolioId}`,related:d.relatedArticles,incomingRelated:incoming.length,whatsapp:true});
   }
   for(let i=0;i<published.length;i++)for(let j=i+1;j<published.length;j++){
     const a=published[i],b=published[j];

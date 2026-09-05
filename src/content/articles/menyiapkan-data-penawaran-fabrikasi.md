@@ -4,6 +4,7 @@
   "description": "Susun kebutuhan bahan, jumlah, pola, finishing, dan pemasangan agar penawaran bisa dibandingkan. Tidak ada harga perkiraan atau kapasitas yang direkayasa.",
   "cluster": "perencanaan",
   "primaryIntent": "Mempersiapkan permintaan penawaran dan membandingkan ruang lingkup pekerjaan.",
+  "targetKeywordCluster": "data ukuran, material, dan lingkup untuk penawaran fabrikasi",
   "targetUser": "Pemilik proyek yang meminta estimasi custom fabrication.",
   "uniqueValue": "Matriks lingkup dan asumsi, pemisahan kebutuhan pasti/opsional, serta cara membandingkan alternatif tanpa daftar harga palsu.",
   "cannibalizationRisk": "Rendah: proses menyiapkan data, tidak menjadi halaman harga jasa yang tidak terverifikasi.",

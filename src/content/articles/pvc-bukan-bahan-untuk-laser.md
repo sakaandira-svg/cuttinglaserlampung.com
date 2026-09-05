@@ -4,6 +4,7 @@
   "description": "Jangan menguji PVC atau bahan tak dikenal dengan laser. Pelajari data yang perlu diminta, cara menghindari salah identifikasi, dan pembahasan proses alternatif.",
   "cluster": "material",
   "primaryIntent": "Memahami mengapa PVC tidak boleh diasumsikan aman untuk laser dan cara memilih tindak lanjut.",
+  "targetKeywordCluster": "mengapa PVC bukan bahan laser dan verifikasi proses alternatif",
   "targetUser": "Pemilik lembar plastik, signage, dan panel yang belum teridentifikasi.",
   "uniqueValue": "Alur hentikan-asumsi, identifikasi dokumen, pemisahan sampel fisik dari uji laser, serta batas pilihan CNC.",
   "cannibalizationRisk": "Rendah: artikel keselamatan pemilihan bahan, bukan landing page jasa laser PVC.",

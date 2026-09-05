@@ -4,6 +4,7 @@
   "description": "Rancang sampel untuk menilai pola, tepi, sambungan, atau finishing. Catat kriteria, versi, dan batas uji agar persetujuan tidak bergantung pada kesan semata.",
   "cluster": "perencanaan",
   "primaryIntent": "Merencanakan sampel yang menjawab ketidakpastian desain dan proses.",
+  "targetKeywordCluster": "uji sampel material, kecocokan desain, dan kriteria penerimaan",
   "targetUser": "Desainer dan pemilik proyek dengan detail yang perlu dibuktikan.",
   "uniqueValue": "Matriks satu pertanyaan per sampel, kontrol variabel, bukti penerimaan, serta batas generalisasi hasil.",
   "cannibalizationRisk": "Rendah: panduan validasi sebelum pemesanan, bukan klaim fasilitas pengujian workshop.",
